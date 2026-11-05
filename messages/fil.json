@@ -1,0 +1,826 @@
+{
+  "Dashboard": {
+    "welcomeBack": "Maligayang pagbalik, {name}",
+    "subtitle": "Posisyon ng cash sa pribadong kayamanan at mga instant multi-currency ledger transfer.",
+    "sendWire": "Magpadala ng Wire",
+    "metalCards": "Metal Cards",
+    "kycPending": "Ang iyong pag-verify ng pagkakakilanlan ay kasalukuyang sinusuri ng aming compliance team.",
+    "kycRejected": "Ang iyong pagtatangka sa pag-verify ay tinanggihan. Mangyaring suriin ang iyong mga detalye at muling magsumite.",
+    "kycRequired": "Kinakailangan ang pag-verify ng pagkakakilanlan. Kumpletuhin ang iyong KYC upang ma-unlock ang buong pribilehiyo ng account.",
+    "checkStatus": "Suriin ang Status",
+    "verifyNow": "I-verify Na"
+  },
+  "Sidebar": {
+    "overview": "Overview",
+    "transfers": "Mga Paglilipat",
+    "metalCards": "Metal Cards",
+    "loans": "Mga Utang",
+    "investment": "Investment",
+    "kycVerification": "KYC Verification",
+    "settings": "Settings",
+    "navigation": "Navigation",
+    "compliance": "Compliance",
+    "adminPanel": "Admin Panel",
+    "customer": "Customer",
+    "signOut": "Mag-sign Out"
+  },
+  "VaultSection": {
+    "title": "Mga Aktibong Balanse sa Vault",
+    "activeVaultsCount": "{count} Aktibong {count, plural, =1 {Vault} other {Vaults}}",
+    "openNewVault": "Magbukas ng Bagong Vault"
+  },
+  "TransfersPage": {
+    "title": "Mga Paglilipat at Bayarin",
+    "description": "Maglipat ng pondo sa pagitan ng mga vault, magbayad sa ibang mga user, o magsagawa ng mga internasyonal na SWIFT wire."
+  },
+  "TransferTabs": {
+    "myVaults": "Aking mga Vault",
+    "payUser": "Magbayad sa User",
+    "wireTransfer": "Wire Transfer"
+  },
+  "InternalTransferForm": {
+    "title": "Internal Vault Swap",
+    "description": "Agarang magpalit ng pondo sa pagitan ng iyong mga vault gamit ang live admin exchange rates.",
+    "fromVault": "Mula sa Vault",
+    "toVault": "Papunta sa Vault",
+    "balanceLabel": "Balanse",
+    "amountToSend": "Halagang Ipapadala",
+    "exchangeRate": "Exchange Rate",
+    "rateNotSet": "Hindi nakatakda ang rate",
+    "recipientReceives": "Matatanggap ng Tumatanggap",
+    "processing": "Pinoproseso ang Swap...",
+    "executeSwap": "I-execute ang Swap",
+    "errors": {
+      "invalidAmount": "Mangyaring maglagay ng wastong halaga ng paglilipat.",
+      "sameVault": "Magkaiba dapat ang pinagmulan at patutunguhang vault.",
+      "swapFailed": "Nabigo ang pagpapalit."
+    },
+    "success": {
+      "swapCompleted": "Nakumpleto ang pagpapalit!"
+    }
+  },
+  "QuickActions": {
+    "sectionTitle": "Mga Mabilisang Aksyon",
+    "addMoney": {
+      "label": "Magdagdag ng Pera",
+      "desc": "Pondohan ang iyong mga vault account"
+    },
+    "sendWire": {
+      "label": "Magpadala ng Wire",
+      "desc": "Instant ledger transfer"
+    },
+    "payBills": {
+      "label": "Magbayad ng Bills",
+      "desc": "Mga naka-iskedyul na bayarin"
+    },
+    "history": {
+      "label": "Kasaysayan",
+      "desc": "Tingnan ang buong log ng transaksyon"
+    },
+    "cardLimits": {
+      "label": "Mga Limitasyon sa Card",
+      "desc": "Pamahalaan ang mga cap sa paggastos"
+    }
+  },
+  "TransactionTable": {
+    "title": "Mga Kamakailang Transaksyon",
+    "viewAll": "Tingnan ang Lahat ng Posting",
+    "emptyState": {
+      "title": "Wala pang nai-post na ledger entry.",
+      "description": "Magsimula ng paglilipat o palitan ng pera upang mapuno ang iyong kasaysayan sa ledger."
+    },
+    "headers": {
+      "description": "Deskripsyon",
+      "type": "Uri",
+      "date": "Petsa ng Posting",
+      "amount": "Halaga"
+    },
+    "types": {
+      "credit": "Credit / Deposito",
+      "debit": "Debit / Outflow"
+    }
+  },
+  "CardsPage": {
+    "backToDashboard": "Bumalik sa Dashboard",
+    "pageTitle": "Metal at Virtual Cards",
+    "pageDescription": "Pamahalaan ang mga pisikal na multi-currency metal card at mga instant disposable virtual card.",
+    "issueNewCard": "Mag-isyu ng Bagong Card",
+    "empty": {
+      "title": "Wala pang aktibong card",
+      "description": "Wala kang nakatalagang virtual o pisikal na card. Mag-click sa ibaba upang i-isyu ang iyong unang card mula sa iyong mga balanse sa vault.",
+      "button": "I-isyu ang Iyong Unang Card"
+    },
+    "card": {
+      "expires": "MAGTAPOS",
+      "showDetails": "Ipakita ang mga Detalye",
+      "hideDetails": "Itago ang mga Detalye",
+      "copyNumber": "Kopyahin ang Numero",
+      "copied": "Nakopya!",
+      "freezeCard": "I-freeze ang Card",
+      "unfreeze": "I-unfreeze"
+    },
+    "issuedList": {
+      "title": "Ang Iyong mga Na-isyu na Card",
+      "cardLabel": "Card",
+      "statusLabel": "Status"
+    },
+    "modal": {
+      "title": "Mag-isyu ng Bagong Card",
+      "subtitle": "Ang mga bayarin sa card ay direktang ibabawas sa iyong napiling balanse sa vault.",
+      "tierLabel": "Pumili ng Uri ng Card",
+      "virtualTitle": "Virtual Card",
+      "virtualDesc": "Instant na paggamit sa digital",
+      "virtualFee": "$5.00 na Bayarin",
+      "metalTitle": "Pisikal na Metal",
+      "metalDesc": "Multi-currency pisikal",
+      "metalFee": "$50.00 na Bayarin",
+      "vaultLabel": "Magbayad Mula sa Vault",
+      "noVaults": "Walang natagpuang vault account.",
+      "accountLabel": "Account",
+      "holderLabel": "Pangalan ng May-ari ng Card",
+      "processing": "Pinoproseso ang Pagbabayad...",
+      "confirmVirtual": "Kumpirmahin at Magbayad ng $5.00",
+      "confirmMetal": "Kumpirmahin at Magbayad ng $50.00"
+    },
+    "errors": {
+      "selectVault": "Mangyaring pumili ng vault account na pagbabayaran.",
+      "purchaseFailed": "Nabigo sa pagproseso ng pagbili."
+    }
+  },
+  "LoansPage": {
+    "backToDashboard": "Bumalik sa Dashboard",
+    "pageTitle": "Kredito at mga Pautang sa Negosyo",
+    "pageDescription": "Mag-apply para sa mga pasilidad ng kredito at subaybayan ang status ng pag-apruba ng aplikasyon.",
+    "applyButton": "Mag-apply para sa Pautang",
+    "applicationsTitle": "Ang Iyong mga Aplikasyon",
+    "empty": {
+      "title": "Walang mga Aplikasyon sa Pautang",
+      "description": "Wala kang mga aktibo o nakabinbing kahilingan sa pautang. Magsumite ng kahilingan upang ma-access ang flexible na pondo.",
+      "button": "Mag-apply Na"
+    },
+    "status": {
+      "pending": "Nakabinbing Pagsusuri",
+      "approved": "Naaprubahan",
+      "rejected": "Tinanggihan",
+      "paid": "Bayad na Lahat"
+    },
+    "card": {
+      "requestedAmount": "Hiniling na Halaga",
+      "term": "Termino",
+      "months": "Mga Buwan",
+      "monthlyEst": "Buwanang Est.",
+      "interest": "Interes",
+      "submitted": "Isinumite"
+    },
+    "modal": {
+      "title": "Mag-apply para sa Credit Line",
+      "subtitle": "Ang mga aplikasyon ay sinusuri ng mga administrator ng bangko sa loob ng 24 na oras.",
+      "vaultLabel": "Patutunguhang Vault Account",
+      "accountLabel": "Account",
+      "amountLabel": "Halaga ng Pautang ($)",
+      "termLabel": "Termino (Mga Buwan)",
+      "purposeLabel": "Layunin",
+      "submitting": "Isinusumite ang Aplikasyon...",
+      "submitButton": "Isumite ang Aplikasyon sa Pautang"
+    },
+    "errors": {
+      "selectVault": "Mangyaring pumili ng patutunguhang vault.",
+      "submissionFailed": "Nabigo ang pagsusumite."
+    }
+  },
+  "InvestmentsPage": {
+    "backToDashboard": "Bumalik sa Dashboard",
+    "pageTitle": "Portfolio ng Investment",
+    "pageDescription": "Palaguin ang iyong kayamanan sa mga equities, crypto, bonds, at commodities.",
+    "newInvestment": "Bagong Investment",
+    "portfolioValue": "Kabuuang Halaga ng Portfolio",
+    "activeBadge": "Aktibo",
+    "empty": {
+      "title": "Wala Pang Investment",
+      "description": "Wala kang mga aktibong hawak na investment. Pumili ng uri ng asset at simulan ang pagbuo ng iyong portfolio ngayon.",
+      "button": "Bumili ng Unang Asset"
+    },
+    "card": {
+      "units": "mga yunit",
+      "totalInvested": "Kabuuang In-invest",
+      "currentPrice": "Kasalukuyang Presyo",
+      "status": "Status",
+      "purchased": "Binili"
+    },
+    "modal": {
+      "title": "Bumili ng Asset para sa Investment",
+      "subtitle": "Ang mga pondo ay direktang ibabawas sa iyong napiling vault account.",
+      "fundingVault": "Funding Vault",
+      "accountLabel": "Account",
+      "assetName": "Pangalan ng Asset",
+      "symbol": "Simbolo / Ticker",
+      "category": "Kategorya",
+      "quantity": "Dami",
+      "unitPrice": "Presyo ng Yunit ($)",
+      "totalPurchase": "Kabuuang Halaga ng Pagbili:",
+      "processing": "Pinoproseso ang Investment...",
+      "confirmButton": "Kumpirmahin ang Pagbili",
+      "categories": {
+        "stocks": "Stocks",
+        "crypto": "Crypto",
+        "bonds": "Bonds",
+        "commodities": "Commodities"
+      }
+    },
+    "errors": {
+      "selectVault": "Mangyaring pumili ng vault para pondohan ang investment na ito.",
+      "purchaseFailed": "Nabigo sa pagkumpleto ng pagbili."
+    }
+  },
+  "KycClient": {
+    "backToSettings": "Bumalik sa Settings",
+    "title": "Pag-verify ng Pagkakakilanlan (KYC)",
+    "subtitle": "I-verify ang iyong pagkakakilanlan upang mag-unlock ng mas mataas na limitasyon sa paglilipat at mga tampok.",
+    "statusLabel": "Status",
+    "statuses": {
+      "pending": "Nakabinbin",
+      "approved": "Naaprubahan",
+      "rejected": "Tinanggihan"
+    },
+    "statusDesc": {
+      "pending": "Ang iyong mga dokumento ay kasalukuyang sinusuri ng aming compliance team.",
+      "approved": "Ang iyong account ay lubusang na-verify.",
+      "rejected": "Mangyaring suriin ang iyong mga detalye at muling magsumite."
+    },
+    "form": {
+      "fullName": "Buong Legal na Pangalan",
+      "fullNamePlaceholder": "Gaya ng ipinapakita sa opisyal na ID",
+      "idType": "Uri ng ID Document",
+      "idTypes": {
+        "passport": "Passport",
+        "nationalId": "National ID Card",
+        "driversLicense": "Driver's License"
+      },
+      "idNumber": "Numero ng ID Document",
+      "idNumberPlaceholder": "Numero ng pagkakakilanlan ng dokumento"
+    },
+    "upload": {
+      "title": "Mag-upload ng ID Document",
+      "subtitle": "Harapang larawan ng iyong pasaporte o ID",
+      "chooseFile": "Pumili ng File",
+      "attached": "✓ Na-attach ang ID Document"
+    },
+    "selfie": {
+      "title": "Pag-verify ng Mukha",
+      "subtitle": "Ihanay ang iyong mukha sa loob ng frame sa ibaba",
+      "attached": "✓ Na-verify at Na-attach ang Selfie"
+    },
+    "submitButton": {
+      "default": "Isumite ang Pag-verify",
+      "processing": "Isinusumite ang Pag-verify..."
+    },
+    "errors": {
+      "noDocument": "Mangyaring i-upload ang iyong ID document.",
+      "noSelfie": "Mangyaring kumuha ng selfie gamit ang camera.",
+      "failed": "Nabigo ang pagsusumite."
+    },
+    "success": {
+      "submitted": "Matagumpay na naisumite ang KYC!"
+    }
+  },
+  "DepositPage": {
+    "backToDashboard": "Bumalik sa Dashboard",
+    "title": "Magdagdag ng Pondo at mga Deposito",
+    "subtitle": "Pondohan ang iyong mga private wealth vault sa pamamagitan ng wire transfer o direktang pagdeposito sa account.",
+    "wireInstructions": {
+      "title": "Mga Tagubilin sa Wire",
+      "partnerBank": "Nakatalagang Partner Bank",
+      "bankNameLabel": "Pangalan ng Bangko",
+      "accountNameLabel": "Pangalan ng Account",
+      "defaultClientName": "Private Wealth Client",
+      "accountNumberLabel": "Numero ng Account",
+      "routingLabel": "Routing / Swift Code",
+      "notice": "Ang mga papasok na wire ay pumapasok sa loob ng 1 araw ng negosyo."
+    }
+  },
+  "SettingsPage": {
+    "title": "Mga Setting ng Account",
+    "subtitle": "Pamahalaan ang iyong overview sa account, mga naka-link na paraan ng pagbabayad, seguridad, at mga tampok ng private wealth.",
+    "profile": {
+      "defaultName": "Profile ng User",
+      "readOnlyBadge": "Read-Only",
+      "fullNameLabel": "Buong Pangalan",
+      "emailLabel": "Email Address",
+      "countryLabel": "Bansa / Residensya",
+      "notProvided": "Hindi ibinigay",
+      "notSpecified": "Hindi tinukoy"
+    },
+    "navSectionTitle": "Mga Kagustuhan at Pamamahala",
+    "items": {
+      "paymentMethods": {
+        "title": "Mga Paraan ng Pagbabayad",
+        "desc": "I-link ang mga bangko at credit/debit card"
+      },
+      "security": {
+        "title": "Seguridad at Password",
+        "desc": "Baguhin ang password at mga aktibong session"
+      },
+      "notifications": {
+        "title": "Mga Notification",
+        "desc": "I-configure ang email at mga alerto sa seguridad"
+      },
+      "kyc": {
+        "title": "Pag-verify ng Pagkakakilanlan",
+        "desc": "Status ng KYC at mga limitasyon sa paglilipat"
+      },
+      "limits": {
+        "title": "Mga Limitasyon sa Paggastos at Paglilipat",
+        "desc": "Magtakda ng mga pang-araw-araw na cap at panuntunan sa pag-withdraw"
+      },
+      "cardControls": {
+        "title": "Kontrol at Seguridad ng Card",
+        "desc": "Mga toggle para sa international, category caps at PIN"
+      },
+      "beneficiaries": {
+        "title": "Mga Benepisyaryo at Estate",
+        "desc": "Mga pinagkakatiwalaang contact at pagpaplano ng asset"
+      },
+      "tax": {
+        "title": "Tax & Compliance Hub",
+        "desc": "Mga pahayag, taunang ulat at residensya"
+      },
+      "apiKeys": {
+        "title": "Mga API Key at Access",
+        "desc": "Bumuo ng mga read-only token para sa mga integration"
+      }
+    }
+  },
+  "BillsPage": {
+    "backToDashboard": "Bumalik sa Dashboard",
+    "title": "Mga Bill at Invoice sa Vault",
+    "subtitle": "Pamahalaan at bayaran ang iyong mga utility, subscription, at obligasyon sa data.",
+    "activeObligations": "Mga Aktibong Obligasyon",
+    "dueDate": "Dapat Bayaran",
+    "empty": {
+      "title": "Walang natagpuang aktibong bill",
+      "description": "Mag-click sa \"Magdagdag ng Bagong Bill\" sa itaas upang magset up ng bayarin sa utility o subscription."
+    },
+    "status": {
+      "paid": "Bayad na",
+      "overdue": "Lampas na sa Takdang Panahon",
+      "pending": "Nakabinbin"
+    }
+  },
+  "AddBillModal": {
+    "addButton": "Magdagdag ng Bagong Bill",
+    "modalTitle": "Magbayad o Mag-iskedyul ng Bill",
+    "modalSubtitle": "Pumili ng provider at ilagay ang iyong halaga.",
+    "selectUtility": "Pumili ng Utility / Provider",
+    "billReference": "Sanggunian / Deskripsyon ng Bill",
+    "amountLabel": "Halaga (USD)",
+    "cancel": "Kanselahin",
+    "proceed": "Magpatuloy sa Pagbabayad",
+    "categories": {
+      "electricity": "Bill sa Kuryente (PHED)",
+      "water": "Water Supply Utility",
+      "internet": "Broadband Data Bundle",
+      "streaming": "Subscription sa Netflix"
+    }
+  },
+  "TransactionsPage": {
+    "backToOverview": "Bumalik sa Overview",
+    "title": "Kasaysayan ng Transaksyon",
+    "description": "Kumpletong audit trail ng lahat ng papasok na credit at papalabas na debit sa iyong mga vault.",
+    "exportCsv": "I-export ang CSV"
+  },
+  "PaymentSettingsClient": {
+    "backToSettings": "Bumalik sa Settings",
+    "pageTitle": "Mga Setting ng Pagbabayad",
+    "pageDescription": "Pamahalaan ang iyong mga panlabas na bank account at credit/debit card para sa pagpondo sa iyong vault.",
+    "tabs": {
+      "banks": "Mga Bank Account",
+      "cards": "Mga Card"
+    },
+    "banksList": {
+      "title": "Ang Iyong mga Naka-link na Bank Account",
+      "empty": "Wala pang naka-link na bank account.",
+      "accountLabel": "Account"
+    },
+    "bankForm": {
+      "title": "I-link ang Panlabas na Bank Account",
+      "bankName": "Pangalan ng Bangko",
+      "bankNamePlaceholder": "hal., Chase",
+      "accountType": "Uri ng Account",
+      "checking": "Checking",
+      "savings": "Savings",
+      "routingNumber": "Routing Number",
+      "routingPlaceholder": "9 na digit",
+      "accountNumber": "Numero ng Account",
+      "accountPlaceholder": "Buong Numero ng Account",
+      "submitting": "Naka-link ang Account...",
+      "submit": "I-link ang Bank Account"
+    },
+    "cardsList": {
+      "title": "Ang Iyong mga Naka-link na Card",
+      "empty": "Wala pang naka-link na card.",
+      "expires": "Magtapos"
+    },
+    "cardForm": {
+      "title": "I-link ang Credit o Debit Card",
+      "holderName": "Pangalan ng May-ari ng Card",
+      "holderPlaceholder": "Pangalan kung paano ito lumalabas sa card",
+      "network": "Network ng Card",
+      "number": "Numero ng Card",
+      "numberPlaceholder": "16-digit na numero ng card",
+      "expMonth": "Buwan ng Pag-expire",
+      "expMonthPlaceholder": "MM (hal., 08)",
+      "expYear": "Taon ng Pag-expire",
+      "expYearPlaceholder": "YYYY (hal., 2028)",
+      "cvc": "CVC / CVV",
+      "cvcPlaceholder": "3 o 4 na digit",
+      "submitting": "Naka-link ang Card...",
+      "submit": "I-link ang Card"
+    },
+    "securityNote": "Ang iyong impormasyon sa pananalapi ay naka-encrypt at nakaimbak alinsunod sa mga mahigpit na pamantayan ng pagsunod sa pagbabangko.",
+    "success": {
+      "bankLinked": "Naka-link ang bank account!",
+      "cardLinked": "Naka-link ang card!"
+    },
+    "errors": {
+      "bankFailed": "Nabigo sa pag-link ng bangko.",
+      "cardFailed": "Nabigo sa pag-link ng card."
+    }
+  },
+  "ApiKeysPage": {
+    "loading": "Naglo-load ng mga API key...",
+    "backToSettings": "Bumalik sa Settings",
+    "title": "Mga Developer API Key",
+    "subtitle": "Bumuo ng mga kredensyal ng API para sa programmatic access sa iyong mga Apex Vault account.",
+    "secretBanner": {
+      "title": "Kopyahin ang Iyong Lihim na Susi Ngayon",
+      "warning": "Para sa mga kadahilanan ng seguridad, ang susi na ito ay <strong>hinding-hindi na ipapakita muli</strong>. Siguraduhing kopyahin ito ngayon at itago ito nang ligtas.",
+      "copyKey": "Kopyahin ang Susi",
+      "copied": "Nakopya!",
+      "dismiss": "Ligtas ko nang nai-save ang susi na ito"
+    },
+    "form": {
+      "title": "Gumawa ng Bagong API Key",
+      "nameLabel": "Pangalan / Label ng Susi",
+      "namePlaceholder": "hal. Production Webhook Server",
+      "permissionsLabel": "Saklaw ng mga Pahintulot",
+      "readOnlyOption": "Read Only (Tingnan ang mga balanse at transaksyon)",
+      "fullAccessOption": "Full Access (Magsimula ng mga paglilipat at pamahalaan ang mga card)",
+      "generating": "Binubuo...",
+      "generateButton": "Bumuo ng mga Kredensyal"
+    },
+    "list": {
+      "title": "Mga Aktibong API Key ({count})",
+      "empty": "Walang natagpuang aktibong API key.",
+      "readOnlyBadge": "Read Only",
+      "fullAccessBadge": "Full Access",
+      "lastUsed": "Huling ginamit noong {date}",
+      "neverUsed": "Hindi kailanman ginamit",
+      "revokeTitle": "I-revoke ang Susi"
+    },
+    "errors": {
+      "loadFailed": "Nabigo sa pag-load ng mga API key.",
+      "generateFailed": "Nabigo sa pagbuo ng susi.",
+      "revokeFailed": "Nabigo sa pag-revoke ng susi."
+    },
+    "success": {
+      "revoked": "Na-revoke ang API key."
+    }
+  },
+  "BeneficiariesPage": {
+    "loading": "Naglo-load ng mga benepisyaryo...",
+    "backToSettings": "Bumalik sa Settings",
+    "title": "Mga Benepisyaryo at Estate Transfer",
+    "subtitle": "Magtalaga ng mga pangalawang benepisyaryo at magtakda ng mga porsyento ng alokasyon ng asset.",
+    "overview": {
+      "portfolioLabel": "Inilaang Portfolio"
+    },
+    "form": {
+      "title": "Magdagdag ng Benepisyaryo",
+      "fullNameLabel": "Buong Pangalan",
+      "fullNamePlaceholder": "hal. Eleanor Vance",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "eleanor@example.com",
+      "relationshipLabel": "Relasyon",
+      "allocationLabel": "Alokasyon (%)",
+      "allocationPlaceholder": "hal. 50",
+      "saving": "Nai-save...",
+      "saveButton": "I-save ang Benepisyaryo"
+    },
+    "relationships": {
+      "spouse": "Asawa",
+      "child": "Anak",
+      "parent": "Magulang",
+      "sibling": "Kapatid",
+      "trust": "Family Trust",
+      "other": "Iba pa"
+    },
+    "list": {
+      "title": "Mga Nakatalagang Benepisyaryo ({count})",
+      "empty": "Wala pang nakatalagang benepisyaryo.",
+      "allocationSub": "Alokasyon"
+    },
+    "errors": {
+      "loadFailed": "Nabigo sa pag-load ng mga benepisyaryo.",
+      "exceedsLimit": "Ang kabuuang alokasyon ay hindi maaaring lumampas sa 100%. Natitirang magagamit: {remaining}%",
+      "addFailed": "Nabigo sa pagdaragdag ng benepisyaryo.",
+      "deleteFailed": "Nabigo sa pagtanggal ng benepisyaryo."
+    },
+    "success": {
+      "added": "Matagumpay na naidagdag ang benepisyaryo!",
+      "removed": "Tinanggal ang benepisyaryo."
+    }
+  },
+  "CardControlsPage": {
+    "loading": "Naglo-load ng mga kontrol sa card...",
+    "backToSettings": "Bumalik sa Settings",
+    "title": "Kontrol at Seguridad ng Card",
+    "subtitle": "Pamahalaan ang mga pahintulot sa transaksyon, mga cap sa paggastos, at seguridad ng card.",
+    "cardTypes": {
+      "metal": "Metal",
+      "virtual": "Virtual",
+      "suffix": "Card"
+    },
+    "status": {
+      "frozen": "Naka-freeze 🧊",
+      "active": "Aktibo ✅"
+    },
+    "buttons": {
+      "freeze": "I-freeze ang Card",
+      "unfreeze": "I-unfreeze ang Card",
+      "updateLimit": "I-update ang Limitasyon",
+      "updating": "Ina-update..."
+    },
+    "togglesSectionTitle": "Mga Toggle sa Transaksyon",
+    "toggles": {
+      "international": {
+        "title": "Mga Internasyonal na Transaksyon",
+        "desc": "Pahintulutan ang mga cross-border at foreign merchant charge"
+      },
+      "atm": {
+        "title": "Mga Pag-withdraw sa ATM",
+        "desc": "Pahintulutan ang pisikal na pag-access sa cash sa mga global ATM"
+      },
+      "online": {
+        "title": "Mga Online Purchase",
+        "desc": "Paganahin ang mga pagbabayad sa e-commerce at web subscription"
+      }
+    },
+    "limitSectionTitle": "Buwanang Limitasyon sa Paggastos",
+    "limitLabel": "Halaga ng Limitasyon ($)",
+    "spentThisMonth": "Nagastos ngayong buwan: ${spent} / ${limit}",
+    "errors": {
+      "loadFailed": "Nabigo sa pag-load ng mga kontrol sa card.",
+      "notFound": "Hindi natagpuan ang mga detalye ng card.",
+      "limitFailed": "Nabigo sa pag-update ng limitasyon sa paggastos."
+    },
+    "success": {
+      "limitUpdated": "Matagumpay na na-update ang limitasyon sa paggastos!"
+    }
+  },
+  "TaxSettingsPage": {
+    "loading": "Naglo-load ng mga detalye sa buwis...",
+    "backToSettings": "Bumalik sa Settings",
+    "title": "Tax & Compliance Hub",
+    "subtitle": "Pamahalaan ang mga regulatory declaration, tax residency, at mga dokumento sa taunang pag-uulat.",
+    "form": {
+      "sectionTitle": "Impormasyon sa Regulasyon",
+      "residencyLabel": "Pangunahing Tax Residency",
+      "tinLabel": "TIN / SSN / EIN",
+      "tinSub": "Ang mga sensitibong ID ay nakamask para sa proteksyon.",
+      "fatcaLabel": "Klasipikasyon sa FATCA",
+      "fatcaOptions": {
+        "exempt": "Exempt Payee",
+        "activeNffe": "Active NFFE",
+        "passiveNffe": "Passive NFFE",
+        "participatingFfi": "Participating FFI"
+      },
+      "usStatusLabel": "Status ng Buwis sa US",
+      "usPersonToggle": "Deklaradong US Person",
+      "saving": "Nai-save...",
+      "saveButton": "I-save ang Compliance Profile"
+    },
+    "documents": {
+      "sectionTitle": "Mga Taunang Dokumento sa Buwis",
+      "downloadBtn": "I-download ang PDF",
+      "form1099": {
+        "title": "Form 1099-INT (Interes sa Kita)",
+        "meta": "Taon ng Buwis 2025 • Magagamit"
+      },
+      "portfolioSummary": {
+        "title": "Taunang Buod ng Portfolio sa Vault",
+        "meta": "Taon ng Buwis 2025 • Magagamit"
+      }
+    },
+    "errors": {
+      "loadFailed": "Nabigo sa pag-load ng mga setting ng buwis.",
+      "updateFailed": "Nabigo sa pag-update ng profile."
+    },
+    "success": {
+      "profileUpdated": "Na-update ang profile ng Tax & Compliance."
+    }
+  },
+  "CustomerLoginPage": {
+    "title": "Pag-sign In sa Pribadong Vault",
+    "subtitle": "I-access ang multi-currency cash positioning at mga serbisyo sa ledger",
+    "adminPortalLink": "Internal Operations / Admin Portal"
+  },
+  "LoginForm": {
+    "validation": {
+      "invalidEmail": "Mangyaring maglagay ng wastong email address",
+      "passwordRequired": "Kinakailangan ang password"
+    },
+    "errors": {
+      "invalidCredentials": "Maling email o password."
+    },
+    "fields": {
+      "emailLabel": "Email Address",
+      "passwordLabel": "Password"
+    },
+    "buttons": {
+      "authenticating": "Nag-aauthenticate...",
+      "signIn": "Mag-sign In sa Portal"
+    },
+    "footer": {
+      "prompt": "Kailangan mo ng pribadong vault?",
+      "createAccount": "Gumawa ng Account"
+    }
+  },
+  "CustomerRegisterPage": {
+    "title": "Gumawa ng Private Vault Account",
+    "subtitle": "Hakbang {step} ng 2 — Profile at mga Kredensyal",
+    "fields": {
+      "fullNameLabel": "Buong Legal na Pangalan",
+      "fullNamePlaceholder": "hal. John Doe",
+      "emailLabel": "Email Address",
+      "passwordLabel": "Password",
+      "genderLabel": "Kasarian",
+      "countryLabel": "Bansa",
+      "phoneLabel": "Numero ng Telepono",
+      "addressLabel": "Residential Street Address",
+      "idLabel": "Government Identification (Passport / SSN / National ID)",
+      "idPlaceholder": "Numero ng ID / Passport"
+    },
+    "genderOptions": {
+      "male": "Lalaki",
+      "female": "Babae",
+      "other": "Iba pa",
+      "preferNotToSay": "Mas gugustuhing huwag sabihin"
+    },
+    "buttons": {
+      "continue": "Magpatuloy sa Identity Setup",
+      "back": "Bumalik",
+      "creating": "Ginagawa ang Vault Account...",
+      "openAccount": "Magbukas ng Account Ngayon"
+    },
+    "termsText": "Tinatanggap ko ang mga tuntunin ng serbisyo at pumapayag sa mga pagsusuri sa elektronikong pag-verify ng pagkakakilanlan.",
+    "footer": {
+      "prompt": "May account na?",
+      "signIn": "Mag-sign in"
+    },
+    "errors": {
+      "termsRequired": "Dapat mong tanggapin ang mga tuntunin ng serbisyo.",
+      "registrationFailed": "Nabigo ang pagpaparehistro.",
+      "loginPrompt": "Nagawa na ang account! Mangyaring mag-log in."
+    }
+  },
+  "InputGroup": {
+    "hidePassword": "Itago ang password",
+    "showPassword": "Ipakita ang password"
+  },
+  "CTA": {
+    "altImage": "Apex Bank Secure Vault Preview",
+    "titlePrefix": "Handa nang i-secure ang iyong mga asset sa",
+    "titleHighlight": "Apex Bank",
+    "description": "Buksan ang iyong pribadong multi-currency vault sa loob ng ilang minuto. Pinatigas ng cryptographic two-factor authentication at real-time device auditing.",
+    "openAccount": "Magbukas ng Libreng Account",
+    "signIn": "Mag-sign In sa Vault"
+  },
+  "FAQ": {
+    "badge": "Mga Institutional Inquiry",
+    "titlePrefix": "Mga Madalas Itanong na",
+    "titleHighlight": "Tanong",
+    "description": "Lahat ng kailangan mong malaman tungkol sa aming mga cryptographic private vault, mga protocol sa seguridad, at multi-currency ledger.",
+    "q1": "Paano pinoprotektahan ang aking mga multi-currency asset sa mga pribadong vault?",
+    "a1": "Ang lahat ng mga pribadong vault ay sinisiguro gamit ang military-grade AES-256 encryption na sinamahan ng mga hardware-backed cryptographic key. Ang mga asset ay nakahiwalay sa loob ng mga multi-region liquidity node na may real-time device auditing.",
+    "q2": "Anong mga hakbang sa seguridad ang kinakailangan sa pag-setup ng account?",
+    "a2": "Ang Apex Bank ay nangangailangan ng time-based one-time password (TOTP) two-factor authentication (2FA) sa pamamagitan ng mga authenticator app, device fingerprinting, at cryptographically verified session para sa bawat transaksyon.",
+    "q3": "Gaano kaqbilis ang mga international currency swap at paglilipat?",
+    "a3": "Ang mga multi-currency cash ledger ay agad na nagse-settle sa loob ng iyong internal vault network. Ang mga external institutional wire settlement ay pinoproseso sa pamamagitan ng mga dedikadong global banking node na may real-time tracking.",
+    "q4": "Maaari ba akong pamahalaan ang mga institutional sub-account at pahintulot?",
+    "a4": "Oo. Sinusuportahan ng mga profile ng enterprise at institusyonal ang custom role-based access control (RBAC), na nagbibigay-daan sa iyong magtalaga ng mga tiyak na pribilehiyo ng multi-signature at auditing sa mga miyembro ng koponan."
+  },
+  "Features": {
+    "badge": "Enterprise Infrastructure",
+    "titlePrefix": "Ininhinyero para sa Ganap na",
+    "titleHighlight": "Privacy at Kontrol",
+    "description": "Tuklasin ang mga core protocol at arkitektura ng pagbabangko na idinisenyo upang protektahan ang iyong mga pribadong vault at institutional asset.",
+    "explore": "Galugarin ang teknikal na protocol",
+    "f1Title": "Hardened Two-Factor Security",
+    "f1Desc": "Mga advanced na TOTP verification workflow na sinamahan ng mga custom authorization checkpoint na nagoprotekta sa bawat session.",
+    "f1Badge": "Cryptographic",
+    "f2Title": "Multi-Currency Ledgers",
+    "f2Desc": "Seamless real-time cash positioning at pamamahala ng balanse sa USD, EUR, at global asset ledger.",
+    "f2Badge": "Global Assets",
+    "f3Title": "Automated Device Audit Trails",
+    "f3Desc": "Real-time device parsing, IP logging, at session tracking na tinitiyak ang kumpletong transparency at pananagutan.",
+    "f3Badge": "Live Tracking"
+  },
+  "Footer": {
+    "brandDescription": "Institutional-grade multi-currency ledger at cryptographic private vault architecture na idinisenyo para sa high-net-worth digital wealth management.",
+    "encrypted": "AES-256 Naka-encrypt",
+    "globalNodes": "Aktibo ang mga Global Node",
+    "platformTitle": "Platform",
+    "features": "Mga Tampok at Ledger",
+    "security": "Overview sa Seguridad",
+    "onboarding": "Mga Hakbang sa Onboarding",
+    "login": "Pag-sign In sa Private Vault",
+    "complianceTitle": "Compliance",
+    "register": "Magbukas ng Account",
+    "deviceAudit": "Mga Device Audit Trail",
+    "totp": "Mga TOTP 2FA Protocol",
+    "privacyPolicy": "Patakaran sa Privacy",
+    "resourcesTitle": "Mga Resources",
+    "github": "GitHub Repository",
+    "apiDocs": "Dokumentasyon ng API",
+    "systemStatus": "Status ng Sistema",
+    "rights": "Apex Bank Enterprise. Nakareserba ang lahat ng karapatan.",
+    "securityTerms": "Mga Tuntunin sa Seguridad",
+    "privacyNotice": "Pansin sa Privacy",
+    "auditLogs": "Mga Audit Log"
+  },
+  "GlobalNetwork": {
+    "badge": "Internasyonal na Imprastruktura",
+    "titlePrefix": "Global Liquidity &",
+    "titleHighlight": "Mga Secure Node",
+    "description": "Ininhinyero na may multi-region redundancy at low-latency encrypted routing sa mga pangunahing global financial center.",
+    "status": "Operational",
+    "latencyText": "latency",
+    "nyRegion": "North America",
+    "nyCity": "New York",
+    "ldnRegion": "Europe",
+    "ldnCity": "London",
+    "zrhRegion": "Central Europe",
+    "zrhCity": "Zurich",
+    "sgpRegion": "Asia-Pacific",
+    "sgpCity": "Singapore"
+  },
+  "Hero": {
+    "badge": "Next-Generation Private Vault & Ledger Architecture",
+    "titlePrefix": "Institutional-Grade Banking para sa",
+    "titleHighlight": "Global Wealth",
+    "description": "Kunin ang buong kontrol sa multi-currency cash positioning at real-time ledger auditing. Pinatigas ng cryptographic two-factor security para sa ganap na privacy.",
+    "check1": "Multi-Currency USD & EUR Ledger",
+    "check2": "Hardened TOTP 2FA Authentication",
+    "check3": "Automated Device Audit Trails",
+    "check4": "Instant Encrypted Transfers",
+    "accessVault": "I-access ang Private Vault",
+    "enteringVault": "Pumapasok sa Vault...",
+    "createAccount": "Gumawa ng Account",
+    "preparingPortal": "Inihahanda ang Portal...",
+    "altImage": "Apex Bank Vault UI Preview",
+    "portfolioLabel": "Kabuuang Portfolio"
+  },
+  "Navbar": {
+    "subtitle": "Private Vault Ledger",
+    "features": "Mga Tampok ng Platform",
+    "security": "Seguridad ng Enterprise",
+    "multiCurrency": "Multi-Currency",
+    "compliance": "Compliance & Audit",
+    "signIn": "Mag-sign In",
+    "openAccount": "Magbukas ng Account",
+    "ariaLabel": "I-toggle ang Navigation Menu"
+  },
+  "OnboardingSteps": {
+    "badge": "Seamless Transition",
+    "titlePrefix": "Ang Iyong Paglalakbay sa",
+    "titleHighlight": "Secure Wealth",
+    "description": "Magsimula sa Apex Bank sa loob ng tatlong structured at cryptographically protected na hakbang.",
+    "phaseText": "Phase",
+    "altImage": "Apex Bank Onboarding Workflow Preview",
+    "s1Title": "Magbukas ng Secure Profile",
+    "s1Desc": "Irehistro ang iyong institusyonal o pribadong account sa loob ng ilang minuto gamit ang mga naka-encrypt na kredensyal.",
+    "s2Title": "I-configure ang TOTP 2FA",
+    "s2Desc": "I-scan ang iyong authenticator QR code upang patigasin ang iyong session gamit ang multi-factor security.",
+    "s3Title": "I-access ang Private Vault",
+    "s3Desc": "Pamahalaan ang mga multi-currency cash ledger at subaybayan ang real-time device audit trails."
+  },
+  "SecurityOverview": {
+    "badge": "Cryptographic Defense",
+    "titlePrefix": "Walang Kompromisong",
+    "titleHighlight": "Seguridad ng Vault",
+    "description": "Ang Apex Bank ay nagpapatupad ng mga mahigpit na layer ng seguridad at multi-factor authorization checkpoint na idinisenyo upang matiyak na ang iyong mga pribadong asset sa pananalapi ay mananatiling ganap na protektado.",
+    "activeProtection": "Aktibong Proteksyon ay Naka-enable",
+    "p1Title": "Cryptographic Credential Hashing",
+    "p1Desc": "Ang mga password ay pinoprotektahan gamit ang industriya-standard na bcrypt encryption hashing upang maprotektahan ang mga user account laban sa mga hindi awtorisadong pagtatangka sa pag-access.",
+    "p1Badge": "Bcrypt & Salt",
+    "p2Title": "Time-Based One-Time Passwords (TOTP)",
+    "p2Desc": "Ipatupad ang multi-factor authentication na may 6-digit na mga authenticator code na kinakailangan sa bawat login session challenge point.",
+    "p2Badge": "TOTP 2FA",
+    "p3Title": "Device & IP Audit Logging",
+    "p3Desc": "Ang awtomatikong user agent parsing at secure IP address tracking ay nagtatala ng bawat login session para sa kabuuang pananagutan at transparency.",
+    "p3Badge": "Audit Trails",
+    "p4Title": "NextAuth Session Hardening",
+    "p4Desc": "Pinipigilan ng custom credentials sign-in error handling at JWT strategy pattern ang mga token leak at sinisiguro ang mga protektadong vault route.",
+    "p4Badge": "Token Security"
+  }
+}

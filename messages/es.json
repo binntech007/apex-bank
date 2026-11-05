@@ -1,0 +1,826 @@
+{
+  "Dashboard": {
+    "welcomeBack": "Bienvenido de nuevo, {name}",
+    "subtitle": "Posicionamiento de efectivo de patrimonio privado y transferencias instantáneas de libros mayores multidivisa.",
+    "sendWire": "Enviar transferencia",
+    "metalCards": "Tarjetas metálicas",
+    "kycPending": "Su verificación de identidad está siendo revisada actualmente por nuestro equipo de cumplimiento.",
+    "kycRejected": "Su intento de verificación fue rechazado. Revise sus datos y vuelva a enviarlos.",
+    "kycRequired": "Se requiere verificación de identidad. Complete su KYC para desbloquear todos los privilegios de la cuenta.",
+    "checkStatus": "Ver estado",
+    "verifyNow": "Verificar ahora"
+  },
+  "Sidebar": {
+    "overview": "Resumen",
+    "transfers": "Transferencias",
+    "metalCards": "Tarjetas metálicas",
+    "loans": "Préstamos",
+    "investment": "Inversión",
+    "kycVerification": "Verificación KYC",
+    "settings": "Ajustes",
+    "navigation": "Navegación",
+    "compliance": "Cumplimiento",
+    "adminPanel": "Panel de administración",
+    "customer": "Cliente",
+    "signOut": "Cerrar sesión"
+  },
+  "VaultSection": {
+    "title": "Saldos de Bóvedas Activas",
+    "activeVaultsCount": "{count} {count, plural, =1 {Bóveda activa} other {Bóvedas activas}}",
+    "openNewVault": "Abrir nueva bóveda"
+  },
+  "TransfersPage": {
+    "title": "Transferencias y Pagos",
+    "description": "Mueva fondos internamente entre bóvedas, pague a otros usuarios o ejecute transferencias SWIFT internacionales."
+  },
+  "TransferTabs": {
+    "myVaults": "Mis bóvedas",
+    "payUser": "Pagar usuario",
+    "wireTransfer": "Transferencia bancaria"
+  },
+  "InternalTransferForm": {
+    "title": "Intercambio interno entre bóvedas",
+    "description": "Intercambie fondos al instante entre sus bóvedas utilizando las tasas de cambio activas del administrador.",
+    "fromVault": "Desde la bóveda",
+    "toVault": "Hacia la bóveda",
+    "balanceLabel": "Saldo",
+    "amountToSend": "Monto a enviar",
+    "exchangeRate": "Tasa de cambio",
+    "rateNotSet": "Tasa no establecida",
+    "recipientReceives": "El destinatario recibe",
+    "processing": "Procesando intercambio...",
+    "executeSwap": "Ejecutar intercambio",
+    "errors": {
+      "invalidAmount": "Por favor, introduzca un monto de transferencia válido.",
+      "sameVault": "Las bóvedas de origen y destino deben ser diferentes.",
+      "swapFailed": "El intercambio falló."
+    },
+    "success": {
+      "swapCompleted": "¡Intercambio completado!"
+    }
+  },
+  "QuickActions": {
+    "sectionTitle": "Acciones rápidas",
+    "addMoney": {
+      "label": "Añadir dinero",
+      "desc": "Financia tus cuentas de bóveda"
+    },
+    "sendWire": {
+      "label": "Enviar transferencia",
+      "desc": "Transferencia de libro mayor instantánea"
+    },
+    "payBills": {
+      "label": "Pagar facturas",
+      "desc": "Pagos programados"
+    },
+    "history": {
+      "label": "Historial",
+      "desc": "Ver registro completo de transacciones"
+    },
+    "cardLimits": {
+      "label": "Límites de tarjeta",
+      "desc": "Gestionar topes de gasto"
+    }
+  },
+ "TransactionTable": {
+    "title": "Transacciones recientes",
+    "viewAll": "Ver todos los registros",
+    "emptyState": {
+      "title": "Aún no hay entradas en el libro mayor.",
+      "description": "Inicie una transferencia o un intercambio de divisas para llenar su historial."
+    },
+    "headers": {
+      "description": "Descripción",
+      "type": "Tipo",
+      "date": "Fecha de contabilización",
+      "amount": "Monto"
+    },
+    "types": {
+      "credit": "Crédito / Depósito",
+      "debit": "Débito / Salida"
+    }
+  },
+  "CardsPage": {
+    "backToDashboard": "Volver al panel",
+    "pageTitle": "Tarjetas metálicas y virtuales",
+    "pageDescription": "Gestiona tarjetas metálicas físicas multidivisa y tarjetas virtuales instantáneas.",
+    "issueNewCard": "Emitir nueva tarjeta",
+    "empty": {
+      "title": "Aún no hay tarjetas activas",
+      "description": "No tienes ninguna tarjeta virtual o física emitida. Haz clic abajo para emitir tu primera tarjeta desde los saldos de tus bóvedas.",
+      "button": "Emitir tu primera tarjeta"
+    },
+    "card": {
+      "expires": "CADUCA",
+      "showDetails": "Mostrar detalles",
+      "hideDetails": "Ocultar detalles",
+      "copyNumber": "Copiar número",
+      "copied": "¡Copiado!",
+      "freezeCard": "Congelar tarjeta",
+      "unfreeze": "Descongelar"
+    },
+    "issuedList": {
+      "title": "Tus tarjetas emitidas",
+      "cardLabel": "Tarjeta",
+      "statusLabel": "Estado"
+    },
+    "modal": {
+      "title": "Emitir nueva tarjeta",
+      "subtitle": "Las tarifas de la tarjeta se deducen directamente del saldo de tu bóveda seleccionada.",
+      "tierLabel": "Seleccionar nivel de tarjeta",
+      "virtualTitle": "Tarjeta virtual",
+      "virtualDesc": "Uso digital instantáneo",
+      "virtualFee": "Tarifa de $5.00",
+      "metalTitle": "Metal físico",
+      "metalDesc": "Física multidivisa",
+      "metalFee": "Tarifa de $50.00",
+      "vaultLabel": "Pagar desde la bóveda",
+      "noVaults": "No se encontraron cuentas de bóveda.",
+      "accountLabel": "Cuenta",
+      "holderLabel": "Nombre del titular",
+      "processing": "Procesando pago...",
+      "confirmVirtual": "Confirmar y pagar $5.00",
+      "confirmMetal": "Confirmar y pagar $50.00"
+    },
+    "errors": {
+      "selectVault": "Por favor, selecciona una cuenta de bóveda para realizar el pago.",
+      "purchaseFailed": "No se pudo procesar la compra."
+    }
+  },
+  "LoansPage": {
+    "backToDashboard": "Volver al panel",
+    "pageTitle": "Créditos y préstamos comerciales",
+    "pageDescription": "Solicita líneas de crédito y realiza un seguimiento del estado de aprobación de tus solicitudes.",
+    "applyButton": "Solicitar préstamo",
+    "applicationsTitle": "Tus solicitudes",
+    "empty": {
+      "title": "No hay solicitudes de préstamo",
+      "description": "No tienes solicitudes de préstamo activas o pendientes. Envía una solicitud para acceder a financiación flexible.",
+      "button": "Solicitar ahora"
+    },
+    "status": {
+      "pending": "Pendiente de revisión",
+      "approved": "Aprobado",
+      "rejected": "Rechazado",
+      "paid": "Totalmente pagado"
+    },
+    "card": {
+      "requestedAmount": "Monto solicitado",
+      "term": "Plazo",
+      "months": "Meses",
+      "monthlyEst": "Estimado mensual",
+      "interest": "Interés",
+      "submitted": "Enviado"
+    },
+    "modal": {
+      "title": "Solicitar línea de crédito",
+      "subtitle": "Las solicitudes son revisadas por los administradores del banco en un plazo de 24 horas.",
+      "vaultLabel": "Cuenta de bóveda de destino",
+      "accountLabel": "Cuenta",
+      "amountLabel": "Monto del préstamo ($)",
+      "termLabel": "Plazo (meses)",
+      "purposeLabel": "Propósito",
+      "submitting": "Enviando solicitud...",
+      "submitButton": "Enviar solicitud de préstamo"
+    },
+    "errors": {
+      "selectVault": "Por favor, selecciona una bóveda de destino.",
+      "submissionFailed": "El envío falló."
+    }
+  },
+  "InvestmentsPage": {
+    "backToDashboard": "Volver al panel",
+    "pageTitle": "Cartera de inversión",
+    "pageDescription": "Haz crecer tu patrimonio en acciones, criptomonedas, bonos y materias primas.",
+    "newInvestment": "Nueva inversión",
+    "portfolioValue": "Valor total de la cartera",
+    "activeBadge": "Activo",
+    "empty": {
+      "title": "Aún no hay inversiones",
+      "description": "No tienes inversiones activas. Selecciona una clase de activo y comienza a construir tu cartera hoy.",
+      "button": "Comprar primer activo"
+    },
+    "card": {
+      "units": "unidades",
+      "totalInvested": "Total invertido",
+      "currentPrice": "Precio actual",
+      "status": "Estado",
+      "purchased": "Comprado"
+    },
+    "modal": {
+      "title": "Comprar activo de inversión",
+      "subtitle": "Los fondos se deducirán directamente de la cuenta de bóveda elegida.",
+      "fundingVault": "Bóveda de financiación",
+      "accountLabel": "Cuenta",
+      "assetName": "Nombre del activo",
+      "symbol": "Símbolo / Ticker",
+      "category": "Categoría",
+      "quantity": "Cantidad",
+      "unitPrice": "Precio unitario ($)",
+      "totalPurchase": "Monto total de compra:",
+      "processing": "Procesando inversión...",
+      "confirmButton": "Confirmar compra",
+      "categories": {
+        "stocks": "Acciones",
+        "crypto": "Criptomonedas",
+        "bonds": "Bonos",
+        "commodities": "Materias primas"
+      }
+    },
+    "errors": {
+      "selectVault": "Por favor, selecciona una bóveda para financiar esta inversión.",
+      "purchaseFailed": "No se pudo completar la compra."
+    }
+  },
+  "KycClient": {
+    "backToSettings": "Volver a ajustes",
+    "title": "Verificación de identidad (KYC)",
+    "subtitle": "Verifica tu identidad para desbloquear mayores límites de transferencia y funciones.",
+    "statusLabel": "Estado",
+    "statuses": {
+      "pending": "Pendiente",
+      "approved": "Aprobado",
+      "rejected": "Rechazado"
+    },
+    "statusDesc": {
+      "pending": "Tus documentos están siendo revisados por nuestro equipo de cumplimiento.",
+      "approved": "Tu cuenta está completamente verificada.",
+      "rejected": "Por favor, revisa tus datos y vuelve a enviarlos."
+    },
+    "form": {
+      "fullName": "Nombre legal completo",
+      "fullNamePlaceholder": "Como aparece en el documento oficial",
+      "idType": "Tipo de documento de identidad",
+      "idTypes": {
+        "passport": "Pasaporte",
+        "nationalId": "Tarjeta de identidad nacional",
+        "driversLicense": "Licencia de conducir"
+      },
+      "idNumber": "Número de documento de identidad",
+      "idNumberPlaceholder": "Número de identificación del documento"
+    },
+    "upload": {
+      "title": "Subir documento de identidad",
+      "subtitle": "Foto frontal de tu pasaporte o identificación",
+      "chooseFile": "Elegir archivo",
+      "attached": "✓ Documento de identidad adjunto"
+    },
+    "selfie": {
+      "title": "Verificación facial",
+      "subtitle": "Alinea tu rostro dentro del marco a continuación",
+      "attached": "✓ Selfi verificado y adjunto"
+    },
+    "submitButton": {
+      "default": "Enviar verificación",
+      "processing": "Enviando verificación..."
+    },
+    "errors": {
+      "noDocument": "Por favor, sube tu documento de identidad.",
+      "noSelfie": "Por favor, capture un selfi usando la cámara.",
+      "failed": "El envío falló."
+    },
+    "success": {
+      "submitted": "¡KYC enviado con éxito!"
+    }
+  },
+  "DepositPage": {
+    "backToDashboard": "Volver al panel",
+    "title": "Añadir fondos y depósitos",
+    "subtitle": "Financia tus bóvedas de patrimonio privado mediante transferencia bancaria o registra un depósito directo en cuenta.",
+    "wireInstructions": {
+      "title": "Instrucciones de transferencia",
+      "partnerBank": "Banco asociado asignado",
+      "bankNameLabel": "Nombre del banco",
+      "accountNameLabel": "Nombre de la cuenta",
+      "defaultClientName": "Cliente de patrimonio privado",
+      "accountNumberLabel": "Número de cuenta",
+      "routingLabel": "Código de ruta / SWIFT",
+      "notice": "Las transferencias entrantes se reflejan en 1 día hábil."
+    }
+  },
+  "SettingsPage": {
+    "title": "Configuración de la cuenta",
+    "subtitle": "Gestiona la información general de tu cuenta, métodos de pago vinculados, seguridad y funciones de patrimonio privado.",
+    "profile": {
+      "defaultName": "Perfil de usuario",
+      "readOnlyBadge": "Solo lectura",
+      "fullNameLabel": "Nombre completo",
+      "emailLabel": "Correo electrónico",
+      "countryLabel": "País / Residencia",
+      "notProvided": "No proporcionado",
+      "notSpecified": "No especificado"
+    },
+    "navSectionTitle": "Preferencias y gestión",
+    "items": {
+      "paymentMethods": {
+        "title": "Métodos de pago",
+        "desc": "Vincula bancos y tarjetas de crédito/débito"
+      },
+      "security": {
+        "title": "Seguridad y contraseña",
+        "desc": "Cambiar contraseña y sesiones activas"
+      },
+      "notifications": {
+        "title": "Notificaciones",
+        "desc": "Configurar alertas de correo y seguridad"
+      },
+      "kyc": {
+        "title": "Verificación de identidad",
+        "desc": "Estado de KYC y límites de transferencia"
+      },
+      "limits": {
+        "title": "Límites de gasto y transferencia",
+        "desc": "Establece topes diarios y reglas de retirada"
+      },
+      "cardControls": {
+        "title": "Controles de tarjeta y seguridad",
+        "desc": "Alternadores internacionales, límites por categoría y PIN"
+      },
+      "beneficiaries": {
+        "title": "Beneficiarios y patrimonio",
+        "desc": "Contactos de confianza y asignación de activos"
+      },
+      "tax": {
+        "title": "Centro de impuestos y cumplimiento",
+        "desc": "Extractos, informes anuales y residencia"
+      },
+      "apiKeys": {
+        "title": "Claves API y acceso",
+        "desc": "Generar tokens de solo lectura para integraciones"
+      }
+    }
+  },
+  "BillsPage": {
+    "backToDashboard": "Volver al panel",
+    "title": "Facturas y recibos de la bóveda",
+    "subtitle": "Gestiona y salda tus servicios públicos, suscripciones y obligaciones de datos.",
+    "activeObligations": "Obligaciones activas",
+    "dueDate": "Vencimiento",
+    "empty": {
+      "title": "No se encontraron facturas activas",
+      "description": "Haz clic en \"Añadir nueva factura\" arriba para configurar un pago de servicios o suscripción."
+    },
+    "status": {
+      "paid": "Pagado",
+      "overdue": "Vencido",
+      "pending": "Pendiente"
+    }
+  },
+  "AddBillModal": {
+    "addButton": "Añadir nueva factura",
+    "modalTitle": "Pagar o programar factura",
+    "modalSubtitle": "Elige un proveedor e introduce tu importe.",
+    "selectUtility": "Seleccionar servicio / proveedor",
+    "billReference": "Referencia de la factura / Descripción",
+    "amountLabel": "Importe (USD)",
+    "cancel": "Cancelar",
+    "proceed": "Continuar al pago",
+    "categories": {
+      "electricity": "Factura de electricidad (PHED)",
+      "water": "Servicio de suministro de agua",
+      "internet": "Paquete de datos de banda ancha",
+      "streaming": "Suscripción a Netflix"
+    }
+  },
+  "TransactionsPage": {
+    "backToOverview": "Volver a la vista general",
+    "title": "Historial de transacciones",
+    "description": "Pista de auditoría completa de todos los créditos entrantes y débitos salientes en tus bóvedas.",
+    "exportCsv": "Exportar CSV"
+  },
+  "PaymentSettingsClient": {
+    "backToSettings": "Volver a ajustes",
+    "pageTitle": "Configuración de pagos",
+    "pageDescription": "Gestiona tus cuentas bancarias externas y tarjetas de crédito/débito para financiar tu bóveda.",
+    "tabs": {
+      "banks": "Cuentas bancarias",
+      "cards": "Tarjetas"
+    },
+    "banksList": {
+      "title": "Tus cuentas bancarias vinculadas",
+      "empty": "Aún no hay cuentas bancarias vinculadas.",
+      "accountLabel": "Cuenta"
+    },
+    "bankForm": {
+      "title": "Vincular cuenta bancaria externa",
+      "bankName": "Nombre del banco",
+      "bankNamePlaceholder": "p. ej., Chase",
+      "accountType": "Tipo de cuenta",
+      "checking": "Corriente",
+      "savings": "Ahorros",
+      "routingNumber": "Número de ruta",
+      "routingPlaceholder": "9 dígitos",
+      "accountNumber": "Número de cuenta",
+      "accountPlaceholder": "Número de cuenta completo",
+      "submitting": "Vinculando cuenta...",
+      "submit": "Vincular cuenta bancaria"
+    },
+    "cardsList": {
+      "title": "Tus tarjetas vinculadas",
+      "empty": "Aún no hay tarjetas vinculadas.",
+      "expires": "Caduca"
+    },
+    "cardForm": {
+      "title": "Vincular tarjeta de crédito o débito",
+      "holderName": "Nombre del titular",
+      "holderPlaceholder": "Nombre tal como aparece en la tarjeta",
+      "network": "Red de tarjeta",
+      "number": "Número de tarjeta",
+      "numberPlaceholder": "Número de tarjeta de 16 dígitos",
+      "expMonth": "Mes de caducidad",
+      "expMonthPlaceholder": "MM (p. ej., 08)",
+      "expYear": "Año de caducidad",
+      "expYearPlaceholder": "AAAA (p. ej., 2028)",
+      "cvc": "CVC / CVV",
+      "cvcPlaceholder": "3 o 4 dígitos",
+      "submitting": "Vinculando tarjeta...",
+      "submit": "Vincular tarjeta"
+    },
+    "securityNote": "Tu información financiera está cifrada y almacenada de acuerdo con estrictos estándares de cumplimiento bancario.",
+    "success": {
+      "bankLinked": "¡Cuenta bancaria vinculada!",
+      "cardLinked": "¡Tarjeta vinculada!"
+    },
+    "errors": {
+      "bankFailed": "No se pudo vincular el banco.",
+      "cardFailed": "No se pudo vincular la tarjeta."
+    }
+  },
+  "ApiKeysPage": {
+    "loading": "Cargando claves API...",
+    "backToSettings": "Volver a ajustes",
+    "title": "Claves API para desarrolladores",
+    "subtitle": "Genera credenciales API para acceso programático a tus cuentas de Apex Vault.",
+    "secretBanner": {
+      "title": "Copia tu clave secreta ahora",
+      "warning": "Por razones de seguridad, esta clave <strong>nunca se volverá a mostrar</strong>. Asegúrate de copiarla ahora y guardarla de forma segura.",
+      "copyKey": "Copiar clave",
+      "copied": "¡Copiado!",
+      "dismiss": "He guardado esta clave de forma segura"
+    },
+    "form": {
+      "title": "Crear nueva clave API",
+      "nameLabel": "Nombre / Etiqueta de la clave",
+      "namePlaceholder": "p. ej. Servidor de Webhooks de Producción",
+      "permissionsLabel": "Alcance de permisos",
+      "readOnlyOption": "Solo lectura (Ver saldos y transacciones)",
+      "fullAccessOption": "Acceso completo (Iniciar transferencias y gestionar tarjetas)",
+      "generating": "Generando...",
+      "generateButton": "Generar credenciales"
+    },
+    "list": {
+      "title": "Claves API activas ({count})",
+      "empty": "No se encontraron claves API activas.",
+      "readOnlyBadge": "Solo lectura",
+      "fullAccessBadge": "Acceso completo",
+      "lastUsed": "Último uso {date}",
+      "neverUsed": "Nunca usada",
+      "revokeTitle": "Revocar clave"
+    },
+    "errors": {
+      "loadFailed": "Error al cargar las claves API.",
+      "generateFailed": "Error al generar la clave.",
+      "revokeFailed": "Error al revocar la clave."
+    },
+    "success": {
+      "revoked": "Clave API revocada."
+    }
+  },
+  "BeneficiariesPage": {
+    "loading": "Cargando beneficiarios...",
+    "backToSettings": "Volver a ajustes",
+    "title": "Beneficiarios y transferencia de patrimonio",
+    "subtitle": "Asigna beneficiarios secundarios y establece los porcentajes de asignación de activos.",
+    "overview": {
+      "portfolioLabel": "Cartera asignada"
+    },
+    "form": {
+      "title": "Añadir beneficiario",
+      "fullNameLabel": "Nombre completo",
+      "fullNamePlaceholder": "p. ej. Eleanor Vance",
+      "emailLabel": "Correo electrónico",
+      "emailPlaceholder": "eleanor@example.com",
+      "relationshipLabel": "Parentesco",
+      "allocationLabel": "Asignación (%)",
+      "allocationPlaceholder": "p. ej. 50",
+      "saving": "Guardando...",
+      "saveButton": "Guardar beneficiario"
+    },
+    "relationships": {
+      "spouse": "Cónyuge",
+      "child": "Hijo/a",
+      "parent": "Padre/Madre",
+      "sibling": "Hermano/a",
+      "trust": "Fideicomiso familiar",
+      "other": "Otro"
+    },
+    "list": {
+      "title": "Beneficiarios asignados ({count})",
+      "empty": "Aún no hay beneficiarios asignados.",
+      "allocationSub": "Asignación"
+    },
+    "errors": {
+      "loadFailed": "Error al cargar los beneficiarios.",
+      "exceedsLimit": "La asignación total no puede superar el 100%. Disponible restante: {remaining}%",
+      "addFailed": "Error al añadir el beneficiario.",
+      "deleteFailed": "Error al eliminar el beneficiario."
+    },
+    "success": {
+      "added": "¡Beneficiario añadido con éxito!",
+      "removed": "Beneficiario eliminado."
+    }
+  },
+  "CardControlsPage": {
+    "loading": "Cargando controles de la tarjeta...",
+    "backToSettings": "Volver a ajustes",
+    "title": "Controles de tarjeta y seguridad",
+    "subtitle": "Gestiona los permisos de transacción, los límites de gasto y la seguridad de la tarjeta.",
+    "cardTypes": {
+      "metal": "De metal",
+      "virtual": "Virtual",
+      "suffix": "Tarjeta"
+    },
+    "status": {
+      "frozen": "Congelada 🧊",
+      "active": "Activa ✅"
+    },
+    "buttons": {
+      "freeze": "Congelar tarjeta",
+      "unfreeze": "Descongelar tarjeta",
+      "updateLimit": "Actualizar límite",
+      "updating": "Actualizando..."
+    },
+    "togglesSectionTitle": "Opciones de transacción",
+    "toggles": {
+      "international": {
+        "title": "Transacciones internacionales",
+        "desc": "Permitir cargos transfronterizos y de comercios extranjeros"
+      },
+      "atm": {
+        "title": "Retiradas en cajeros automáticos",
+        "desc": "Permitir acceso a efectivo físico en cajeros de todo el mundo"
+      },
+      "online": {
+        "title": "Compras online",
+        "desc": "Habilitar pagos de comercio electrónico y suscripciones web"
+      }
+    },
+    "limitSectionTitle": "Límite de gasto mensual",
+    "limitLabel": "Importe del límite ($)",
+    "spentThisMonth": "Gastado este mes: ${spent} / ${limit}",
+    "errors": {
+      "loadFailed": "Error al cargar los controles de la tarjeta.",
+      "notFound": "No se encontraron los detalles de la tarjeta.",
+      "limitFailed": "Error al actualizar el límite de gasto."
+    },
+    "success": {
+      "limitUpdated": "¡Límite de gasto actualizado con éxito!"
+    }
+  },
+  "TaxSettingsPage": {
+    "loading": "Cargando detalles fiscales...",
+    "backToSettings": "Volver a ajustes",
+    "title": "Centro de impuestos y cumplimiento",
+    "subtitle": "Gestiona las declaraciones reglamentarias, la residencia fiscal y los documentos de informes anuales.",
+    "form": {
+      "sectionTitle": "Información reglamentaria",
+      "residencyLabel": "Residencia fiscal principal",
+      "tinLabel": "TIN / SSN / EIN",
+      "tinSub": "Los identificadores sensibles están enmascarados para su protección.",
+      "fatcaLabel": "Clasificación FATCA",
+      "fatcaOptions": {
+        "exempt": "Beneficiario exento",
+        "activeNffe": "NFFE activo",
+        "passiveNffe": "NFFE pasivo",
+        "participatingFfi": "IFF participante"
+      },
+      "usStatusLabel": "Estado fiscal en EE. UU.",
+      "usPersonToggle": "Persona de EE. UU. declarada",
+      "saving": "Guardando...",
+      "saveButton": "Guardar perfil de cumplimiento"
+    },
+    "documents": {
+      "sectionTitle": "Documentos fiscales anuales",
+      "downloadBtn": "Descargar PDF",
+      "form1099": {
+        "title": "Formulario 1099-INT (Ingresos por intereses)",
+        "meta": "Año fiscal 2025 • Disponible"
+      },
+      "portfolioSummary": {
+        "title": "Resumen anual de la cartera de la bóveda",
+        "meta": "Año fiscal 2025 • Disponible"
+      }
+    },
+    "errors": {
+      "loadFailed": "Error al cargar la configuración fiscal.",
+      "updateFailed": "Error al actualizar el perfil."
+    },
+    "success": {
+      "profileUpdated": "Perfil de impuestos y cumplimiento actualizado."
+    }
+  },
+  "CustomerLoginPage": {
+    "title": "Iniciar sesión en la Bóveda Privada",
+    "subtitle": "Accede al posicionamiento de efectivo multidivisa y a los servicios de contabilidad",
+    "adminPortalLink": "Operaciones internas / Portal de administración"
+  },
+  "LoginForm": {
+    "validation": {
+      "invalidEmail": "Por favor, introduce una dirección de correo electrónico válida",
+      "passwordRequired": "La contraseña es obligatoria"
+    },
+    "errors": {
+      "invalidCredentials": "Correo electrónico o contraseña inválidos."
+    },
+    "fields": {
+      "emailLabel": "Correo electrónico",
+      "passwordLabel": "Contraseña"
+    },
+    "buttons": {
+      "authenticating": "Autenticando...",
+      "signIn": "Iniciar sesión en el portal"
+    },
+    "footer": {
+      "prompt": "¿Necesitas una bóveda privada?",
+      "createAccount": "Crear cuenta"
+    }
+  },
+  "CustomerRegisterPage": {
+    "title": "Crear cuenta de Bóveda Privada",
+    "subtitle": "Paso {step} de 2 — Perfil y credenciales",
+    "fields": {
+      "fullNameLabel": "Nombre legal completo",
+      "fullNamePlaceholder": "p. ej. John Doe",
+      "emailLabel": "Correo electrónico",
+      "passwordLabel": "Contraseña",
+      "genderLabel": "Género",
+      "countryLabel": "País",
+      "phoneLabel": "Número de teléfono",
+      "addressLabel": "Dirección residencial",
+      "idLabel": "Identificación oficial (Pasaporte / DNI)",
+      "idPlaceholder": "Número de DNI / Pasaporte"
+    },
+    "genderOptions": {
+      "male": "Masculino",
+      "female": "Femenino",
+      "other": "Otro",
+      "preferNotToSay": "Prefiero no decirlo"
+    },
+    "buttons": {
+      "continue": "Continuar a la configuración de identidad",
+      "back": "Atrás",
+      "creating": "Creando cuenta de bóveda...",
+      "openAccount": "Abrir cuenta ahora"
+    },
+    "termsText": "Acepto los términos de servicio y consiento los controles de verificación de identidad electrónica.",
+    "footer": {
+      "prompt": "¿Ya estás registrado?",
+      "signIn": "Iniciar sesión"
+    },
+    "errors": {
+      "termsRequired": "Debes aceptar los términos de servicio.",
+      "registrationFailed": "Error en el registro.",
+      "loginPrompt": "¡Cuenta creada! Por favor, inicia sesión."
+    }
+  },
+  "InputGroup": {
+    "hidePassword": "Ocultar contraseña",
+    "showPassword": "Mostrar contraseña"
+  },
+  "CTA": {
+    "altImage": "Vista previa de la bóveda segura de Apex Bank",
+    "titlePrefix": "¿Listo para asegurar tus activos con",
+    "titleHighlight": "Apex Bank",
+    "description": "Abre tu bóveda privada multidivisa en minutos. Protegida con autenticación criptográfica de dos factores y auditoría de dispositivos en tiempo real.",
+    "openAccount": "Abrir cuenta gratis",
+    "signIn": "Iniciar sesión en la bóveda"
+  },
+  "FAQ": {
+    "badge": "Consultas institucionales",
+    "titlePrefix": "Preguntas",
+    "titleHighlight": "Frecuentes",
+    "description": "Todo lo que necesitas saber sobre nuestras bóvedas privadas criptográficas, protocolos de seguridad y libros mayores multidivisa.",
+    "q1": "¿Cómo se protegen mis activos multidivisa en las bóvedas privadas?",
+    "a1": "Todas las bóvedas privadas están aseguradas mediante cifrado AES-256 de grado militar combinado con claves criptográficas respaldadas por hardware. Los activos se aíslan en nodos de liquidez multirregión con auditoría de dispositivos en tiempo real.",
+    "q2": "¿Qué medidas de seguridad se requieren durante la configuración de la cuenta?",
+    "a2": "Apex Bank requiere autenticación de dos factores (2FA) mediante contraseña de un solo uso basada en tiempo (TOTP) a través de aplicaciones de autenticación, huella digital del dispositivo y sesiones verificadas criptográficamente para cada transacción.",
+    "q3": "¿Qué tan rápidos son los intercambios y transferencias de divisas internacionales?",
+    "a3": "Los libros mayores de efectivo multidivisa se liquidan instantáneamente dentro de su red de bóvedas internas. Las liquidaciones de transferencias bancarias institucionales externas se procesan a través de nodos bancarios globales dedicados con seguimiento en tiempo real.",
+    "q4": "¿Puedo administrar subcuentas y permisos institucionales?",
+    "a4": "Sí. Los perfiles empresariales e institucionales admiten control de acceso basado en roles (RBAC) personalizado, lo que le permite asignar privilegios específicos de firma múltiple y auditoría a los miembros del equipo."
+  },
+  "Features": {
+    "badge": "Infraestructura empresarial",
+    "titlePrefix": "Diseñado para una",
+    "titleHighlight": "Privacidad y Control Absolutos",
+    "description": "Descubre los protocolos principales y la arquitectura bancaria diseñados para salvaguardar tus bóvedas privadas y activos institucionales.",
+    "explore": "Explorar protocolo técnico",
+    "f1Title": "Seguridad de doble factor reforzada",
+    "f1Desc": "Flujos de trabajo de verificación TOTP avanzados combinados con puntos de control de autorización personalizados que protegen cada sesión.",
+    "f1Badge": "Criptográfico",
+    "f2Title": "Libros mayores multidivisa",
+    "f2Desc": "Posicionamiento de efectivo en tiempo real y gestión de saldos fluidos en libros mayores de activos USD, EUR y globales.",
+    "f2Badge": "Activos globales",
+    "f3Title": "Pistas de auditoría de dispositivos automatizadas",
+    "f3Desc": "Análisis de dispositivos en tiempo real, registro de IP y seguimiento de sesiones que garantizan total transparencia y rendición de cuentas.",
+    "f3Badge": "Seguimiento en vivo"
+  },
+  "Footer": {
+    "brandDescription": "Libros mayores multidivisa de grado institucional y arquitectura de bóveda privada criptográfica diseñada para la gestión patrimonial digital de alto valor.",
+    "encrypted": "Cifrado AES-256",
+    "globalNodes": "Nodos globales activos",
+    "platformTitle": "Plataforma",
+    "features": "Características y libros mayores",
+    "security": "Resumen de seguridad",
+    "onboarding": "Pasos de incorporación",
+    "login": "Inicio de sesión de bóveda privada",
+    "complianceTitle": "Cumplimiento",
+    "register": "Abrir cuenta",
+    "deviceAudit": "Pistas de auditoría de dispositivos",
+    "totp": "Protocolos TOTP 2FA",
+    "privacyPolicy": "Política de privacidad",
+    "resourcesTitle": "Recursos",
+    "github": "Repositorio de GitHub",
+    "apiDocs": "Documentación de API",
+    "systemStatus": "Estado del sistema",
+    "rights": "Apex Bank Enterprise. Todos los derechos reservados.",
+    "securityTerms": "Términos de seguridad",
+    "privacyNotice": "Aviso de privacidad",
+    "auditLogs": "Registros de auditoría"
+  },
+  "GlobalNetwork": {
+    "badge": "Infraestructura internacional",
+    "titlePrefix": "Liquidez global y",
+    "titleHighlight": "Nodos seguros",
+    "description": "Diseñado con redundancia multirregión y enrutamiento cifrado de baja latencia en los principales centros financieros mundiales.",
+    "status": "Operativo",
+    "latencyText": "latencia",
+    "nyRegion": "América del Norte",
+    "nyCity": "Nueva York",
+    "ldnRegion": "Europa",
+    "ldnCity": "Londres",
+    "zrhRegion": "Europa Central",
+    "zrhCity": "Zúrich",
+    "sgpRegion": "Asia-Pacífico",
+    "sgpCity": "Singapur"
+  },
+  "Hero": {
+    "badge": "Arquitectura de bóveda privada y libro mayor de próxima generación",
+    "titlePrefix": "Banca de grado institucional para la",
+    "titleHighlight": "Riqueza global",
+    "description": "Toma el control absoluto del posicionamiento de efectivo multidivisa y de la auditoría de libros mayores en tiempo real. Protegido con seguridad criptográfica de doble factor para una privacidad absoluta.",
+    "check1": "Libro mayor multidivisa USD y EUR",
+    "check2": "Autenticación TOTP 2FA reforzada",
+    "check3": "Pistas de auditoría de dispositivos automatizadas",
+    "check4": "Transferencias cifradas instantáneas",
+    "accessVault": "Acceder a la bóveda privada",
+    "enteringVault": "Entrando a la bóveda...",
+    "createAccount": "Crear cuenta",
+    "preparingPortal": "Preparando portal...",
+    "altImage": "Vista previa de la interfaz de usuario de la bóveda de Apex Bank",
+    "portfolioLabel": "Portafolio total"
+  },
+  "Navbar": {
+    "subtitle": "Libro mayor de bóveda privada",
+    "features": "Características de la plataforma",
+    "security": "Seguridad empresarial",
+    "multiCurrency": "Multidivisa",
+    "compliance": "Cumplimiento y auditoría",
+    "signIn": "Iniciar sesión",
+    "openAccount": "Abrir cuenta",
+    "ariaLabel": "Alternar menú de navegación"
+  },
+  "OnboardingSteps": {
+    "badge": "Transición fluida",
+    "titlePrefix": "Tu camino hacia la",
+    "titleHighlight": "Riqueza segura",
+    "description": "Comienza con Apex Bank en tres pasos estructurados y protegidos criptográficamente.",
+    "phaseText": "Fase",
+    "altImage": "Vista previa del flujo de incorporación de Apex Bank",
+    "s1Title": "Abrir perfil seguro",
+    "s1Desc": "Registra tu cuenta institucional o privada en minutos con credenciales cifradas.",
+    "s2Title": "Configurar TOTP 2FA",
+    "s2Desc": "Escanea tu código QR de autenticación para asegurar tu sesión con seguridad multifactor.",
+    "s3Title": "Acceder a la bóveda privada",
+    "s3Desc": "Administra libros mayores de efectivo multidivisa y supervisa las pistas de auditoría de dispositivos en tiempo real."
+  },
+  "SecurityOverview": {
+    "badge": "Defensa criptográfica",
+    "titlePrefix": "Seguridad de bóveda",
+    "titleHighlight": "sin concesiones",
+    "description": "Apex Bank implementa rigurosas capas de seguridad y puntos de control de autorización multifactor diseñados para garantizar que tus activos financieros privados permanezcan completamente protegidos.",
+    "activeProtection": "Protección activa habilitada",
+    "p1Title": "Hashing de credenciales criptográficas",
+    "p1Desc": "Las contraseñas se protegen utilizando hash de cifrado bcrypt estándar de la industria para salvaguardar las cuentas de usuario contra intentos de acceso no autorizados.",
+    "p1Badge": "Bcrypt y Sal",
+    "p2Title": "Contraseñas de un solo uso basadas en tiempo (TOTP)",
+    "p2Desc": "Hacer cumplir la autenticación multifactor con códigos de autenticador de 6 dígitos requeridos en cada punto de desafío de sesión de inicio de sesión.",
+    "p2Badge": "TOTP 2FA",
+    "p3Title": "Registro de auditoría de dispositivos e IP",
+    "p3Desc": "El análisis automatizado de agentes de usuario y el seguimiento seguro de direcciones IP registran cada sesión de inicio de sesión para una total rendición de cuentas y transparencia.",
+    "p3Badge": "Pistas de auditoría",
+    "p4Title": "Endurecimiento de sesiones NextAuth",
+    "p4Desc": "El manejo personalizado de errores de inicio de sesión de credenciales y los patrones de estrategia JWT evitan fugas de tokens y aseguran las rutas de bóveda protegidas.",
+    "p4Badge": "Seguridad de tokens"
+  }
+}

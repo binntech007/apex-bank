@@ -1,0 +1,826 @@
+{
+  "Dashboard": {
+    "welcomeBack": "Welcome back, {name}",
+    "subtitle": "Private wealth cash positioning & instant multi-currency ledger transfers.",
+    "sendWire": "Send Wire",
+    "metalCards": "Metal Cards",
+    "kycPending": "Your identity verification is currently under review by our compliance team.",
+    "kycRejected": "Your verification attempt was rejected. Please review your details and re-submit.",
+    "kycRequired": "Identity verification required. Complete your KYC to unlock full account privileges.",
+    "checkStatus": "Check Status",
+    "verifyNow": "Verify Now"
+  },
+  "Sidebar": {
+    "overview": "Overview",
+    "transfers": "Transfers",
+    "metalCards": "Metal Cards",
+    "loans": "Loans",
+    "investment": "Investment",
+    "kycVerification": "KYC Verification",
+    "settings": "Settings",
+    "navigation": "Navigation",
+    "compliance": "Compliance",
+    "adminPanel": "Admin Panel",
+    "customer": "Customer",
+    "signOut": "Sign Out"
+  },
+  "VaultSection": {
+    "title": "Active Vault Balances",
+    "activeVaultsCount": "{count} Active {count, plural, =1 {Vault} other {Vaults}}",
+    "openNewVault": "Open New Vault"
+  },
+  "TransfersPage": {
+    "title": "Transfers & Payments",
+    "description": "Move funds internally between vaults, pay other users, or execute international SWIFT wires."
+  },
+  "TransferTabs": {
+    "myVaults": "My Vaults",
+    "payUser": "Pay User",
+    "wireTransfer": "Wire Transfer"
+  },
+  "InternalTransferForm": {
+    "title": "Internal Vault Swap",
+    "description": "Swap funds instantly between your vaults using live admin exchange rates.",
+    "fromVault": "From Vault",
+    "toVault": "To Vault",
+    "balanceLabel": "Balance",
+    "amountToSend": "Amount to Send",
+    "exchangeRate": "Exchange Rate",
+    "rateNotSet": "Rate not set",
+    "recipientReceives": "Recipient Receives",
+    "processing": "Processing Swap...",
+    "executeSwap": "Execute Swap",
+    "errors": {
+      "invalidAmount": "Please enter a valid transfer amount.",
+      "sameVault": "Source and destination vaults must be different.",
+      "swapFailed": "Swap failed."
+    },
+    "success": {
+      "swapCompleted": "Swap completed!"
+    }
+  },
+  "QuickActions": {
+    "sectionTitle": "Quick Actions",
+    "addMoney": {
+      "label": "Add Money",
+      "desc": "Fund your vault accounts"
+    },
+    "sendWire": {
+      "label": "Send Wire",
+      "desc": "Instant ledger transfer"
+    },
+    "payBills": {
+      "label": "Pay Bills",
+      "desc": "Scheduled payments"
+    },
+    "history": {
+      "label": "History",
+      "desc": "View full transaction log"
+    },
+    "cardLimits": {
+      "label": "Card Limits",
+      "desc": "Manage spending caps"
+    }
+  },
+  "TransactionTable": {
+    "title": "Recent Transactions",
+    "viewAll": "View All Postings",
+    "emptyState": {
+      "title": "No ledger entries posted yet.",
+      "description": "Initiate a transfer or currency swap to populate your ledger history."
+    },
+    "headers": {
+      "description": "Description",
+      "type": "Type",
+      "date": "Posting Date",
+      "amount": "Amount"
+    },
+    "types": {
+      "credit": "Credit / Deposit",
+      "debit": "Debit / Outflow"
+    }
+  },
+  "CardsPage": {
+    "backToDashboard": "Back to Dashboard",
+    "pageTitle": "Metal & Virtual Cards",
+    "pageDescription": "Manage physical multi-currency metal cards and instant disposable virtual cards.",
+    "issueNewCard": "Issue New Card",
+    "empty": {
+      "title": "No active cards yet",
+      "description": "You don't have any virtual or physical cards issued. Click below to issue your first card from your vault balances.",
+      "button": "Issue Your First Card"
+    },
+    "card": {
+      "expires": "EXPIRES",
+      "showDetails": "Show Details",
+      "hideDetails": "Hide Details",
+      "copyNumber": "Copy Number",
+      "copied": "Copied!",
+      "freezeCard": "Freeze Card",
+      "unfreeze": "Unfreeze"
+    },
+    "issuedList": {
+      "title": "Your Issued Cards",
+      "cardLabel": "Card",
+      "statusLabel": "Status"
+    },
+    "modal": {
+      "title": "Issue New Card",
+      "subtitle": "Card fees are deducted directly from your selected vault balance.",
+      "tierLabel": "Select Card Tier",
+      "virtualTitle": "Virtual Card",
+      "virtualDesc": "Instant digital usage",
+      "virtualFee": "$5.00 Fee",
+      "metalTitle": "Physical Metal",
+      "metalDesc": "Multi-currency physical",
+      "metalFee": "$50.00 Fee",
+      "vaultLabel": "Pay From Vault",
+      "noVaults": "No vault accounts found.",
+      "accountLabel": "Account",
+      "holderLabel": "Cardholder Name",
+      "processing": "Processing Payment...",
+      "confirmVirtual": "Confirm & Pay $5.00",
+      "confirmMetal": "Confirm & Pay $50.00"
+    },
+    "errors": {
+      "selectVault": "Please select a vault account to pay from.",
+      "purchaseFailed": "Failed to process purchase."
+    }
+  },
+  "LoansPage": {
+    "backToDashboard": "Back to Dashboard",
+    "pageTitle": "Credit & Business Loans",
+    "pageDescription": "Apply for credit facilities and track application approval status.",
+    "applyButton": "Apply For Loan",
+    "applicationsTitle": "Your Applications",
+    "empty": {
+      "title": "No Loan Applications",
+      "description": "You don't have any active or pending loan requests. Submit a request to access flexible funding.",
+      "button": "Apply Now"
+    },
+    "status": {
+      "pending": "Pending Review",
+      "approved": "Approved",
+      "rejected": "Rejected",
+      "paid": "Fully Paid"
+    },
+    "card": {
+      "requestedAmount": "Requested Amount",
+      "term": "Term",
+      "months": "Months",
+      "monthlyEst": "Monthly Est.",
+      "interest": "Interest",
+      "submitted": "Submitted"
+    },
+    "modal": {
+      "title": "Apply for Credit Line",
+      "subtitle": "Applications are reviewed by bank administrators within 24 hours.",
+      "vaultLabel": "Destination Vault Account",
+      "accountLabel": "Account",
+      "amountLabel": "Loan Amount ($)",
+      "termLabel": "Term (Months)",
+      "purposeLabel": "Purpose",
+      "submitting": "Submitting Application...",
+      "submitButton": "Submit Loan Application"
+    },
+    "errors": {
+      "selectVault": "Please select a destination vault.",
+      "submissionFailed": "Submission failed."
+    }
+  },
+  "InvestmentsPage": {
+    "backToDashboard": "Back to Dashboard",
+    "pageTitle": "Investment Portfolio",
+    "pageDescription": "Grow your wealth across equities, crypto, bonds, and commodities.",
+    "newInvestment": "New Investment",
+    "portfolioValue": "Total Portfolio Value",
+    "activeBadge": "Active",
+    "empty": {
+      "title": "No Investments Yet",
+      "description": "You don't have any active investment holdings. Select an asset class and start building your portfolio today.",
+      "button": "Buy First Asset"
+    },
+    "card": {
+      "units": "units",
+      "totalInvested": "Total Invested",
+      "currentPrice": "Current Price",
+      "status": "Status",
+      "purchased": "Purchased"
+    },
+    "modal": {
+      "title": "Buy Investment Asset",
+      "subtitle": "Funds will be deducted directly from your chosen vault account.",
+      "fundingVault": "Funding Vault",
+      "accountLabel": "Account",
+      "assetName": "Asset Name",
+      "symbol": "Symbol / Ticker",
+      "category": "Category",
+      "quantity": "Quantity",
+      "unitPrice": "Unit Price ($)",
+      "totalPurchase": "Total Purchase Amount:",
+      "processing": "Processing Investment...",
+      "confirmButton": "Confirm Purchase",
+      "categories": {
+        "stocks": "Stocks",
+        "crypto": "Crypto",
+        "bonds": "Bonds",
+        "commodities": "Commodities"
+      }
+    },
+    "errors": {
+      "selectVault": "Please select a vault to fund this investment.",
+      "purchaseFailed": "Failed to complete purchase."
+    }
+  },
+  "KycClient": {
+    "backToSettings": "Back to Settings",
+    "title": "Identity Verification (KYC)",
+    "subtitle": "Verify your identity to unlock higher transfer limits and features.",
+    "statusLabel": "Status",
+    "statuses": {
+      "pending": "Pending",
+      "approved": "Approved",
+      "rejected": "Rejected"
+    },
+    "statusDesc": {
+      "pending": "Your documents are currently under review by our compliance team.",
+      "approved": "Your account is fully verified.",
+      "rejected": "Please review your details and re-submit."
+    },
+    "form": {
+      "fullName": "Legal Full Name",
+      "fullNamePlaceholder": "As shown on official ID",
+      "idType": "ID Document Type",
+      "idTypes": {
+        "passport": "Passport",
+        "nationalId": "National ID Card",
+        "driversLicense": "Driver's License"
+      },
+      "idNumber": "ID Document Number",
+      "idNumberPlaceholder": "Document identification number"
+    },
+    "upload": {
+      "title": "Upload ID Document",
+      "subtitle": "Front photo of your passport or ID",
+      "chooseFile": "Choose File",
+      "attached": "✓ ID Document Attached"
+    },
+    "selfie": {
+      "title": "Face Verification",
+      "subtitle": "Align your face inside the frame below",
+      "attached": "✓ Selfie Verified & Attached"
+    },
+    "submitButton": {
+      "default": "Submit Verification",
+      "processing": "Submitting Verification..."
+    },
+    "errors": {
+      "noDocument": "Please upload your ID document.",
+      "noSelfie": "Please capture a selfie using the camera.",
+      "failed": "Submission failed."
+    },
+    "success": {
+      "submitted": "KYC submitted successfully!"
+    }
+  },
+  "DepositPage": {
+    "backToDashboard": "Back to Dashboard",
+    "title": "Add Funds & Deposits",
+    "subtitle": "Fund your private wealth vaults via wire transfer or log a direct account deposit.",
+    "wireInstructions": {
+      "title": "Wire Instructions",
+      "partnerBank": "Assigned Partner Bank",
+      "bankNameLabel": "Bank Name",
+      "accountNameLabel": "Account Name",
+      "defaultClientName": "Private Wealth Client",
+      "accountNumberLabel": "Account Number",
+      "routingLabel": "Routing / Swift Code",
+      "notice": "Inbound wires reflect within 1 business day."
+    }
+  },
+  "SettingsPage": {
+    "title": "Account Settings",
+    "subtitle": "Manage your account overview, linked payment methods, security, and private wealth features.",
+    "profile": {
+      "defaultName": "User Profile",
+      "readOnlyBadge": "Read-Only",
+      "fullNameLabel": "Full Name",
+      "emailLabel": "Email Address",
+      "countryLabel": "Country / Residency",
+      "notProvided": "Not provided",
+      "notSpecified": "Not specified"
+    },
+    "navSectionTitle": "Preferences & Management",
+    "items": {
+      "paymentMethods": {
+        "title": "Payment Methods",
+        "desc": "Link banks & credit/debit cards"
+      },
+      "security": {
+        "title": "Security & Password",
+        "desc": "Change password & active sessions"
+      },
+      "notifications": {
+        "title": "Notifications",
+        "desc": "Configure email & security alerts"
+      },
+      "kyc": {
+        "title": "Identity Verification",
+        "desc": "KYC status & transfer limits"
+      },
+      "limits": {
+        "title": "Spending & Transfer Limits",
+        "desc": "Set daily caps & withdrawal rules"
+      },
+      "cardControls": {
+        "title": "Card Controls & Security",
+        "desc": "International toggles, category caps & PIN"
+      },
+      "beneficiaries": {
+        "title": "Beneficiaries & Estate",
+        "desc": "Trusted contacts & asset assignment"
+      },
+      "tax": {
+        "title": "Tax & Compliance Hub",
+        "desc": "Statements, annual reports & residency"
+      },
+      "apiKeys": {
+        "title": "API Keys & Access",
+        "desc": "Generate read-only tokens for integrations"
+      }
+    }
+  },
+  "BillsPage": {
+    "backToDashboard": "Back to Dashboard",
+    "title": "Vault Bills & Invoices",
+    "subtitle": "Manage and settle your utilities, subscriptions, and data obligations.",
+    "activeObligations": "Active Obligations",
+    "dueDate": "Due",
+    "empty": {
+      "title": "No active bills found",
+      "description": "Click \"Add New Bill\" above to set up a utility payment or subscription."
+    },
+    "status": {
+      "paid": "Paid",
+      "overdue": "Overdue",
+      "pending": "Pending"
+    }
+  },
+  "AddBillModal": {
+    "addButton": "Add New Bill",
+    "modalTitle": "Settle or Schedule Bill",
+    "modalSubtitle": "Choose a provider and enter your amount.",
+    "selectUtility": "Select Utility / Provider",
+    "billReference": "Bill Reference / Description",
+    "amountLabel": "Amount (USD)",
+    "cancel": "Cancel",
+    "proceed": "Proceed to Payment",
+    "categories": {
+      "electricity": "Electricity Bill (PHED)",
+      "water": "Water Supply Utility",
+      "internet": "Broadband Data Bundle",
+      "streaming": "Netflix Subscription"
+    }
+  },
+  "TransactionsPage": {
+    "backToOverview": "Back to Overview",
+    "title": "Transaction History",
+    "description": "Complete audit trail of all incoming credits and outgoing debits across your vaults.",
+    "exportCsv": "Export CSV"
+  },
+  "PaymentSettingsClient": {
+    "backToSettings": "Back to Settings",
+    "pageTitle": "Payment Settings",
+    "pageDescription": "Manage your external bank accounts and credit/debit cards for funding your vault.",
+    "tabs": {
+      "banks": "Bank Accounts",
+      "cards": "Cards"
+    },
+    "banksList": {
+      "title": "Your Linked Bank Accounts",
+      "empty": "No bank accounts linked yet.",
+      "accountLabel": "Account"
+    },
+    "bankForm": {
+      "title": "Link External Bank Account",
+      "bankName": "Bank Name",
+      "bankNamePlaceholder": "e.g., Chase",
+      "accountType": "Account Type",
+      "checking": "Checking",
+      "savings": "Savings",
+      "routingNumber": "Routing Number",
+      "routingPlaceholder": "9 digits",
+      "accountNumber": "Account Number",
+      "accountPlaceholder": "Full Account Number",
+      "submitting": "Linking Account...",
+      "submit": "Link Bank Account"
+    },
+    "cardsList": {
+      "title": "Your Linked Cards",
+      "empty": "No cards linked yet.",
+      "expires": "Expires"
+    },
+    "cardForm": {
+      "title": "Link Credit or Debit Card",
+      "holderName": "Cardholder Name",
+      "holderPlaceholder": "Name as it appears on card",
+      "network": "Card Network",
+      "number": "Card Number",
+      "numberPlaceholder": "16-digit card number",
+      "expMonth": "Expiration Month",
+      "expMonthPlaceholder": "MM (e.g., 08)",
+      "expYear": "Expiration Year",
+      "expYearPlaceholder": "YYYY (e.g., 2028)",
+      "cvc": "CVC / CVV",
+      "cvcPlaceholder": "3 or 4 digits",
+      "submitting": "Linking Card...",
+      "submit": "Link Card"
+    },
+    "securityNote": "Your financial information is encrypted and stored according to strict banking compliance standards.",
+    "success": {
+      "bankLinked": "Bank account linked!",
+      "cardLinked": "Card linked!"
+    },
+    "errors": {
+      "bankFailed": "Failed to link bank.",
+      "cardFailed": "Failed to link card."
+    }
+  },
+  "ApiKeysPage": {
+    "loading": "Loading API keys...",
+    "backToSettings": "Back to Settings",
+    "title": "Developer API Keys",
+    "subtitle": "Generate API credentials for programmatic access to your Apex Vault accounts.",
+    "secretBanner": {
+      "title": "Copy Your Secret Key Now",
+      "warning": "For security reasons, this key will <strong>never be displayed again</strong>. Make sure to copy it now and store it securely.",
+      "copyKey": "Copy Key",
+      "copied": "Copied!",
+      "dismiss": "I have securely saved this key"
+    },
+    "form": {
+      "title": "Create New API Key",
+      "nameLabel": "Key Name / Label",
+      "namePlaceholder": "e.g. Production Webhook Server",
+      "permissionsLabel": "Permissions Scope",
+      "readOnlyOption": "Read Only (View balances & transactions)",
+      "fullAccessOption": "Full Access (Initiate transfers & manage cards)",
+      "generating": "Generating...",
+      "generateButton": "Generate Credentials"
+    },
+    "list": {
+      "title": "Active API Keys ({count})",
+      "empty": "No active API keys found.",
+      "readOnlyBadge": "Read Only",
+      "fullAccessBadge": "Full Access",
+      "lastUsed": "Last used {date}",
+      "neverUsed": "Never used",
+      "revokeTitle": "Revoke Key"
+    },
+    "errors": {
+      "loadFailed": "Failed to load API keys.",
+      "generateFailed": "Failed to generate key.",
+      "revokeFailed": "Failed to revoke key."
+    },
+    "success": {
+      "revoked": "API key revoked."
+    }
+  },
+  "BeneficiariesPage": {
+    "loading": "Loading beneficiaries...",
+    "backToSettings": "Back to Settings",
+    "title": "Beneficiaries & Estate Transfer",
+    "subtitle": "Assign secondary beneficiaries and set asset allocation percentages.",
+    "overview": {
+      "portfolioLabel": "Allocated Portfolio"
+    },
+    "form": {
+      "title": "Add Beneficiary",
+      "fullNameLabel": "Full Name",
+      "fullNamePlaceholder": "e.g. Eleanor Vance",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "eleanor@example.com",
+      "relationshipLabel": "Relationship",
+      "allocationLabel": "Allocation (%)",
+      "allocationPlaceholder": "e.g. 50",
+      "saving": "Saving...",
+      "saveButton": "Save Beneficiary"
+    },
+    "relationships": {
+      "spouse": "Spouse",
+      "child": "Child",
+      "parent": "Parent",
+      "sibling": "Sibling",
+      "trust": "Family Trust",
+      "other": "Other"
+    },
+    "list": {
+      "title": "Assigned Beneficiaries ({count})",
+      "empty": "No beneficiaries assigned yet.",
+      "allocationSub": "Allocation"
+    },
+    "errors": {
+      "loadFailed": "Failed to load beneficiaries.",
+      "exceedsLimit": "Total allocation cannot exceed 100%. Remaining available: {remaining}%",
+      "addFailed": "Failed to add beneficiary.",
+      "deleteFailed": "Failed to delete beneficiary."
+    },
+    "success": {
+      "added": "Beneficiary added successfully!",
+      "removed": "Beneficiary removed."
+    }
+  },
+  "CardControlsPage": {
+    "loading": "Loading card controls...",
+    "backToSettings": "Back to Settings",
+    "title": "Card Controls & Security",
+    "subtitle": "Manage transaction permissions, spending caps, and card security.",
+    "cardTypes": {
+      "metal": "Metal",
+      "virtual": "Virtual",
+      "suffix": "Card"
+    },
+    "status": {
+      "frozen": "Frozen 🧊",
+      "active": "Active ✅"
+    },
+    "buttons": {
+      "freeze": "Freeze Card",
+      "unfreeze": "Unfreeze Card",
+      "updateLimit": "Update Limit",
+      "updating": "Updating..."
+    },
+    "togglesSectionTitle": "Transaction Toggles",
+    "toggles": {
+      "international": {
+        "title": "International Transactions",
+        "desc": "Allow cross-border and foreign merchant charges"
+      },
+      "atm": {
+        "title": "ATM Withdrawals",
+        "desc": "Allow physical cash access at global ATMs"
+      },
+      "online": {
+        "title": "Online Purchases",
+        "desc": "Enable e-commerce and web subscription payments"
+      }
+    },
+    "limitSectionTitle": "Monthly Spend Limit",
+    "limitLabel": "Limit Amount ($)",
+    "spentThisMonth": "Spent this month: ${spent} / ${limit}",
+    "errors": {
+      "loadFailed": "Failed to load card controls.",
+      "notFound": "Card details not found.",
+      "limitFailed": "Failed to update spending limit."
+    },
+    "success": {
+      "limitUpdated": "Spending limit updated successfully!"
+    }
+  },
+  "TaxSettingsPage": {
+    "loading": "Loading tax details...",
+    "backToSettings": "Back to Settings",
+    "title": "Tax & Compliance Hub",
+    "subtitle": "Manage regulatory declarations, tax residency, and annual reporting documents.",
+    "form": {
+      "sectionTitle": "Regulatory Information",
+      "residencyLabel": "Primary Tax Residency",
+      "tinLabel": "TIN / SSN / EIN",
+      "tinSub": "Sensitive IDs are masked for protection.",
+      "fatcaLabel": "FATCA Classification",
+      "fatcaOptions": {
+        "exempt": "Exempt Payee",
+        "activeNffe": "Active NFFE",
+        "passiveNffe": "Passive NFFE",
+        "participatingFfi": "Participating FFI"
+      },
+      "usStatusLabel": "US Tax Status",
+      "usPersonToggle": "Declared US Person",
+      "saving": "Saving...",
+      "saveButton": "Save Compliance Profile"
+    },
+    "documents": {
+      "sectionTitle": "Annual Tax Documents",
+      "downloadBtn": "Download PDF",
+      "form1099": {
+        "title": "Form 1099-INT (Interest Income)",
+        "meta": "Tax Year 2025 • Available"
+      },
+      "portfolioSummary": {
+        "title": "Annual Vault Portfolio Summary",
+        "meta": "Tax Year 2025 • Available"
+      }
+    },
+    "errors": {
+      "loadFailed": "Failed to load tax settings.",
+      "updateFailed": "Failed to update profile."
+    },
+    "success": {
+      "profileUpdated": "Tax & Compliance profile updated."
+    }
+  },
+  "CustomerLoginPage": {
+    "title": "Private Vault Sign In",
+    "subtitle": "Access multi-currency cash positioning and ledger services",
+    "adminPortalLink": "Internal Operations / Admin Portal"
+  },
+  "LoginForm": {
+    "validation": {
+      "invalidEmail": "Please enter a valid email address",
+      "passwordRequired": "Password is required"
+    },
+    "errors": {
+      "invalidCredentials": "Invalid email or password."
+    },
+    "fields": {
+      "emailLabel": "Email Address",
+      "passwordLabel": "Password"
+    },
+    "buttons": {
+      "authenticating": "Authenticating...",
+      "signIn": "Sign In to Portal"
+    },
+    "footer": {
+      "prompt": "Need a private vault?",
+      "createAccount": "Create Account"
+    }
+  },
+  "CustomerRegisterPage": {
+    "title": "Create Private Vault Account",
+    "subtitle": "Step {step} of 2 — Profile & Credentials",
+    "fields": {
+      "fullNameLabel": "Legal Full Name",
+      "fullNamePlaceholder": "e.g. John Doe",
+      "emailLabel": "Email Address",
+      "passwordLabel": "Password",
+      "genderLabel": "Gender",
+      "countryLabel": "Country",
+      "phoneLabel": "Phone Number",
+      "addressLabel": "Residential Street Address",
+      "idLabel": "Government Identification (Passport / SSN / National ID)",
+      "idPlaceholder": "ID / Passport Number"
+    },
+    "genderOptions": {
+      "male": "Male",
+      "female": "Female",
+      "other": "Other",
+      "preferNotToSay": "Prefer not to say"
+    },
+    "buttons": {
+      "continue": "Continue to Identity Setup",
+      "back": "Back",
+      "creating": "Creating Vault Account...",
+      "openAccount": "Open Account Now"
+    },
+    "termsText": "I accept the terms of service and consent to electronic identity verification checks.",
+    "footer": {
+      "prompt": "Already registered?",
+      "signIn": "Sign in"
+    },
+    "errors": {
+      "termsRequired": "You must accept the terms of service.",
+      "registrationFailed": "Registration failed.",
+      "loginPrompt": "Account created! Please log in."
+    }
+  },
+  "InputGroup": {
+    "hidePassword": "Hide password",
+    "showPassword": "Show password"
+  },
+  "CTA": {
+    "altImage": "Apex Bank Secure Vault Preview",
+    "titlePrefix": "Ready to secure your assets with",
+    "titleHighlight": "Apex Bank",
+    "description": "Open your private multi-currency vault in minutes. Hardened with cryptographic two-factor authentication and real-time device auditing.",
+    "openAccount": "Open Free Account",
+    "signIn": "Sign In to Vault"
+  },
+  "FAQ": {
+    "badge": "Institutional Inquiries",
+    "titlePrefix": "Frequently Asked",
+    "titleHighlight": "Questions",
+    "description": "Everything you need to know about our cryptographic private vaults, security protocols, and multi-currency ledgers.",
+    "q1": "How are my multi-currency assets protected in private vaults?",
+    "a1": "All private vaults are secured using military-grade AES-256 encryption combined with hardware-backed cryptographic keys. Assets are isolated within multi-region liquidity nodes with real-time device auditing.",
+    "q2": "What security measures are required during account setup?",
+    "a2": "Apex Bank requires time-based one-time password (TOTP) two-factor authentication (2FA) via authenticator apps, device fingerprinting, and cryptographically verified sessions for every transaction.",
+    "q3": "How fast are international currency swaps and transfers?",
+    "a3": "Multi-currency cash ledgers settle instantly within your internal vault network. External institutional wire settlements process through dedicated global banking nodes with real-time tracking.",
+    "q4": "Can I manage institutional sub-accounts and permissions?",
+    "a4": "Yes. Enterprise and institutional profiles support custom role-based access control (RBAC), allowing you to assign specific multi-signature and auditing privileges to team members."
+  },
+  "Features": {
+    "badge": "Enterprise Infrastructure",
+    "titlePrefix": "Engineered for Absolute",
+    "titleHighlight": "Privacy & Control",
+    "description": "Discover the core protocols and banking architecture designed to safeguard your private vaults and institutional assets.",
+    "explore": "Explore technical protocol",
+    "f1Title": "Hardened Two-Factor Security",
+    "f1Desc": "Advanced TOTP verification workflows coupled with custom authorization checkpoints protecting every session.",
+    "f1Badge": "Cryptographic",
+    "f2Title": "Multi-Currency Ledgers",
+    "f2Desc": "Seamless real-time cash positioning and balance management across USD, EUR, and global asset ledgers.",
+    "f2Badge": "Global Assets",
+    "f3Title": "Automated Device Audit Trails",
+    "f3Desc": "Real-time device parsing, IP logging, and session tracking ensuring complete transparency and accountability.",
+    "f3Badge": "Live Tracking"
+  },
+  "Footer": {
+    "brandDescription": "Institutional-grade multi-currency ledgers and cryptographic private vault architecture designed for high-net-worth digital wealth management.",
+    "encrypted": "AES-256 Encrypted",
+    "globalNodes": "Global Nodes Active",
+    "platformTitle": "Platform",
+    "features": "Features & Ledgers",
+    "security": "Security Overview",
+    "onboarding": "Onboarding Steps",
+    "login": "Private Vault Login",
+    "complianceTitle": "Compliance",
+    "register": "Open Account",
+    "deviceAudit": "Device Audit Trails",
+    "totp": "TOTP 2FA Protocols",
+    "privacyPolicy": "Privacy Policy",
+    "resourcesTitle": "Resources",
+    "github": "GitHub Repository",
+    "apiDocs": "API Documentation",
+    "systemStatus": "System Status",
+    "rights": "Apex Bank Enterprise. All rights reserved.",
+    "securityTerms": "Security Terms",
+    "privacyNotice": "Privacy Notice",
+    "auditLogs": "Audit Logs"
+  },
+  "GlobalNetwork": {
+    "badge": "International Infrastructure",
+    "titlePrefix": "Global Liquidity &",
+    "titleHighlight": "Secure Nodes",
+    "description": "Engineered with multi-region redundancy and low-latency encrypted routing across major global financial centers.",
+    "status": "Operational",
+    "latencyText": "latency",
+    "nyRegion": "North America",
+    "nyCity": "New York",
+    "ldnRegion": "Europe",
+    "ldnCity": "London",
+    "zrhRegion": "Central Europe",
+    "zrhCity": "Zurich",
+    "sgpRegion": "Asia-Pacific",
+    "sgpCity": "Singapore"
+  },
+  "Hero": {
+    "badge": "Next-Generation Private Vault & Ledger Architecture",
+    "titlePrefix": "Institutional-Grade Banking for",
+    "titleHighlight": "Global Wealth",
+    "description": "Take full control of multi-currency cash positioning and real-time ledger auditing. Hardened with cryptographic two-factor security for absolute privacy.",
+    "check1": "Multi-Currency USD & EUR Ledger",
+    "check2": "Hardened TOTP 2FA Authentication",
+    "check3": "Automated Device Audit Trails",
+    "check4": "Instant Encrypted Transfers",
+    "accessVault": "Access Private Vault",
+    "enteringVault": "Entering Vault...",
+    "createAccount": "Create Account",
+    "preparingPortal": "Preparing Portal...",
+    "altImage": "Apex Bank Vault UI Preview",
+    "portfolioLabel": "Total Portfolio"
+  },
+  "Navbar": {
+    "subtitle": "Private Vault Ledger",
+    "features": "Platform Features",
+    "security": "Enterprise Security",
+    "multiCurrency": "Multi-Currency",
+    "compliance": "Compliance & Audit",
+    "signIn": "Sign In",
+    "openAccount": "Open Account",
+    "ariaLabel": "Toggle Navigation Menu"
+  },
+  "OnboardingSteps": {
+    "badge": "Seamless Transition",
+    "titlePrefix": "Your Journey to",
+    "titleHighlight": "Secure Wealth",
+    "description": "Get started with Apex Bank in three structured, cryptographically protected steps.",
+    "phaseText": "Phase",
+    "altImage": "Apex Bank Onboarding Workflow Preview",
+    "s1Title": "Open Secure Profile",
+    "s1Desc": "Register your institutional or private account in minutes with encrypted credentials.",
+    "s2Title": "Configure TOTP 2FA",
+    "s2Desc": "Scan your authenticator QR code to harden your session with multi-factor security.",
+    "s3Title": "Access Private Vault",
+    "s3Desc": "Manage multi-currency cash ledgers and monitor real-time device audit trails."
+  },
+  "SecurityOverview": {
+    "badge": "Cryptographic Defense",
+    "titlePrefix": "Uncompromising",
+    "titleHighlight": "Vault Security",
+    "description": "Apex Bank implements rigorous security layers and multi-factor authorization checkpoints designed to ensure your private financial assets remain completely protected.",
+    "activeProtection": "Active Protection Enabled",
+    "p1Title": "Cryptographic Credential Hashing",
+    "p1Desc": "Passwords are protected using industry-standard bcrypt encryption hashing to safeguard user accounts against unauthorized access attempts.",
+    "p1Badge": "Bcrypt & Salt",
+    "p2Title": "Time-Based One-Time Passwords (TOTP)",
+    "p2Desc": "Enforce multi-factor authentication with 6-digit authenticator codes required at every login session challenge point.",
+    "p2Badge": "TOTP 2FA",
+    "p3Title": "Device & IP Audit Logging",
+    "p3Desc": "Automated user agent parsing and secure IP address tracking record every login session for total accountability and transparency.",
+    "p3Badge": "Audit Trails",
+    "p4Title": "NextAuth Session Hardening",
+    "p4Desc": "Custom credentials sign-in error handling and JWT strategy patterns prevent token leaks and secure protected vault routes.",
+    "p4Badge": "Token Security"
+  }
+}

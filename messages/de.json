@@ -1,0 +1,826 @@
+{
+  "Dashboard": {
+    "welcomeBack": "Willkommen zurück, {name}",
+    "subtitle": "Privatvermögen-Liquiditätspositionierung & sofortige Mandanten-Mehrwährungstransfers.",
+    "sendWire": "Überweisung senden",
+    "metalCards": "Metallkarten",
+    "kycPending": "Ihre Identitätsprüfung wird derzeit von unserem Compliance-Team überprüft.",
+    "kycRejected": "Ihr Verifizierungsversuch wurde abgelehnt. Bitte überprüfen Sie Ihre Daten und reichen Sie diese erneut ein.",
+    "kycRequired": "Identitätsprüfung erforderlich. Schließen Sie Ihr KYC ab, um alle Kontoberechtigungen freizuschalten.",
+    "checkStatus": "Status prüfen",
+    "verifyNow": "Jetzt verifizieren"
+  },
+  "Sidebar": {
+    "overview": "Übersicht",
+    "transfers": "Überweisungen",
+    "metalCards": "Metallkarten",
+    "loans": "Kredite",
+    "investment": "Investitionen",
+    "kycVerification": "KYC-Verifizierung",
+    "settings": "Einstellungen",
+    "navigation": "Navigation",
+    "compliance": "Compliance",
+    "adminPanel": "Admin-Bereich",
+    "customer": "Kunde",
+    "signOut": "Abmelden"
+  },
+  "VaultSection": {
+    "title": "Aktive Tresorguthaben",
+    "activeVaultsCount": "{count} Aktive {count, plural, =1 {Tresor} other {Tresore}}",
+    "openNewVault": "Neuen Tresor eröffnen"
+  },
+  "TransfersPage": {
+    "title": "Überweisungen & Zahlungen",
+    "description": "Verschieben Sie Gelder intern zwischen Tresoren, bezahlen Sie andere Benutzer oder führen Sie internationale SWIFT-Überweisungen aus."
+  },
+  "TransferTabs": {
+    "myVaults": "Meine Tresore",
+    "payUser": "Benutzer bezahlen",
+    "wireTransfer": "Banküberweisung"
+  },
+  "InternalTransferForm": {
+    "title": "Interner Tresortausch",
+    "description": "Tauschen Sie Gelder mithilfe von Live-Admin-Wechselkursen sofort zwischen Ihren Tresoren aus.",
+    "fromVault": "Von Tresor",
+    "toVault": "Zu Tresor",
+    "balanceLabel": "Guthaben",
+    "amountToSend": "Zu sendender Betrag",
+    "exchangeRate": "Wechselkurs",
+    "rateNotSet": "Kurs nicht festgelegt",
+    "recipientReceives": "Empfänger erhält",
+    "processing": "Tausch wird verarbeitet...",
+    "executeSwap": "Tausch ausführen",
+    "errors": {
+      "invalidAmount": "Bitte geben Sie einen gültigen Überweisungsbetrag ein.",
+      "sameVault": "Quell- und Ziel-Tresor müssen unterschiedlich sein.",
+      "swapFailed": "Tausch fehlgeschlagen."
+    },
+    "success": {
+      "swapCompleted": "Tausch abgeschlossen!"
+    }
+  },
+  "QuickActions": {
+    "sectionTitle": "Schnellaktionen",
+    "addMoney": {
+      "label": "Geld einzahlen",
+      "desc": "Laden Sie Ihre Tresorkonten auf"
+    },
+    "sendWire": {
+      "label": "Überweisung senden",
+      "desc": "Sofortige Hauptbuchüberweisung"
+    },
+    "payBills": {
+      "label": "Rechnungen bezahlen",
+      "desc": "Geplante Zahlungen"
+    },
+    "history": {
+      "label": "Verlauf",
+      "desc": "Vollständiges Transaktionsprotokoll anzeigen"
+    },
+    "cardLimits": {
+      "label": "Kartenlimits",
+      "desc": "Ausgabenlimits verwalten"
+    }
+  },
+  "TransactionTable": {
+    "title": "Letzte Transaktionen",
+    "viewAll": "Alle Buchungen anzeigen",
+    "emptyState": {
+      "title": "Noch keine Hauptbucheinträge gebucht.",
+      "description": "Initieren Sie eine Überweisung oder einen Währungstausch, um Ihren Hauptbuchverlauf zu füllen."
+    },
+    "headers": {
+      "description": "Beschreibung",
+      "type": "Typ",
+      "date": "Buchungsdatum",
+      "amount": "Betrag"
+    },
+    "types": {
+      "credit": "Gutschrift / Einzahlung",
+      "debit": "Belastung / Abfluss"
+    }
+  },
+  "CardsPage": {
+    "backToDashboard": "Zurück zum Dashboard",
+    "pageTitle": "Metall- & Virtuelle Karten",
+    "pageDescription": "Verwalten Sie physische Mehrwährungs-Metallkarten und sofortige virtuelle Einwegkarten.",
+    "issueNewCard": "Neue Karte ausstellen",
+    "empty": {
+      "title": "Noch keine aktiven Karten",
+      "description": "Sie haben keine virtuellen oder physischen Karten ausgestellt. Klicken Sie unten, um Ihre erste Karte von Ihren Tresorguthaben aus auszustellen.",
+      "button": "Erste Karte ausstellen"
+    },
+    "card": {
+      "expires": "GÜLTIG BIS",
+      "showDetails": "Details anzeigen",
+      "hideDetails": "Details ausblenden",
+      "copyNumber": "Nummer kopieren",
+      "copied": "Kopiert!",
+      "freezeCard": "Karte sperren",
+      "unfreeze": "Entsperren"
+    },
+    "issuedList": {
+      "title": "Ihre ausgegebenen Karten",
+      "cardLabel": "Karte",
+      "statusLabel": "Status"
+    },
+    "modal": {
+      "title": "Neue Karte ausstellen",
+      "subtitle": "Kartengebühren werden direkt von Ihrem ausgewählten Tresorguthaben abgezogen.",
+      "tierLabel": "Kartenebene auswählen",
+      "virtualTitle": "Virtuelle Karte",
+      "virtualDesc": "Sofortige digitale Nutzung",
+      "virtualFee": "5,00 $ Gebühr",
+      "metalTitle": "Physisches Metall",
+      "metalDesc": "Physisch mit mehreren Währungen",
+      "metalFee": "50,00 $ Gebühr",
+      "vaultLabel": "Bezahlen von Tresor",
+      "noVaults": "Keine Tresorkonten gefunden.",
+      "accountLabel": "Konto",
+      "holderLabel": "Name des Karteninhabers",
+      "processing": "Zahlung wird verarbeitet...",
+      "confirmVirtual": "Bestätigen & 5,00 $ bezahlen",
+      "confirmMetal": "Bestätigen & 50,00 $ bezahlen"
+    },
+    "errors": {
+      "selectVault": "Bitte wählen Sie ein Tresorkonto für die Zahlung aus.",
+      "purchaseFailed": "Kauf konnte nicht verarbeitet werden."
+    }
+  },
+  "LoansPage": {
+    "backToDashboard": "Zurück zum Dashboard",
+    "pageTitle": "Kredit- & Firmenkredite",
+    "pageDescription": "Beantragen Sie Kreditfazilitäten und verfolgen Sie den Genehmigungsstatus von Anträgen.",
+    "applyButton": "Kredit beantragen",
+    "applicationsTitle": "Ihre Anträge",
+    "empty": {
+      "title": "Keine Kreditanträge",
+      "description": "Sie haben keine aktiven oder ausstehenden Kreditanfragen. Reichen Sie eine Anfrage ein, um auf flexible Finanzmittel zuzugreifen.",
+      "button": "Jetzt bewerben"
+    },
+    "status": {
+      "pending": "Ausstehende Prüfung",
+      "approved": "Genehmigt",
+      "rejected": "Abgelehnt",
+      "paid": "Vollständig bezahlt"
+    },
+    "card": {
+      "requestedAmount": "Beantragter Betrag",
+      "term": "Laufzeit",
+      "months": "Monate",
+      "monthlyEst": "Monatl. Schätzung",
+      "interest": "Zinsen",
+      "submitted": "Eingereicht"
+    },
+    "modal": {
+      "title": "Kreditlinie beantragen",
+      "subtitle": "Anträge werden innerhalb von 24 Stunden von Bankadministratoren geprüft.",
+      "vaultLabel": "Ziel-Tresorkonto",
+      "accountLabel": "Konto",
+      "amountLabel": "Kreditbetrag ($)",
+      "termLabel": "Laufzeit (Monate)",
+      "purposeLabel": "Verwendungszweck",
+      "submitting": "Antrag wird eingereicht...",
+      "submitButton": "Kreditantrag einreichen"
+    },
+    "errors": {
+      "selectVault": "Bitte wählen Sie einen Ziel-Tresor aus.",
+      "submissionFailed": "Einreichung fehlgeschlagen."
+    }
+  },
+  "InvestmentsPage": {
+    "backToDashboard": "Zurück zum Dashboard",
+    "pageTitle": "Anlageportfolio",
+    "pageDescription": "Vermehren Sie Ihr Vermögen in Aktien, Kryptowährungen, Anleihen und Rohstoffen.",
+    "newInvestment": "Neue Investition",
+    "portfolioValue": "Gesamtwert des Portfolios",
+    "activeBadge": "Aktiv",
+    "empty": {
+      "title": "Noch keine Investitionen",
+      "description": "Sie haben keine aktiven Anlagebestände. Wählen Sie eine Anlageklasse und beginnen Sie noch heute mit dem Aufbau Ihres Portfolios.",
+      "button": "Ersten Vermögenswert kaufen"
+    },
+    "card": {
+      "units": "Einheiten",
+      "totalInvested": "Gesamtinvestition",
+      "currentPrice": "Aktueller Preis",
+      "status": "Status",
+      "purchased": "Gekauft"
+    },
+    "modal": {
+      "title": "Anlagevermögen kaufen",
+      "subtitle": "Gelder werden direkt von Ihrem gewählten Tresorkonto abgezogen.",
+      "fundingVault": "Finanzierungskonto (Tresor)",
+      "accountLabel": "Konto",
+      "assetName": "Name des Vermögenswerts",
+      "symbol": "Symbol / Ticker",
+      "category": "Kategorie",
+      "quantity": "Menge",
+      "unitPrice": "Stückpreis ($)",
+      "totalPurchase": "Gesamtkaufbetrag:",
+      "processing": "Investition wird verarbeitet...",
+      "confirmButton": "Kauf bestätigen",
+      "categories": {
+        "stocks": "Aktien",
+        "crypto": "Krypto",
+        "bonds": "Anleihen",
+        "commodities": "Rohstoffe"
+      }
+    },
+    "errors": {
+      "selectVault": "Bitte wählen Sie einen Tresor zur Finanzierung dieser Investition aus.",
+      "purchaseFailed": "Kauf konnte nicht abgeschlossen werden."
+    }
+  },
+  "KycClient": {
+    "backToSettings": "Zurück zu den Einstellungen",
+    "title": "Identitätsprüfung (KYC)",
+    "subtitle": "Verifizieren Sie Ihre Identität, um höhere Überweisungslimits und Funktionen freizuschalten.",
+    "statusLabel": "Status",
+    "statuses": {
+      "pending": "Ausstehend",
+      "approved": "Genehmigt",
+      "rejected": "Abgelehnt"
+    },
+    "statusDesc": {
+      "pending": "Ihre Dokumente werden derzeit von unserem Compliance-Team überprüft.",
+      "approved": "Ihr Konto ist vollständig verifiziert.",
+      "rejected": "Bitte überprüfen Sie Ihre Daten und reichen Sie sie erneut ein."
+    },
+    "form": {
+      "fullName": "Vollständiger gesetzlicher Name",
+      "fullNamePlaceholder": "Wie auf dem amtlichen Ausweis angegeben",
+      "idType": "Ausweisdokumenttyp",
+      "idTypes": {
+        "passport": "Reisepass",
+        "nationalId": "Personalausweis",
+        "driversLicense": "Führerschein"
+      },
+      "idNumber": "Ausweisnummer",
+      "idNumberPlaceholder": "Dokumenten-Identifikationsnummer"
+    },
+    "upload": {
+      "title": "Ausweisdokument hochladen",
+      "subtitle": "Vorderseite Ihres Reisepasses oder Personalausweises",
+      "chooseFile": "Datei auswählen",
+      "attached": "✓ Ausweisdokument angehängt"
+    },
+    "selfie": {
+      "title": "Gesichtsverifizierung",
+      "subtitle": "Richten Sie Ihr Gesicht innerhalb des Rahmens unten aus",
+      "attached": "✓ Selfie verifiziert & angehängt"
+    },
+    "submitButton": {
+      "default": "Verifizierung einreichen",
+      "processing": "Verifizierung wird eingereicht..."
+    },
+    "errors": {
+      "noDocument": "Bitte laden Sie Ihr Ausweisdokument hoch.",
+      "noSelfie": "Bitte nehmen Sie ein Selfie mit der Kamera auf.",
+      "failed": "Einreichung fehlgeschlagen."
+    },
+    "success": {
+      "submitted": "KYC erfolgreich eingereicht!"
+    }
+  },
+  "DepositPage": {
+    "backToDashboard": "Zurück zum Dashboard",
+    "title": "Geld einzahlen & Einlagen",
+    "subtitle": "Finanzieren Sie Ihre Privatvermögen-Tresore per Banküberweisung oder erfassen Sie eine direkte Kontoeinzahlung.",
+    "wireInstructions": {
+      "title": "Überweisungsanweisungen",
+      "partnerBank": "Zugewiesene Partnerbank",
+      "bankNameLabel": "Bankname",
+      "accountNameLabel": "Kontoname",
+      "defaultClientName": "Privatvermögenskunde",
+      "accountNumberLabel": "Kontonummer",
+      "routingLabel": "Routing- / SWIFT-Code",
+      "notice": "Eingehende Überweisungen werden innerhalb von 1 Werktag verbucht."
+    }
+  },
+  "SettingsPage": {
+    "title": "Kontoeinstellungen",
+    "subtitle": "Verwalten Sie Ihre Kontoübersicht, verknüpfte Zahlungsmethoden, Sicherheit und Privatvermögensfunktionen.",
+    "profile": {
+      "defaultName": "Benutzerprofil",
+      "readOnlyBadge": "Schreibgeschützt",
+      "fullNameLabel": "Vollständiger Name",
+      "emailLabel": "E-Mail-Adresse",
+      "countryLabel": "Land / Wohnsitz",
+      "notProvided": "Nicht angegeben",
+      "notSpecified": "Nicht spezifiziert"
+    },
+    "navSectionTitle": "Präferenzen & Verwaltung",
+    "items": {
+      "paymentMethods": {
+        "title": "Zahlungsmethoden",
+        "desc": "Banken & Kredit-/Debitkarten verknüpfen"
+      },
+      "security": {
+        "title": "Sicherheit & Passwort",
+        "desc": "Passwort ändern & aktive Sitzungen"
+      },
+      "notifications": {
+        "title": "Benachrichtigungen",
+        "desc": "E-Mail- & Sicherheitswarnungen konfigurieren"
+      },
+      "kyc": {
+        "title": "Identitätsprüfung",
+        "desc": "KYC-Status & Überweisungslimits"
+      },
+      "limits": {
+        "title": "Ausgaben- & Überweisungslimits",
+        "desc": "Tägliche Obergrenzen & Abzugsregeln festlegen"
+      },
+      "cardControls": {
+        "title": "Kartensteuerung & Sicherheit",
+        "desc": "Internationale Umschalter, Kategorie-Obergrenzen & PIN"
+      },
+      "beneficiaries": {
+        "title": "Begünstigte & Nachlass",
+        "desc": "Vertrauenswürdige Kontakte & Vermögenszuordnung"
+      },
+      "tax": {
+        "title": "Steuer- & Compliance-Hub",
+        "desc": "Auszüge, Jahresberichte & Wohnsitz"
+      },
+      "apiKeys": {
+        "title": "API-Schlüssel & Zugriff",
+        "desc": "Schreibgeschützte Token für Integrationen generieren"
+      }
+    }
+  },
+  "BillsPage": {
+    "backToDashboard": "Zurück zum Dashboard",
+    "title": "Tresor-Rechnungen & Rechnungsstellung",
+    "subtitle": "Verwalten und begleichen Sie Ihre Versorgungsunternehmen, Abonnements und Datenverpflichtungen.",
+    "activeObligations": "Aktive Verpflichtungen",
+    "dueDate": "Fällig",
+    "empty": {
+      "title": "Keine aktiven Rechnungen gefunden",
+      "description": "Klicken Sie oben auf \"Neue Rechnung hinzufügen\", um eine Versorgungszahlung oder ein Abonnement einzurichten."
+    },
+    "status": {
+      "paid": "Bezahlt",
+      "overdue": "Überfällig",
+      "pending": "Ausstehend"
+    }
+  },
+  "AddBillModal": {
+    "addButton": "Neue Rechnung hinzufügen",
+    "modalTitle": "Rechnung begleichen oder planen",
+    "modalSubtitle": "Wählen Sie einen Anbieter aus und geben Sie Ihren Betrag ein.",
+    "selectUtility": "Versorgungsunternehmen / Anbieter auswählen",
+    "billReference": "Rechnungsreferenz / Beschreibung",
+    "amountLabel": "Betrag (USD)",
+    "cancel": "Abbrechen",
+    "proceed": "Zur Zahlung fortfahren",
+    "categories": {
+      "electricity": "Stromrechnung (PHED)",
+      "water": "Wasserversorgung",
+      "internet": "Breitband-Datenpaket",
+      "streaming": "Netflix-Abonnement"
+    }
+  },
+  "TransactionsPage": {
+    "backToOverview": "Zurück zur Übersicht",
+    "title": "Transaktionsverlauf",
+    "description": "Vollständiger Prüfpfad aller eingehenden Gutschriften und ausgehenden Belastungen über Ihre Tresore hinweg.",
+    "exportCsv": "CSV exportieren"
+  },
+  "PaymentSettingsClient": {
+    "backToSettings": "Zurück zu den Einstellungen",
+    "pageTitle": "Zahlungseinstellungen",
+    "pageDescription": "Verwalten Sie Ihre externen Bankkonten und Kredit-/Debitkarten zur Finanzierung Ihres Tresors.",
+    "tabs": {
+      "banks": "Bankkonten",
+      "cards": "Karten"
+    },
+    "banksList": {
+      "title": "Ihre verknüpften Bankkonten",
+      "empty": "Noch keine Bankkonten verknüpft.",
+      "accountLabel": "Konto"
+    },
+    "bankForm": {
+      "title": "Externes Bankkonto verknüpfen",
+      "bankName": "Bankname",
+      "bankNamePlaceholder": "z. B. Chase",
+      "accountType": "Kontoart",
+      "checking": "Girokonto",
+      "savings": "Sparkonto",
+      "routingNumber": "Routing-Nummer",
+      "routingPlaceholder": "9 Ziffern",
+      "accountNumber": "Kontonummer",
+      "accountPlaceholder": "Vollständige Kontonummer",
+      "submitting": "Konto wird verknüpft...",
+      "submit": "Bankkonto verknüpfen"
+    },
+    "cardsList": {
+      "title": "Ihre verknüpften Karten",
+      "empty": "Noch keine Karten verknüpft.",
+      "expires": "Gültig bis"
+    },
+    "cardForm": {
+      "title": "Kredit- oder Debitkarte verknüpfen",
+      "holderName": "Name des Karteninhabers",
+      "holderPlaceholder": "Name wie auf der Karte angegeben",
+      "network": "Kartennetzwerk",
+      "number": "Kartennummer",
+      "numberPlaceholder": "16-stellige Kartennummer",
+      "expMonth": "Ablaufmonat",
+      "expMonthPlaceholder": "MM (z. B. 08)",
+      "expYear": "Ablaufjahr",
+      "expYearPlaceholder": "JJJJ (z. B. 2028)",
+      "cvc": "CVC / CVV",
+      "cvcPlaceholder": "3 oder 4 Ziffern",
+      "submitting": "Karte wird verknüpft...",
+      "submit": "Karte verknüpfen"
+    },
+    "securityNote": "Ihre Finanzinformationen werden verschlüsselt und gemäß strengen Bank-Compliance-Standards gespeichert.",
+    "success": {
+      "bankLinked": "Bankkonto verknüpft!",
+      "cardLinked": "Karte verknüpft!"
+    },
+    "errors": {
+      "bankFailed": "Bank konnte nicht verknüpft werden.",
+      "cardFailed": "Karte konnte nicht verknüpft werden."
+    }
+  },
+  "ApiKeysPage": {
+    "loading": "API-Schlüssel werden geladen...",
+    "backToSettings": "Zurück zu den Einstellungen",
+    "title": "Entwickler-API-Schlüssel",
+    "subtitle": "Generieren Sie API-Anmeldeinformationen für den programmatischen Zugriff auf Ihre Apex-Tresorkonten.",
+    "secretBanner": {
+      "title": "Kopieren Sie jetzt Ihren geheimen Schlüssel",
+      "warning": "Aus Sicherheitsgründen wird dieser Schlüssel <strong>nie wieder angezeigt</strong>. Kopieren Sie ihn jetzt und bewahren Sie ihn sicher auf.",
+      "copyKey": "Schlüssel kopieren",
+      "copied": "Kopiert!",
+      "dismiss": "Ich habe diesen Schlüssel sicher gespeichert"
+    },
+    "form": {
+      "title": "Neuen API-Schlüssel erstellen",
+      "nameLabel": "Schlüsselname / Bezeichnung",
+      "namePlaceholder": "z. B. Produktions-Webhook-Server",
+      "permissionsLabel": "Berechtigungsumfang",
+      "readOnlyOption": "Schreibgeschützt (Guthaben & Transaktionen anzeigen)",
+      "fullAccessOption": "Vvoller Zugriff (Überweisungen initiieren & Karten verwalten)",
+      "generating": "Wird generiert...",
+      "generateButton": "Anmeldeinformationen generieren"
+    },
+    "list": {
+      "title": "Aktive API-Schlüssel ({count})",
+      "empty": "Keine aktiven API-Schlüssel gefunden.",
+      "readOnlyBadge": "Schreibgeschützt",
+      "fullAccessBadge": "Voller Zugriff",
+      "lastUsed": "Zuletzt verwendet am {date}",
+      "neverUsed": "Nie verwendet",
+      "revokeTitle": "Schlüssel widerrufen"
+    },
+    "errors": {
+      "loadFailed": "API-Schlüssel konnten nicht geladen werden.",
+      "generateFailed": "Schlüssel konnte nicht generiert werden.",
+      "revokeFailed": "Schlüssel konnte nicht widerrufen werden."
+    },
+    "success": {
+      "revoked": "API-Schlüssel widerrufen."
+    }
+  },
+  "BeneficiariesPage": {
+    "loading": "Begünstigte werden geladen...",
+    "backToSettings": "Zurück zu den Einstellungen",
+    "title": "Begünstigte & Nachlasstransfer",
+    "subtitle": "Weisen Sie sekundäre Begünstigte zu und legen Sie Vermögensaufteilungs-Prozentsätze fest.",
+    "overview": {
+      "portfolioLabel": "Zugeordnetes Portfolio"
+    },
+    "form": {
+      "title": "Begünstigten hinzufügen",
+      "fullNameLabel": "Vollständiger Name",
+      "fullNamePlaceholder": "z. B. Eleanor Vance",
+      "emailLabel": "E-Mail-Adresse",
+      "emailPlaceholder": "eleanor@example.com",
+      "relationshipLabel": "Beziehung",
+      "allocationLabel": "Zuteilung (%)",
+      "allocationPlaceholder": "z. B. 50",
+      "saving": "Wird gespeichert...",
+      "saveButton": "Begünstigten speichern"
+    },
+    "relationships": {
+      "spouse": "Ehepartner/in",
+      "child": "Kind",
+      "parent": "Elternteil",
+      "sibling": "Geschwister",
+      "trust": "Familientreuhand",
+      "other": "Andere"
+    },
+    "list": {
+      "title": "Zugewiesene Begünstigte ({count})",
+      "empty": "Noch keine Begünstigten zugewiesen.",
+      "allocationSub": "Zuteilung"
+    },
+    "errors": {
+      "loadFailed": "Begünstigte konnten nicht geladen werden.",
+      "exceedsLimit": "Die Gesamtzuteilung darf 100 % nicht überschreiten. Verbleibend verfügbar: {remaining}%",
+      "addFailed": "Begünstigter konnte nicht hinzugefügt werden.",
+      "deleteFailed": "Begünstigter konnte nicht gelöscht werden."
+    },
+    "success": {
+      "added": "Begünstigter erfolgreich hinzugefügt!",
+      "removed": "Begünstigter entfernt."
+    }
+  },
+  "CardControlsPage": {
+    "loading": "Kartensteuerung wird geladen...",
+    "backToSettings": "Zurück zu den Einstellungen",
+    "title": "Kartensteuerung & Sicherheit",
+    "subtitle": "Transaktionsberechtigungen, Ausgabenlimits und Kartensicherheit verwalten.",
+    "cardTypes": {
+      "metal": "Metall",
+      "virtual": "Virtuell",
+      "suffix": "Karte"
+    },
+    "status": {
+      "frozen": "Gesperrt 🧊",
+      "active": "Aktiv ✅"
+    },
+    "buttons": {
+      "freeze": "Karte sperren",
+      "unfreeze": "Karte entsperren",
+      "updateLimit": "Limit aktualisieren",
+      "updating": "Wird aktualisiert..."
+    },
+    "togglesSectionTitle": "Transaktions-Umschalter",
+    "toggles": {
+      "international": {
+        "title": "Internationale Transaktionen",
+        "desc": "Grenzüberschreitende und ausländische Händlergebühren zulassen"
+      },
+      "atm": {
+        "title": "Geldautomat-Abhebungen",
+        "desc": "Physischen Bargeldzugriff an globalen Geldautomaten erlauben"
+      },
+      "online": {
+        "title": "Online-Einkäufe",
+        "desc": "E-Commerce- und Web-Abonnementzahlungen aktivieren"
+      }
+    },
+    "limitSectionTitle": "Monatliches Ausgabenlimit",
+    "limitLabel": "Limitbetrag ($)",
+    "spentThisMonth": "Diesen Monat ausgegeben: ${spent} / ${limit}",
+    "errors": {
+      "loadFailed": "Kartensteuerung konnte nicht geladen werden.",
+      "notFound": "Kartendetails nicht gefunden.",
+      "limitFailed": "Ausgabenlimit konnte nicht aktualisiert werden."
+    },
+    "success": {
+      "limitUpdated": "Ausgabenlimit erfolgreich aktualisiert!"
+    }
+  },
+  "TaxSettingsPage": {
+    "loading": "Steuerdetails werden geladen...",
+    "backToSettings": "Zurück zu den Einstellungen",
+    "title": "Steuer- & Compliance-Hub",
+    "subtitle": "Regulatorische Meldungen, steuerlichen Wohnsitz und jährliche Berichterstattungsdokumente verwalten.",
+    "form": {
+      "sectionTitle": "Regulatorische Informationen",
+      "residencyLabel": "Primärer steuerlicher Wohnsitz",
+      "tinLabel": "TIN / SSN / EIN",
+      "tinSub": "Sensible IDs sind zum Schutz maskiert.",
+      "fatcaLabel": "FATCA-Klassifizierung",
+      "fatcaOptions": {
+        "exempt": "Befreiter Empfänger",
+        "activeNffe": "Aktives NFFE",
+        "passiveNffe": " Passives NFFE",
+        "participatingFfi": "Teilnehmendes FFI"
+      },
+      "usStatusLabel": "US-Steuerstatus",
+      "usPersonToggle": "Deklarierte US-Person",
+      "saving": "Wird gespeichert...",
+      "saveButton": "Compliance-Profil speichern"
+    },
+    "documents": {
+      "sectionTitle": "Jährliche Steuerdokumente",
+      "downloadBtn": "PDF herunterladen",
+      "form1099": {
+        "title": "Formular 1099-INT (Zinserträge)",
+        "meta": "Steuerjahr 2025 • Verfügbar"
+      },
+      "portfolioSummary": {
+        "title": "Jährliche Tresor-Portfolioübersicht",
+        "meta": "Steuerjahr 2025 • Verfügbar"
+      }
+    },
+    "errors": {
+      "loadFailed": "Steuereinstellungen konnten nicht geladen werden.",
+      "updateFailed": "Profil konnte nicht aktualisiert werden."
+    },
+    "success": {
+      "profileUpdated": "Steuer- & Compliance-Profil aktualisiert."
+    }
+  },
+  "CustomerLoginPage": {
+    "title": "Privattresor Anmelden",
+    "subtitle": "Auf Mehrwährungs-Liquiditätspositionierung und Hauptbuchdienste zugreifen",
+    "adminPortalLink": "Interne Operationen / Admin-Portal"
+  },
+  "LoginForm": {
+    "validation": {
+      "invalidEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+      "passwordRequired": "Passwort ist erforderlich"
+    },
+    "errors": {
+      "invalidCredentials": "Ungültige E-Mail-Adresse oder falsches Passwort."
+    },
+    "fields": {
+      "emailLabel": "E-Mail-Adresse",
+      "passwordLabel": "Passwort"
+    },
+    "buttons": {
+      "authenticating": "Authentifizierung läuft...",
+      "signIn": "Im Portal anmelden"
+    },
+    "footer": {
+      "prompt": "Sie benötigen einen Privattresor?",
+      "createAccount": "Konto erstellen"
+    }
+  },
+  "CustomerRegisterPage": {
+    "title": "Privattresor-Konto erstellen",
+    "subtitle": "Schritt {step} von 2 — Profil & Anmeldeinformationen",
+    "fields": {
+      "fullNameLabel": "Vollständiger gesetzlicher Name",
+      "fullNamePlaceholder": "z. B. Max Mustermann",
+      "emailLabel": "E-Mail-Adresse",
+      "passwordLabel": "Passwort",
+      "genderLabel": "Geschlecht",
+      "countryLabel": "Land",
+      "phoneLabel": "Telefonnummer",
+      "addressLabel": "Wohnanschrift (Straße)",
+      "idLabel": "Behördlicher Ausweis (Reisepass / SSN / Personalausweis)",
+      "idPlaceholder": "Ausweis- / Reisepassnummer"
+    },
+    "genderOptions": {
+      "male": "Männlich",
+      "female": "Weiblich",
+      "other": "Divers",
+      "preferNotToSay": "Keine Angabe"
+    },
+    "buttons": {
+      "continue": "Weiter zur Identitätseinrichtung",
+      "back": "Zurück",
+      "creating": "Tresorkonto wird erstellt...",
+      "openAccount": "Konto jetzt eröffnen"
+    },
+    "termsText": "Ich akzeptiere die Nutzungsbedingungen und stimme elektronischen Identitätsprüfungen zu.",
+    "footer": {
+      "prompt": "Bereits registriert?",
+      "signIn": "Anmelden"
+    },
+    "errors": {
+      "termsRequired": "Sie müssen die Nutzungsbedingungen akzeptieren.",
+      "registrationFailed": "Registrierung fehlgeschlagen.",
+      "loginPrompt": "Konto erstellt! Bitte melden Sie sich an."
+    }
+  },
+  "InputGroup": {
+    "hidePassword": "Passwort verbergen",
+    "showPassword": "Passwort anzeigen"
+  },
+  "CTA": {
+    "altImage": "Apex Bank Secure Vault Vorschau",
+    "titlePrefix": "Bereit, Ihr Vermögen abzusichern mit",
+    "titleHighlight": "Apex Bank",
+    "description": "Eröffnen Sie Ihren privaten Mehrwährungstresor in wenigen Minuten. Abgesichert durch kryptografische Zwei-Faktor-Authentifizierung und Echtzeit-Geräteprüfung.",
+    "openAccount": "Kostenloses Konto eröffnen",
+    "signIn": "Im Tresor anmelden"
+  },
+  "FAQ": {
+    "badge": "Institutionelle Anfragen",
+    "titlePrefix": "Häufig gestellte",
+    "titleHighlight": "Fragen",
+    "description": "Alles, was Sie über unsere kryptografischen Privattresore, Sicherheitsprotokolle und Mehrwährungshauptbücher wissen müssen.",
+    "q1": "Wie werden meine Mehrwährungsvermögenswerte in Privattresoren geschützt?",
+    "a1": "Alle Privattresore sind durch militärische AES-256-Verschlüsselung in Kombination mit hardwarebasierten kryptografischen Schlüsseln geschützt. Vermögenswerte werden in regionsübergreifenden Liquiditätsknoten mit Echtzeit-Geräteprüfung isoliert.",
+    "q2": "Welche Sicherheitsmaßnahmen sind bei der Kontoeinrichtung erforderlich?",
+    "a2": "Apex Bank erfordert eine zeitbasierte Einmalpasswort-Zwei-Faktor-Authentifizierung (TOTP 2FA) über Authenticator-Apps, Geräte-Fingerprinting und kryptografisch verifizierte Sitzungen für jede Transaktion.",
+    "q3": "Wie schnell sind internationale Währungstausche und Überweisungen?",
+    "a3": "Mehrwährungs-Bargeldhauptbücher werden sofort innerhalb Ihres internen Tresor城的netzwerks abgerechnet. Externe institutionelle Überweisungsabwicklungen erfolgen über dedizierte globale Bankknoten mit Echtzeit-Tracking.",
+    "q4": "Kann ich institutionelle Unterkonten und Berechtigungen verwalten?",
+    "a4": "Ja. Unternehmens- und institutionelle Profile unterstützen eine benutzerdefinierte rollenbasierte Zugriffskontrolle (RBAC), mit der Sie Teammitgliedern spezifische Multi-Signatur- und Prüfungsberechtigungen zuweisen können."
+  },
+  "Features": {
+    "badge": "Unternehmensinfrastruktur",
+    "titlePrefix": "Entwickelt für absolute",
+    "titleHighlight": "Privatsphäre & Kontrolle",
+    "description": "Entdecken Sie die Kernprotokolle und die Bankarchitektur zum Schutz Ihrer Privattresore und institutionellen Vermögenswerte.",
+    "explore": "Technisches Protokoll erkunden",
+    "f1Title": "Härtete Zwei-Faktor-Sicherheit",
+    "f1Desc": "Fortschrittliche TOTP-Verifizierungsworkflows gekoppelt mit benutzerdefinierten Autorisierungskontrollpunkten, die jede Sitzung schützen.",
+    "f1Badge": "Kryptografisch",
+    "f2Title": "Mehrwährungshauptbücher",
+    "f2Desc": "Nahtlose Echtzeit-Liquiditätspositionierung und Saldenverwaltung über USD-, EUR- und globale Vermögenswert-Hauptbücher.",
+    "f2Badge": "Globale Vermögenswerte",
+    "f3Title": "Automatisierte Geräte-Prüfpfade",
+    "f3Desc": "Echtzeit-User-Agent-Analyse, IP-Protokollierung und Sitzungsverfolgung für absolute Transparenz und Rechenschaftspflicht.",
+    "f3Badge": "Live-Tracking"
+  },
+  "Footer": {
+    "brandDescription": "Institutionelle Mehrwährungshauptbücher und kryptografische Privattresor-Architektur für vermögende Privatkunden.",
+    "encrypted": "AES-256 verschlüsselt",
+    "globalNodes": "Globale Knoten aktiv",
+    "platformTitle": "Plattform",
+    "features": "Funktionen & Hauptbücher",
+    "security": "Sicherheitsübersicht",
+    "onboarding": "Onboarding-Schritte",
+    "login": "Privattresor-Anmeldung",
+    "complianceTitle": "Compliance",
+    "register": "Konto eröffnen",
+    "deviceAudit": "Geräte-Prüfpfade",
+    "totp": "TOTP 2FA-Protokolle",
+    "privacyPolicy": "Datenschutzbestimmungen",
+    "resourcesTitle": "Ressourcen",
+    "github": "GitHub-Repository",
+    "apiDocs": "API-Dokumentation",
+    "systemStatus": "Systemstatus",
+    "rights": "Apex Bank Enterprise. Alle Rechte vorbehalten.",
+    "securityTerms": "Sicherheitsbedingungen",
+    "privacyNotice": "Datenschutzhinweis",
+    "auditLogs": "Prüfprotokolle"
+  },
+  "GlobalNetwork": {
+    "badge": "Internationale Infrastruktur",
+    "titlePrefix": "Globale Liquidität &",
+    "titleHighlight": "Sichere Knoten",
+    "description": "Entwickelt mit regionsübergreifender Redundanz und latenzarmem, verschlüsseltem Routing über wichtige globale Finanzzentren.",
+    "status": "Betriebsbereit",
+    "latencyText": "Latenz",
+    "nyRegion": "Nordamerika",
+    "nyCity": "New York",
+    "ldnRegion": "Europa",
+    "ldnCity": "London",
+    "zrhRegion": "Mitteleuropa",
+    "zrhCity": "Zürich",
+    "sgpRegion": "Asien-Pazifik",
+    "sgpCity": "Singapur"
+  },
+  "Hero": {
+    "badge": "Privattresor- & Hauptbuch-Architektur der nächsten Generation",
+    "titlePrefix": "Institutionelles Banking für",
+    "titleHighlight": "globalen Wohlstand",
+    "description": "Übernehmen Sie die vollständige Kontrolle über die Mehrwährungs-Liquiditätspositionierung und die Hauptbuchprüfung in Echtzeit. Abgesichert durch kryptografische Zwei-Faktor-Sicherheit für absolute Privatsphäre.",
+    "check1": "USD- & EUR-Mehrwährungshauptbuch",
+    "check2": "Härtete TOTP 2FA-Authentifizierung",
+    "check3": "Automatisierte Geräte-Prüfpfade",
+    "check4": "Sofortige verschlüsselte Überweisungen",
+    "accessVault": "Auf Privattresor zugreifen",
+    "enteringVault": "Tresor wird betreten...",
+    "createAccount": "Konto erstellen",
+    "preparingPortal": "Portal wird vorbereitet...",
+    "altImage": "Apex Bank Tresor UI Vorschau",
+    "portfolioLabel": "Gesamtportfolio"
+  },
+  "Navbar": {
+    "subtitle": "Privattresor-Hauptbuch",
+    "features": "Plattformfunktionen",
+    "security": "Unternehmenssicherheit",
+    "multiCurrency": "Mehrwährung",
+    "compliance": "Compliance & Audit",
+    "signIn": "Anmelden",
+    "openAccount": "Konto eröffnen",
+    "ariaLabel": "Navigationsmenü umschalten"
+  },
+  "OnboardingSteps": {
+    "badge": "Nahtloser Übergang",
+    "titlePrefix": "Ihr Weg zu",
+    "titleHighlight": "sicherem Wohlstand",
+    "description": "Starten Sie bei Apex Bank in drei strukturierten, kryptografisch geschützten Schritten.",
+    "phaseText": "Phase",
+    "altImage": "Apex Bank Onboarding-Workflow Vorschau",
+    "s1Title": "Sicheres Profil eröffnen",
+    "s1Desc": "Registrieren Sie Ihr institutionelles oder privates Konto in wenigen Minuten mit verschlüsselten Anmeldeinformationen.",
+    "s2Title": "TOTP 2FA konfigurieren",
+    "s2Desc": "Scannen Sie Ihren Authenticator-QR-Code, um Ihre Sitzung mit Multifaktorsicherheit zu härten.",
+    "s3Title": "Auf Privattresor zugreifen",
+    "s3Desc": "Verwalten Sie Mehrwährungs-Bargeldhauptbücher und überwachen Sie Geräte-Prüfpfade in Echtzeit."
+  },
+  "SecurityOverview": {
+    "badge": "Kryptografische Verteidigung",
+    "titlePrefix": "Kompromisslose",
+    "titleHighlight": "Tresorsicherheit",
+    "description": "Apex Bank implementiert strenge Sicherheitsschichten und Multifaktor-Autorisierungskontrollpunkte, um sicherzustellen, dass Ihre privaten Finanzwerte vollständig geschützt bleiben.",
+    "activeProtection": "Aktiver Schutz aktiviert",
+    "p1Title": "Kryptografisches Anmeldeinformations-Hashing",
+    "p1Desc": "Passwörter werden durch branchenübliche bcrypt-Verschlüsselung geschützt, um Benutzerkonten vor unbefugten Zugriffsversuchen zu bewahren.",
+    "p1Badge": "Bcrypt & Salt",
+    "p2Title": "Zeitbasierte Einmalpasswörter (TOTP)",
+    "p2Desc": "Erzwingen Sie die Multifaktor-Authentifizierung mit 6-stelligen Authenticator-Codes, die bei jedem Anmeldesitzungs-Prüfpunkt erforderlich sind.",
+    "p2Badge": "TOTP 2FA",
+    "p3Title": "Geräte- & IP-Prüfprotokollierung",
+    "p3Desc": "Automatisierte User-Agent-Analyse und sichere IP-Adressverfolgung protokollieren jede Anmeldesitzung für absolute Rechenschaftspflicht und Transparenz.",
+    "p3Badge": "Prüfpfade",
+    "p4Title": "NextAuth-Sitzungshärtung",
+    "p4Desc": "Benutzerdefinierte Anmeldefehlerbehandlung und JWT-Strategiemuster verhindern Token-Lecks und sichern geschützte Tresorrouten.",
+    "p4Badge": "Tokensicherheit"
+  }
+}

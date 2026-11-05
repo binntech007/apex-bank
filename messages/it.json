@@ -1,0 +1,826 @@
+{
+  "Dashboard": {
+    "welcomeBack": "Bentornato, {name}",
+    "subtitle": "Posizionamento di cassa per patrimoni privati e trasferimenti immediati su mastro multivaluta.",
+    "sendWire": "Invia bonifico",
+    "metalCards": "Carte in metallo",
+    "kycPending": "La verifica della tua identità è attualmente in fase di revisione da parte del nostro team di compliance.",
+    "kycRejected": "Il tuo tentativo di verifica è stato rifiutato. Rivedi i tuoi dati e inviali nuovamente.",
+    "kycRequired": "Verifica dell'identità richiesta. Completa il tuo KYC per sbloccare tutti i privilegi dell'account.",
+    "checkStatus": "Verifica stato",
+    "verifyNow": "Verifica ora"
+  },
+  "Sidebar": {
+    "overview": "Panoramica",
+    "transfers": "Trasferimenti",
+    "metalCards": "Carte in metallo",
+    "loans": "Prestiti",
+    "investment": "Investimenti",
+    "kycVerification": "Verifica KYC",
+    "settings": "Impostazioni",
+    "navigation": "Navigazione",
+    "compliance": "Compliance",
+    "adminPanel": "Pannello di amministrazione",
+    "customer": "Cliente",
+    "signOut": "Disconnettiti"
+  },
+  "VaultSection": {
+    "title": "Saldi attivi del caveau",
+    "activeVaultsCount": "{count} {count, plural, =1 {Caveau attivo} other {Caveau attivi}}",
+    "openNewVault": "Apri nuovo caveau"
+  },
+  "TransfersPage": {
+    "title": "Trasferimenti e pagamenti",
+    "description": "Sposta fondi internamente tra i caveau, paga altri utenti o esegui bonifici SWIFT internazionali."
+  },
+  "TransferTabs": {
+    "myVaults": "I miei caveau",
+    "payUser": "Paga utente",
+    "wireTransfer": "Bonifico bancario"
+  },
+  "InternalTransferForm": {
+    "title": "Scambio interno tra caveau",
+    "description": "Scambia fondi istantaneamente tra i tuoi caveau utilizzando i tassi di cambio amministrativi in tempo reale.",
+    "fromVault": "Dal caveau",
+    "toVault": "Al caveau",
+    "balanceLabel": "Saldo",
+    "amountToSend": "Importo da inviare",
+    "exchangeRate": "Tasso di cambio",
+    "rateNotSet": "Tasso non impostato",
+    "recipientReceives": "Il destinatario riceve",
+    "processing": "Elaborazione scambio...",
+    "executeSwap": "Esegui scambio",
+    "errors": {
+      "invalidAmount": "Inserisci un importo di trasferimento valido.",
+      "sameVault": "Il caveau di origine e quello di destinazione devono essere differenti.",
+      "swapFailed": "Scambio non riuscito."
+    },
+    "success": {
+      "swapCompleted": "Scambio completato!"
+    }
+  },
+  "QuickActions": {
+    "sectionTitle": "Azioni rapide",
+    "addMoney": {
+      "label": "Aggiungi fondi",
+      "desc": "Finanzia i tuoi conti in caveau"
+    },
+    "sendWire": {
+      "label": "Invia bonifico",
+      "desc": "Trasferimento istantaneo su mastro"
+    },
+    "payBills": {
+      "label": "Paga bollette",
+      "desc": "Pagamenti pianificati"
+    },
+    "history": {
+      "label": "Cronologia",
+      "desc": "Visualizza il registro transazioni completo"
+    },
+    "cardLimits": {
+      "label": "Limiti carta",
+      "desc": "Gestisci i tetti di spesa"
+    }
+  },
+  "TransactionTable": {
+    "title": "Transazioni recenti",
+    "viewAll": "Visualizza tutte le registrazioni",
+    "emptyState": {
+      "title": "Nessuna voce di mastro registrata finora.",
+      "description": "Avvia un trasferimento o un cambio valuta per popolare la cronologia del tuo mastro."
+    },
+    "headers": {
+      "description": "Descrizione",
+      "type": "Tipo",
+      "date": "Data di registrazione",
+      "amount": "Importo"
+    },
+    "types": {
+      "credit": "Credito / Deposito",
+      "debit": "Addebito / Uscita"
+    }
+  },
+  "CardsPage": {
+    "backToDashboard": "Torna alla dashboard",
+    "pageTitle": "Carte virtuali e in metallo",
+    "pageDescription": "Gestisci carte fisiche in metallo multivaluta e carte virtuali usa e getta istantanee.",
+    "issueNewCard": "Emetti nuova carta",
+    "empty": {
+      "title": "Nessuna carta attiva",
+      "description": "Non hai carte virtuali o fisiche emesse. Clicca qui sotto per emettere la tua prima carta dai saldi del caveau.",
+      "button": "Emetti la tua prima carta"
+    },
+    "card": {
+      "expires": "SCADENZA",
+      "showDetails": "Mostra dettagli",
+      "hideDetails": "Nascondi dettagli",
+      "copyNumber": "Copia numero",
+      "copied": "Copiato!",
+      "freezeCard": "Blocca carta",
+      "unfreeze": "Sblocca"
+    },
+    "issuedList": {
+      "title": "Le tue carte emesse",
+      "cardLabel": "Carta",
+      "statusLabel": "Stato"
+    },
+    "modal": {
+      "title": "Emetti nuova carta",
+      "subtitle": "Le commissioni della carta vengono detratte direttamente dal saldo del caveau selezionato.",
+      "tierLabel": "Seleziona livello carta",
+      "virtualTitle": "Carta virtuale",
+      "virtualDesc": "Utilizzo digitale istantaneo",
+      "virtualFee": "Commissione di $ 5,00",
+      "metalTitle": "Metallo fisico",
+      "metalDesc": "Fisica multivaluta",
+      "metalFee": "Commissione di $ 50,00",
+      "vaultLabel": "Paga dal caveau",
+      "noVaults": "Nessun conto in caveau trovato.",
+      "accountLabel": "Conto",
+      "holderLabel": "Nome del titolare della carta",
+      "processing": "Elaborazione pagamento...",
+      "confirmVirtual": "Conferma e paga $ 5,00",
+      "confirmMetal": "Conferma e paga $ 50,00"
+    },
+    "errors": {
+      "selectVault": "Seleziona un conto in caveau da cui effettuare il pagamento.",
+      "purchaseFailed": "Elaborazione dell'acquisto non riuscita."
+    }
+  },
+  "LoansPage": {
+    "backToDashboard": "Torna alla dashboard",
+    "pageTitle": "Crediti e prestiti aziendali",
+    "pageDescription": "Richiedi linee di credito e monitora lo stato di approvazione della domanda.",
+    "applyButton": "Richiedi prestito",
+    "applicationsTitle": "Le tue richieste",
+    "empty": {
+      "title": "Nessuna richiesta di prestito",
+      "description": "Non hai richieste di prestito attive o in sospeso. Invia una richiesta per accedere a finanziamenti flessibili.",
+      "button": "Richiedi ora"
+    },
+    "status": {
+      "pending": "Revisione in sospeso",
+      "approved": "Approvato",
+      "rejected": "Rifiutato",
+      "paid": "Interamente pagato"
+    },
+    "card": {
+      "requestedAmount": "Importo richiesto",
+      "term": "Durata",
+      "months": "Mesi",
+      "monthlyEst": "Stima mensile",
+      "interest": "Interesse",
+      "submitted": "Inviato"
+    },
+    "modal": {
+      "title": "Richiedi linea di credito",
+      "subtitle": "Le richieste vengono esaminate dagli amministratori della banca entro 24 ore.",
+      "vaultLabel": "Conto in caveau di destinazione",
+      "accountLabel": "Conto",
+      "amountLabel": "Importo del prestito ($)",
+      "termLabel": "Durata (Mesi)",
+      "purposeLabel": "Scopo",
+      "submitting": "Invio richiesta...",
+      "submitButton": "Invia richiesta di prestito"
+    },
+    "errors": {
+      "selectVault": "Seleziona un caveau di destinazione.",
+      "submissionFailed": "Invio non riuscito."
+    }
+  },
+  "InvestmentsPage": {
+    "backToDashboard": "Torna alla dashboard",
+    "pageTitle": "Portafoglio di investimento",
+    "pageDescription": "Accresci il tuo patrimonio in azioni, criptovalute, obbligazioni e materie prime.",
+    "newInvestment": "Nuovo investimento",
+    "portfolioValue": "Valore totale del portafoglio",
+    "activeBadge": "Attivo",
+    "empty": {
+      "title": "Nessun investimento",
+      "description": "Non hai partecipazioni di investimento attive. Seleziona una classe di attività e inizia a costruire il tuo portafoglio oggi.",
+      "button": "Acquista primo asset"
+    },
+    "card": {
+      "units": "unità",
+      "totalInvested": "Totale investito",
+      "currentPrice": "Prezzo attuale",
+      "status": "Stato",
+      "purchased": "Acquistato"
+    },
+    "modal": {
+      "title": "Acquista asset di investimento",
+      "subtitle": "I fondi saranno detratti direttamente dal conto in caveau prescelto.",
+      "fundingVault": "Caveau di finanziamento",
+      "accountLabel": "Conto",
+      "assetName": "Nome asset",
+      "symbol": "Simbolo / Ticker",
+      "category": "Categoria",
+      "quantity": "Quantità",
+      "unitPrice": "Prezzo unitario ($)",
+      "totalPurchase": "Importo totale acquisto:",
+      "processing": "Elaborazione investimento...",
+      "confirmButton": "Conferma acquisto",
+      "categories": {
+        "stocks": "Azioni",
+        "crypto": "Criptovalute",
+        "bonds": "Obbligazioni",
+        "commodities": "Materie prime"
+      }
+    },
+    "errors": {
+      "selectVault": "Seleziona un caveau per finanziare questo investimento.",
+      "purchaseFailed": "Completamento dell'acquisto non riuscito."
+    }
+  },
+  "KycClient": {
+    "backToSettings": "Torna alle impostazioni",
+    "title": "Verifica dell'identità (KYC)",
+    "subtitle": "Verifica la tua identità per sbloccare limiti di trasferimento più alti e nuove funzioni.",
+    "statusLabel": "Stato",
+    "statuses": {
+      "pending": "In sospeso",
+      "approved": "Approvato",
+      "rejected": "Rifiutato"
+    },
+    "statusDesc": {
+      "pending": "I tuoi documenti sono attualmente in fase di revisione da parte del nostro team di compliance.",
+      "approved": "Il tuo account è completamente verificato.",
+      "rejected": "Rivedi i tuoi dati e inviali nuovamente."
+    },
+    "form": {
+      "fullName": "Nome completo legale",
+      "fullNamePlaceholder": "Come mostrato sul documento ufficiale",
+      "idType": "Tipo di documento d'identità",
+      "idTypes": {
+        "passport": "Passaporto",
+        "nationalId": "Carta d'identità nazionale",
+        "driversLicense": "Patente di guida"
+      },
+      "idNumber": "Numero documento d'identità",
+      "idNumberPlaceholder": "Numero identificativo del documento"
+    },
+    "upload": {
+      "title": "Carica documento d'identità",
+      "subtitle": "Foto frontale del passaporto o della carta d'identità",
+      "chooseFile": "Scegli file",
+      "attached": "✓ Documento d'identità allegato"
+    },
+    "selfie": {
+      "title": "Verifica facciale",
+      "subtitle": "Allinea il tuo viso all'interno del riquadro sottostante",
+      "attached": "✓ Selfie verificato e allegato"
+    },
+    "submitButton": {
+      "default": "Invia verifica",
+      "processing": "Invio verifica in corso..."
+    },
+    "errors": {
+      "noDocument": "Carica il tuo documento d'identità.",
+      "noSelfie": "Scatta un selfie utilizzando la fotocamera.",
+      "failed": "Invio non riuscito."
+    },
+    "success": {
+      "submitted": "KYC inviato con successo!"
+    }
+  },
+  "DepositPage": {
+    "backToDashboard": "Torna alla dashboard",
+    "title": "Aggiungi fondi e depositi",
+    "subtitle": "Finanzia i tuoi caveau di ricchezza privata tramite bonifico bancario o registra un deposito diretto sul conto.",
+    "wireInstructions": {
+      "title": "Istruzioni per il bonifico",
+      "partnerBank": "Banca partner assegnata",
+      "bankNameLabel": "Nome della banca",
+      "accountNameLabel": "Nome del conto",
+      "defaultClientName": "Cliente Private Wealth",
+      "accountNumberLabel": "Numero di conto",
+      "routingLabel": "Codice SWIFT / Routing",
+      "notice": "I bonifici in entrata vengono accreditati entro 1 giorno lavorativo."
+    }
+  },
+  "SettingsPage": {
+    "title": "Impostazioni account",
+    "subtitle": "Gestisci la panoramica del tuo account, i metodi di pagamento collegati, la sicurezza e le funzioni di wealth management.",
+    "profile": {
+      "defaultName": "Profilo utente",
+      "readOnlyBadge": "Sola lettura",
+      "fullNameLabel": "Nome completo",
+      "emailLabel": "Indirizzo email",
+      "countryLabel": "Paese / Residenza",
+      "notProvided": "Non fornito",
+      "notSpecified": "Non specificato"
+    },
+    "navSectionTitle": "Preferenze e gestione",
+    "items": {
+      "paymentMethods": {
+        "title": "Metodi di pagamento",
+        "desc": "Collega banche e carte di credito/debito"
+      },
+      "security": {
+        "title": "Sicurezza e password",
+        "desc": "Cambia password e sessioni attive"
+      },
+      "notifications": {
+        "title": "Notifiche",
+        "desc": "Configura avvisi email e di sicurezza"
+      },
+      "kyc": {
+        "title": "Verifica dell'identità",
+        "desc": "Stato KYC e limiti di trasferimento"
+      },
+      "limits": {
+        "title": "Limiti di spesa e trasferimento",
+        "desc": "Imposta tetti giornalieri e regole di prelievo"
+      },
+      "cardControls": {
+        "title": "Controlli carta e sicurezza",
+        "desc": "Attivazioni internazionali, tetti per categoria e PIN"
+      },
+      "beneficiaries": {
+        "title": "Beneficiari ed eredità",
+        "desc": "Contatti di fiducia e assegnazione beni"
+      },
+      "tax": {
+        "title": "Hub fiscale e di compliance",
+        "desc": "Estratti conto, report annuali e residenza"
+      },
+      "apiKeys": {
+        "title": "Chiavi API e accesso",
+        "desc": "Genera token di sola lettura per integrazioni"
+      }
+    }
+  },
+  "BillsPage": {
+    "backToDashboard": "Torna alla dashboard",
+    "title": "Bollette e fatture del caveau",
+    "subtitle": "Gestisci e salda le tue utenze, gli abbonamenti e gli obblighi di dati.",
+    "activeObligations": "Obblighi attivi",
+    "dueDate": "Scadenza",
+    "empty": {
+      "title": "Nessuna bolletta attiva trovata",
+      "description": "Clicca su \"Aggiungi nuova bolletta\" in alto per configurare il pagamento di un'utenza o un abbonamento."
+    },
+    "status": {
+      "paid": "Pagato",
+      "overdue": "Scaduto",
+      "pending": "In sospeso"
+    }
+  },
+  "AddBillModal": {
+    "addButton": "Aggiungi nuova bolletta",
+    "modalTitle": "Salda o pianifica bolletta",
+    "modalSubtitle": "Scegli un fornitore e inserisci l'importo.",
+    "selectUtility": "Seleziona utenza / fornitore",
+    "billReference": "Riferimento bolletta / Descrizione",
+    "amountLabel": "Importo (USD)",
+    "cancel": "Annulla",
+    "proceed": "Procedi al pagamento",
+    "categories": {
+      "electricity": "Bolletta della luce (PHED)",
+      "water": "Servizio idrico",
+      "internet": "Pacchetto dati banda larga",
+      "streaming": "Abbonamento Netflix"
+    }
+  },
+  "TransactionsPage": {
+    "backToOverview": "Torna alla panoramica",
+    "title": "Cronologia transazioni",
+    "description": "Audit trail completo di tutti i crediti in entrata e addebiti in uscita nei tuoi caveau.",
+    "exportCsv": "Esporta CSV"
+  },
+  "PaymentSettingsClient": {
+    "backToSettings": "Torna alle impostazioni",
+    "pageTitle": "Impostazioni di pagamento",
+    "pageDescription": "Gestisci i tuoi conti bancari esterni e le carte di credito/debito per finanziare il tuo caveau.",
+    "tabs": {
+      "banks": "Conti bancari",
+      "cards": "Carte"
+    },
+    "banksList": {
+      "title": "I tuoi conti bancari collegati",
+      "empty": "Nessun conto bancario collegato.",
+      "accountLabel": "Conto"
+    },
+    "bankForm": {
+      "title": "Collega conto bancario esterno",
+      "bankName": "Nome della banca",
+      "bankNamePlaceholder": "es. Chase",
+      "accountType": "Tipo di conto",
+      "checking": "Conto corrente",
+      "savings": "Conto di risparmio",
+      "routingNumber": "Codice routing",
+      "routingPlaceholder": "9 cifre",
+      "accountNumber": "Numero di conto",
+      "accountPlaceholder": "Numero di conto completo",
+      "submitting": "Collegamento conto...",
+      "submit": "Collega conto bancario"
+    },
+    "cardsList": {
+      "title": "Le tue carte collegate",
+      "empty": "Nessuna carta collegata.",
+      "expires": "Scadenza"
+    },
+    "cardForm": {
+      "title": "Collega carta di credito o debito",
+      "holderName": "Nome del titolare della carta",
+      "holderPlaceholder": "Nome come appare sulla carta",
+      "network": "Circuito della carta",
+      "number": "Numero carta",
+      "numberPlaceholder": "Numero carta a 16 cifre",
+      "expMonth": "Mese di scadenza",
+      "expMonthPlaceholder": "MM (es. 08)",
+      "expYear": "Anno di scadenza",
+      "expYearPlaceholder": "AAAA (es. 2028)",
+      "cvc": "CVC / CVV",
+      "cvcPlaceholder": "3 o 4 cifre",
+      "submitting": "Collegamento carta...",
+      "submit": "Collega carta"
+    },
+    "securityNote": "Le tue informazioni finanziarie sono crittografate e archiviate secondo i severi standard di conformità bancaria.",
+    "success": {
+      "bankLinked": "Conto bancario collegato!",
+      "cardLinked": "Carta collegata!"
+    },
+    "errors": {
+      "bankFailed": "Collegamento della banca non riuscito.",
+      "cardFailed": "Collegamento della carta non riuscito."
+    }
+  },
+  "ApiKeysPage": {
+    "loading": "Caricamento chiavi API...",
+    "backToSettings": "Torna alle impostazioni",
+    "title": "Chiavi API per sviluppatori",
+    "subtitle": "Genera credenziali API per l'accesso programmatico ai tuoi conti Apex Vault.",
+    "secretBanner": {
+      "title": "Copia subito la tua chiave segreta",
+      "warning": "Per motivi di sicurezza, questa chiave <strong>non verrà mai più mostrata</strong>. Assicurati di copiarla ora e di conservarla in modo sicuro.",
+      "copyKey": "Copia chiave",
+      "copied": "Copiato!",
+      "dismiss": "Ho salvato questa chiave in modo sicuro"
+    },
+    "form": {
+      "title": "Crea nuova chiave API",
+      "nameLabel": "Nome chiave / Etichetta",
+      "namePlaceholder": "es. Server Webhook di produzione",
+      "permissionsLabel": "Ambito dei permessi",
+      "readOnlyOption": "Sola lettura (Visualizza saldi e transazioni)",
+      "fullAccessOption": "Accesso completo (Avvia trasferimenti e gestisci carte)",
+      "generating": "Generazione in corso...",
+      "generateButton": "Genera credenziali"
+    },
+    "list": {
+      "title": "Chiavi API attive ({count})",
+      "empty": "Nessuna chiave API attiva trovata.",
+      "readOnlyBadge": "Sola lettura",
+      "fullAccessBadge": "Accesso completo",
+      "lastUsed": "Ultimo utilizzo {date}",
+      "neverUsed": "Mai usata",
+      "revokeTitle": "Revoca chiave"
+    },
+    "errors": {
+      "loadFailed": "Caricamento delle chiavi API non riuscito.",
+      "generateFailed": "Generazione della chiave non riuscita.",
+      "revokeFailed": "Revoca della chiave non riuscita."
+    },
+    "success": {
+      "revoked": "Chiave API revocata."
+    }
+  },
+  "BeneficiariesPage": {
+    "loading": "Caricamento beneficiari...",
+    "backToSettings": "Torna alle impostazioni",
+    "title": "Beneficiari e trasferimento eredità",
+    "subtitle": "Assegna beneficiari secondari e imposta le percentuali di allocazione dei beni.",
+    "overview": {
+      "portfolioLabel": "Portafoglio allocato"
+    },
+    "form": {
+      "title": "Aggiungi beneficiario",
+      "fullNameLabel": "Nome completo",
+      "fullNamePlaceholder": "es. Eleanor Vance",
+      "emailLabel": "Indirizzo email",
+      "emailPlaceholder": "eleanor@example.com",
+      "relationshipLabel": "Relazione",
+      "allocationLabel": "Allocazione (%)",
+      "allocationPlaceholder": "es. 50",
+      "saving": "Salvataggio...",
+      "saveButton": "Salva beneficiario"
+    },
+    "relationships": {
+      "spouse": "Coniuge",
+      "child": "Figlio/a",
+      "parent": "Genitore",
+      "sibling": "Fratello/Sorella",
+      "trust": "Trust familiare",
+      "other": "Altro"
+    },
+    "list": {
+      "title": "Beneficiari assegnati ({count})",
+      "empty": "Nessun beneficiario assegnato.",
+      "allocationSub": "Allocazione"
+    },
+    "errors": {
+      "loadFailed": "Caricamento dei beneficiari non riuscito.",
+      "exceedsLimit": "L'allocazione totale non può superare il 100%. Disponibile rimanente: {remaining}%",
+      "addFailed": "Aggiunta del beneficiario non riuscita.",
+      "deleteFailed": "Eliminazione del beneficiario non riuscita."
+    },
+    "success": {
+      "added": "Beneficiario aggiunto con successo!",
+      "removed": "Beneficiario rimosso."
+    }
+  },
+  "CardControlsPage": {
+    "loading": "Caricamento controlli carta...",
+    "backToSettings": "Torna alle impostazioni",
+    "title": "Controlli carta e sicurezza",
+    "subtitle": "Gestisci autorizzazioni di transazione, tetti di spesa e sicurezza della carta.",
+    "cardTypes": {
+      "metal": "Metallo",
+      "virtual": "Virtuale",
+      "suffix": "Carta"
+    },
+    "status": {
+      "frozen": "Bloccata 🧊",
+      "active": "Attiva ✅"
+    },
+    "buttons": {
+      "freeze": "Blocca carta",
+      "unfreeze": "Sblocca carta",
+      "updateLimit": "Aggiorna limite",
+      "updating": "Aggiornamento..."
+    },
+    "togglesSectionTitle": "Attivazioni transazioni",
+    "toggles": {
+      "international": {
+        "title": "Transazioni internazionali",
+        "desc": "Consenti transazioni transfrontaliere e addebiti di esercenti esteri"
+      },
+      "atm": {
+        "title": "Prelievi ATM",
+        "desc": "Consenti l'accesso fisico al contante presso gli ATM globali"
+      },
+      "online": {
+        "title": "Acquisti online",
+        "desc": "Abilita pagamenti e-commerce e abbonamenti web"
+      }
+    },
+    "limitSectionTitle": "Limite di spesa mensile",
+    "limitLabel": "Importo limite ($)",
+    "spentThisMonth": "Speso questo mese: ${spent} / ${limit}",
+    "errors": {
+      "loadFailed": "Caricamento dei controlli carta non riuscito.",
+      "notFound": "Dettagli della carta non trovati.",
+      "limitFailed": "Aggiornamento del limite di spesa non riuscito."
+    },
+    "success": {
+      "limitUpdated": "Limite di spesa aggiornato con successo!"
+    }
+  },
+  "TaxSettingsPage": {
+    "loading": "Caricamento dettagli fiscali...",
+    "backToSettings": "Torna alle impostazioni",
+    "title": "Hub fiscale e di compliance",
+    "subtitle": "Gestisci dichiarazioni normative, residenza fiscale e documenti di rendicontazione annuale.",
+    "form": {
+      "sectionTitle": "Informazioni normative",
+      "residencyLabel": "Residenza fiscale principale",
+      "tinLabel": "TIN / SSN / EIN",
+      "tinSub": "Gli ID sensibili sono mascherati per protezione.",
+      "fatcaLabel": "Classificazione FATCA",
+      "fatcaOptions": {
+        "exempt": "Percipiente esente",
+        "activeNffe": "NFFE attivo",
+        "passiveNffe": "NFFE passivo",
+        "participatingFfi": "FFI partecipante"
+      },
+      "usStatusLabel": "Stato fiscale USA",
+      "usPersonToggle": "Soggetto US dichiarato",
+      "saving": "Salvataggio...",
+      "saveButton": "Salva profilo di compliance"
+    },
+    "documents": {
+      "sectionTitle": "Documenti fiscali annuali",
+      "downloadBtn": "Scarica PDF",
+      "form1099": {
+        "title": "Modulo 1099-INT (Redditi da interessi)",
+        "meta": "Anno fiscale 2025 • Disponibile"
+      },
+      "portfolioSummary": {
+        "title": "Riepilogo annuale portafoglio caveau",
+        "meta": "Anno fiscale 2025 • Disponibile"
+      }
+    },
+    "errors": {
+      "loadFailed": "Caricamento delle impostazioni fiscali non riuscito.",
+      "updateFailed": "Aggiornamento del profilo non riuscito."
+    },
+    "success": {
+      "profileUpdated": "Profilo fiscale e di compliance aggiornato."
+    }
+  },
+  "CustomerLoginPage": {
+    "title": "Accesso al caveau privato",
+    "subtitle": "Accedi al posizionamento di cassa multivaluta e ai servizi di mastro",
+    "adminPortalLink": "Operazioni interne / Portale amministrativo"
+  },
+  "LoginForm": {
+    "validation": {
+      "invalidEmail": "Inserisci un indirizzo email valido",
+      "passwordRequired": "La password è obbligatoria"
+    },
+    "errors": {
+      "invalidCredentials": "Email o password non validi."
+    },
+    "fields": {
+      "emailLabel": "Indirizzo email",
+      "passwordLabel": "Password"
+    },
+    "buttons": {
+      "authenticating": "Autenticazione in corso...",
+      "signIn": "Accedi al portale"
+    },
+    "footer": {
+      "prompt": "Hai bisogno di un caveau privato?",
+      "createAccount": "Crea account"
+    }
+  },
+  "CustomerRegisterPage": {
+    "title": "Crea conto in caveau privato",
+    "subtitle": "Passaggio {step} di 2 — Profilo e credenziali",
+    "fields": {
+      "fullNameLabel": "Nome completo legale",
+      "fullNamePlaceholder": "es. Mario Rossi",
+      "emailLabel": "Indirizzo email",
+      "passwordLabel": "Password",
+      "genderLabel": "Genere",
+      "countryLabel": "Paese",
+      "phoneLabel": "Numero di telefono",
+      "addressLabel": "Indirizzo di residenza",
+      "idLabel": "Documento d'identità governativo (Passaporto / SSN / Carta d'identità)",
+      "idPlaceholder": "Numero documento / Passaporto"
+    },
+    "genderOptions": {
+      "male": "Maschio",
+      "female": "Femmina",
+      "other": "Altro",
+      "preferNotToSay": "Preferisco non specificare"
+    },
+    "buttons": {
+      "continue": "Continua alla configurazione dell'identità",
+      "back": "Indietro",
+      "creating": "Creazione conto in caveau...",
+      "openAccount": "Apri conto ora"
+    },
+    "termsText": "Accetto i termini di servizio e acconsento ai controlli di verifica elettronica dell'identità.",
+    "footer": {
+      "prompt": "Sei già registrato?",
+      "signIn": "Accedi"
+    },
+    "errors": {
+      "termsRequired": "Devi accettare i termini di servizio.",
+      "registrationFailed": "Registrazione non riuscita.",
+      "loginPrompt": "Account creato! Effettua l'accesso."
+    }
+  },
+  "InputGroup": {
+    "hidePassword": "Nascondi password",
+    "showPassword": "Mostra password"
+  },
+  "CTA": {
+    "altImage": "Anteprima del caveau sicuro Apex Bank",
+    "titlePrefix": "Pronto a proteggere i tuoi beni con",
+    "titleHighlight": "Apex Bank",
+    "description": "Apri il tuo caveau privato multivaluta in pochi minuti. Protetto da autenticazione a due fattori crittografica e audit dei dispositivi in tempo reale.",
+    "openAccount": "Apri conto gratuito",
+    "signIn": "Accedi al caveau"
+  },
+  "FAQ": {
+    "badge": "Richieste istituzionali",
+    "titlePrefix": "Domande",
+    "titleHighlight": "frequenti",
+    "description": "Tutto ciò che devi sapere sui nostri caveau privati crittografici, protocolli di sicurezza e mastri multivaluta.",
+    "q1": "Come sono protetti i miei beni multivaluta nei caveau privati?",
+    "a1": "Tutti i caveau privati sono protetti tramite crittografia AES-256 di livello militare combinata con chiavi crittografiche basate su hardware. Gli asset sono isolati all'interno di nodi di liquidità multi-regione con audit dei dispositivi in tempo reale.",
+    "q2": "Quali misure di sicurezza sono richieste durante la configurazione dell'account?",
+    "a2": "Apex Bank richiede l'autenticazione a due fattori (2FA) con password monouso basata sul tempo (TOTP) tramite app di autenticazione, impronta digitale del dispositivo e sessioni verificate crittograficamente per ogni transazione.",
+    "q3": "Quanto sono rapidi i cambi valuta internazionali e i trasferimenti?",
+    "a3": "I mastri di cassa multivaluta si regolano istantaneamente all'interno della tua rete di caveau interna. I regolamenti di bonifico istituzionale esterno vengono elaborati tramite nodi bancari globali dedicati con tracciamento in tempo reale.",
+    "q4": "Posso gestire sotto-account istituzionali e permessi?",
+    "a4": "Sì. I profili aziendali e istituzionali supportano il controllo degli accessi basato sui ruoli personalizzati (RBAC), consentendoti di assegnare specifici privilegi di firma multipla e audit ai membri del team."
+  },
+  "Features": {
+    "badge": "Infrastruttura aziendale",
+    "titlePrefix": "Progettato per assoluta",
+    "titleHighlight": "privacy e controllo",
+    "description": "Scopri i protocolli principali e l'architettura bancaria progettati per salvaguardare i tuoi caveau privati e asset istituzionali.",
+    "explore": "Esplora il protocollo tecnico",
+    "f1Title": "Sicurezza a due fattori avanzata",
+    "f1Desc": "Flussi di lavoro di verifica TOTP avanzati abbinati a checkpoint di autorizzazione personalizzati che proteggono ogni sessione.",
+    "f1Badge": "Crittografico",
+    "f2Title": "Mastri multivaluta",
+    "f2Desc": "Posizionamento di cassa in tempo reale e gestione dei saldi senza interruzioni su mastri USD, EUR e asset globali.",
+    "f2Badge": "Asset globali",
+    "f3Title": "Audit trail di dispositivi automatizzati",
+    "f3Desc": "Analisi degli user agent in tempo reale, registrazione IP e tracciamento delle sessioni che garantiscono trasparenza e responsabilità complete.",
+    "f3Badge": "Tracciamento in tempo reale"
+  },
+  "Footer": {
+    "brandDescription": "Mastri multivaluta di livello istituzionale e architettura di caveau privati crittografici progettati per la gestione patrimoniale digitale di grandi patrimoni.",
+    "encrypted": "Crittografia AES-256",
+    "globalNodes": "Nodi globali attivi",
+    "platformTitle": "Piattaforma",
+    "features": "Funzioni e mastri",
+    "security": "Panoramica sicurezza",
+    "onboarding": "Fasi di onboarding",
+    "login": "Accesso al caveau privato",
+    "complianceTitle": "Compliance",
+    "register": "Apri conto",
+    "deviceAudit": "Audit trail dei dispositivi",
+    "totp": "Protocolli 2FA TOTP",
+    "privacyPolicy": "Informativa sulla privacy",
+    "resourcesTitle": "Risorse",
+    "github": "Repository GitHub",
+    "apiDocs": "Documentazione API",
+    "systemStatus": "Stato del sistema",
+    "rights": "Apex Bank Enterprise. Tutti i diritti riservati.",
+    "securityTerms": "Termini di sicurezza",
+    "privacyNotice": "Avviso sulla privacy",
+    "auditLogs": "Log di audit"
+  },
+  "GlobalNetwork": {
+    "badge": "Infrastruttura internazionale",
+    "titlePrefix": "Liquidità globale e",
+    "titleHighlight": "nodi sicuri",
+    "description": "Progettato con ridondanza multi-regione e routing crittografato a bassa latenza nei principali centri finanziari globali.",
+    "status": "Operativo",
+    "latencyText": "latenza",
+    "nyRegion": "Nord America",
+    "nyCity": "New York",
+    "ldnRegion": "Europa",
+    "ldnCity": "Londra",
+    "zrhRegion": "Europa Centrale",
+    "zrhCity": "Zurigo",
+    "sgpRegion": "Asia-Pacifico",
+    "sgpCity": "Singapore"
+  },
+  "Hero": {
+    "badge": "Architettura di caveau e mastro privato di nuova generazione",
+    "titlePrefix": "Banking di livello istituzionale per la",
+    "titleHighlight": "ricchezza globale",
+    "description": "Prendi il controllo completo del posizionamento di cassa multivaluta e dell'audit dei mastri in tempo reale. Protetto da sicurezza crittografica a due fattori per una privacy assoluta.",
+    "check1": "Mastro multivaluta USD e EUR",
+    "check2": "Autenticazione TOTP 2FA avanzata",
+    "check3": "Audit trail di dispositivi automatizzati",
+    "check4": "Trasferimenti crittografici istantanei",
+    "accessVault": "Accedi al caveau privato",
+    "enteringVault": "Accesso al caveau...",
+    "createAccount": "Crea account",
+    "preparingPortal": "Preparazione portale...",
+    "altImage": "Anteprima UI caveau Apex Bank",
+    "portfolioLabel": "Portafoglio totale"
+  },
+  "Navbar": {
+    "subtitle": "Mastro caveau privato",
+    "features": "Funzioni della piattaforma",
+    "security": "Sicurezza aziendale",
+    "multiCurrency": "Multivaluta",
+    "compliance": "Compliance e audit",
+    "signIn": "Accedi",
+    "openAccount": "Apri conto",
+    "ariaLabel": "Attiva/disattiva menu di navigazione"
+  },
+  "OnboardingSteps": {
+    "badge": "Transizione fluida",
+    "titlePrefix": "Il tuo percorso verso la",
+    "titleHighlight": "ricchezza sicura",
+    "description": "Inizia con Apex Bank in tre passaggi strutturati e protetti crittograficamente.",
+    "phaseText": "Fase",
+    "altImage": "Anteprima flusso di onboarding Apex Bank",
+    "s1Title": "Apri profilo sicuro",
+    "s1Desc": "Registra il tuo account istituzionale o privato in pochi minuti con credenziali crittografate.",
+    "s2Title": "Configura TOTP 2FA",
+    "s2Desc": "Scansiona il codice QR dell'autenticatore per rafforzare la tua sessione con la sicurezza multifattore.",
+    "s3Title": "Accedi al caveau privato",
+    "s3Desc": "Gestisci i mastri di cassa multivaluta e monitora gli audit trail dei dispositivi in tempo reale."
+  },
+  "SecurityOverview": {
+    "badge": "Difesa crittografica",
+    "titlePrefix": "Sicurezza del caveau",
+    "titleHighlight": "senza compromessi",
+    "description": "Apex Bank implementa rigorosi livelli di sicurezza e checkpoint di autorizzazione multifattore progettati per garantire che i tuoi beni finanziari privati rimangano completamente protetti.",
+    "activeProtection": "Protezione attiva abilitata",
+    "p1Title": "Hashing crittografico delle credenziali",
+    "p1Desc": "Le password sono protette utilizzando l'hashing di crittografia bcrypt standard del settore per salvaguardare gli account utente da tentativi di accesso non autorizzati.",
+    "p1Badge": "Bcrypt e Salt",
+    "p2Title": "Password monouso basate sul tempo (TOTP)",
+    "p2Desc": "Imponi l'autenticazione multifattore con codici autenticatore a 6 cifre richiesti in ogni punto di verifica della sessione di accesso.",
+    "p2Badge": "TOTP 2FA",
+    "p3Title": "Registrazione audit dispositivi e IP",
+    "p3Desc": "L'analisi automatica degli user agent e il tracciamento sicuro degli indirizzi IP registrano ogni sessione di accesso per totale responsabilità e trasparenza.",
+    "p3Badge": "Audit trail",
+    "p4Title": "Rafforzamento della sessione NextAuth",
+    "p4Desc": "La gestione personalizzata degli errori di accesso delle credenziali e i modelli di strategia JWT prevengono la perdita di token e proteggono le rotte protette del caveau.",
+    "p4Badge": "Sicurezza dei token"
+  }
+}

@@ -1,0 +1,826 @@
+{
+  "Dashboard": {
+    "welcomeBack": "Bon retour, {name}",
+    "subtitle": "Positionnement de trésorerie privée et transferts instantanés sur grand livre multi-devises.",
+    "sendWire": "Envoyer un virement",
+    "metalCards": "Cartes en métal",
+    "kycPending": "Votre vérification d'identité est actuellement en cours d'examen par notre équipe de conformité.",
+    "kycRejected": "Votre tentative de vérification a été rejetée. Veuillez vérifier vos informations et les soumettre à nouveau.",
+    "kycRequired": "Vérification d'identité requise. Complétez votre KYC pour débloquer l'ensemble des privilèges du compte.",
+    "checkStatus": "Vérifier le statut",
+    "verifyNow": "Vérifier maintenant"
+  },
+  "Sidebar": {
+    "overview": "Aperçu",
+    "transfers": "Virements",
+    "metalCards": "Cartes en métal",
+    "loans": "Prêts",
+    "investment": "Investissement",
+    "kycVerification": "Vérification KYC",
+    "settings": "Paramètres",
+    "navigation": "Navigation",
+    "compliance": "Conformité",
+    "adminPanel": "Panneau d'administration",
+    "customer": "Client",
+    "signOut": "Se déconnecter"
+  },
+  "VaultSection": {
+    "title": "Soldes des coffres actifs",
+    "activeVaultsCount": "{count} {count, plural, =1 {Coffre actif} other {Coffres actifs}}",
+    "openNewVault": "Ouvrir un nouveau coffre"
+  },
+  "TransfersPage": {
+    "title": "Virements et Paiements",
+    "description": "Transférez des fonds en interne entre les coffres, payez d'autres utilisateurs ou effectuez des virements SWIFT internationaux."
+  },
+  "TransferTabs": {
+    "myVaults": "Mes coffres",
+    "payUser": "Payer un utilisateur",
+    "wireTransfer": "Virement international"
+  },
+  "InternalTransferForm": {
+    "title": "Échange interne entre coffres",
+    "description": "Échangez instantanément des fonds entre vos coffres en utilisant les taux de change administratifs en direct.",
+    "fromVault": "Du coffre",
+    "toVault": "Vers le coffre",
+    "balanceLabel": "Solde",
+    "amountToSend": "Montant à envoyer",
+    "exchangeRate": "Taux de change",
+    "rateNotSet": "Taux non défini",
+    "recipientReceives": "Le bénéficiaire reçoit",
+    "processing": "Traitement de l'échange...",
+    "executeSwap": "Exécuter l'échange",
+    "errors": {
+      "invalidAmount": "Veuillez entrer un montant de transfert valide.",
+      "sameVault": "Les coffres source et de destination doivent être différents.",
+      "swapFailed": "Échec de l'échange."
+    },
+    "success": {
+      "swapCompleted": "Échange effectué !"
+    }
+  },
+  "QuickActions": {
+    "sectionTitle": "Actions rapides",
+    "addMoney": {
+      "label": "Ajouter de l'argent",
+      "desc": "Alimenter vos comptes de coffre"
+    },
+    "sendWire": {
+      "label": "Envoyer un virement",
+      "desc": "Transfert instantané du grand livre"
+    },
+    "payBills": {
+      "label": "Payer les factures",
+      "desc": "Paiements planifiés"
+    },
+    "history": {
+      "label": "Historique",
+      "desc": "Voir le journal complet des transactions"
+    },
+    "cardLimits": {
+      "label": "Limites de carte",
+      "desc": "Gérer les plafonds de dépenses"
+    }
+  },
+  "TransactionTable": {
+    "title": "Transactions récentes",
+    "viewAll": "Voir toutes les écritures",
+    "emptyState": {
+      "title": "Aucune écriture comptable pour le moment.",
+      "description": "Initiez un virement ou un échange de devises pour alimenter votre historique."
+    },
+    "headers": {
+      "description": "Description",
+      "type": "Type",
+      "date": "Date de valeur",
+      "amount": "Montant"
+    },
+    "types": {
+      "credit": "Crédit / Dépôt",
+      "debit": "Débit / Sortie"
+    }
+  },
+  "CardsPage": {
+    "backToDashboard": "Retour au tableau de bord",
+    "pageTitle": "Cartes métalliques et virtuelles",
+    "pageDescription": "Gérez des cartes métalliques physiques multidevises et des cartes virtuelles jetables instantanées.",
+    "issueNewCard": "Émettre une nouvelle carte",
+    "empty": {
+      "title": "Aucune carte active pour le moment",
+      "description": "Vous n'avez aucune carte virtuelle ou physique émise. Cliquez ci-dessous pour émettre votre première carte à partir du solde de vos coffres.",
+      "button": "Émettre votre première carte"
+    },
+    "card": {
+      "expires": "EXPIRE",
+      "showDetails": "Afficher les détails",
+      "hideDetails": "Masquer les détails",
+      "copyNumber": "Copier le numéro",
+      "copied": "Copié !",
+      "freezeCard": "Geler la carte",
+      "unfreeze": "Dégeler"
+    },
+    "issuedList": {
+      "title": "Vos cartes émises",
+      "cardLabel": "Carte",
+      "statusLabel": "Statut"
+    },
+    "modal": {
+      "title": "Émettre une nouvelle carte",
+      "subtitle": "Les frais de carte sont déduits directement du solde de votre coffre sélectionné.",
+      "tierLabel": "Sélectionner le type de carte",
+      "virtualTitle": "Carte virtuelle",
+      "virtualDesc": "Usage numérique instantané",
+      "virtualFee": "Frais de 5,00 $",
+      "metalTitle": "Métal physique",
+      "metalDesc": "Physique multidevise",
+      "metalFee": "Frais de 50,00 $",
+      "vaultLabel": "Payer depuis le coffre",
+      "noVaults": "Aucun compte de coffre trouvé.",
+      "accountLabel": "Compte",
+      "holderLabel": "Nom du titulaire",
+      "processing": "Traitement du paiement...",
+      "confirmVirtual": "Confirmer et payer 5,00 $",
+      "confirmMetal": "Confirmer et payer 50,00 $"
+    },
+    "errors": {
+      "selectVault": "Veuillez sélectionner un compte de coffre pour effectuer le paiement.",
+      "purchaseFailed": "Échec du traitement de l'achat."
+    }
+  },
+  "LoansPage": {
+    "backToDashboard": "Retour au tableau de bord",
+    "pageTitle": "Crédits et prêts professionnels",
+    "pageDescription": "Demandez des facilités de crédit et suivez l'état d'approbation de vos demandes.",
+    "applyButton": "Demander un prêt",
+    "applicationsTitle": "Vos demandes",
+    "empty": {
+      "title": "Aucune demande de prêt",
+      "description": "Vous n'avez aucune demande de prêt active ou en attente. Soumettez une demande pour accéder à un financement flexible.",
+      "button": "Postuler maintenant"
+    },
+    "status": {
+      "pending": "En attente de révision",
+      "approved": "Approuvé",
+      "rejected": "Rejeté",
+      "paid": "Entièrement remboursé"
+    },
+    "card": {
+      "requestedAmount": "Montant demandé",
+      "term": "Durée",
+      "months": "Mois",
+      "monthlyEst": "Est. mensuelle",
+      "interest": "Intérêt",
+      "submitted": "Soumis"
+    },
+    "modal": {
+      "title": "Demander une ligne de crédit",
+      "subtitle": "Les demandes sont examinées par les administrateurs de la banque dans les 24 heures.",
+      "vaultLabel": "Compte de coffre de destination",
+      "accountLabel": "Compte",
+      "amountLabel": "Montant du prêt ($)",
+      "termLabel": "Durée (Mois)",
+      "purposeLabel": "Motif",
+      "submitting": "Soumission de la demande...",
+      "submitButton": "Soumettre la demande de prêt"
+    },
+    "errors": {
+      "selectVault": "Veuillez sélectionner un coffre de destination.",
+      "submissionFailed": "Échec de la soumission."
+    }
+  },
+  "InvestmentsPage": {
+    "backToDashboard": "Retour au tableau de bord",
+    "pageTitle": "Portefeuille d'investissement",
+    "pageDescription": "Faites croître votre patrimoine grâce aux actions, cryptos, obligations et matières premières.",
+    "newInvestment": "Nouvel investissement",
+    "portfolioValue": "Valeur totale du portefeuille",
+    "activeBadge": "Actif",
+    "empty": {
+      "title": "Aucun investissement pour le moment",
+      "description": "Vous n'avez pas de placements actifs. Sélectionnez une classe d'actifs et commencez à constituer votre portefeuille dès aujourd'hui.",
+      "button": "Acheter un premier actif"
+    },
+    "card": {
+      "units": "unités",
+      "totalInvested": "Total investi",
+      "currentPrice": "Prix actuel",
+      "status": "Statut",
+      "purchased": "Acheté"
+    },
+    "modal": {
+      "title": "Acheter un actif d'investissement",
+      "subtitle": "Les fonds seront déduits directement du compte de coffre choisi.",
+      "fundingVault": "Coffre de financement",
+      "accountLabel": "Compte",
+      "assetName": "Nom de l'actif",
+      "symbol": "Symbole / Ticker",
+      "category": "Catégorie",
+      "quantity": "Quantité",
+      "unitPrice": "Prix unitaire ($)",
+      "totalPurchase": "Montant total d'achat :",
+      "processing": "Traitement de l'investissement...",
+      "confirmButton": "Confirmer l'achat",
+      "categories": {
+        "stocks": "Actions",
+        "crypto": "Crypto",
+        "bonds": "Obligations",
+        "commodities": "Matières premières"
+      }
+    },
+    "errors": {
+      "selectVault": "Veuillez sélectionner un coffre pour financer cet investissement.",
+      "purchaseFailed": "Échec de l'achat."
+    }
+  },
+  "KycClient": {
+    "backToSettings": "Retour aux paramètres",
+    "title": "Vérification d'identité (KYC)",
+    "subtitle": "Vérifiez votre identité pour débloquer des limites de transfert et des fonctionnalités supérieures.",
+    "statusLabel": "Statut",
+    "statuses": {
+      "pending": "En attente",
+      "approved": "Approuvé",
+      "rejected": "Rejeté"
+    },
+    "statusDesc": {
+      "pending": "Vos documents sont actuellement en cours d'examen par notre équipe de conformité.",
+      "approved": "Votre compte est entièrement vérifié.",
+      "rejected": "Veuillez vérifier vos informations et les soumettre à nouveau."
+    },
+    "form": {
+      "fullName": "Nom complet légal",
+      "fullNamePlaceholder": "Tel qu'indiqué sur la pièce d'identité officielle",
+      "idType": "Type de pièce d'identité",
+      "idTypes": {
+        "passport": "Passeport",
+        "nationalId": "Carte d'identité nationale",
+        "driversLicense": "Permis de conduire"
+      },
+      "idNumber": "Numéro de pièce d'identité",
+      "idNumberPlaceholder": "Numéro d'identification du document"
+    },
+    "upload": {
+      "title": "Télécharger la pièce d'identité",
+      "subtitle": "Photo de face de votre passeport ou pièce d'identité",
+      "chooseFile": "Choisir un fichier",
+      "attached": "✓ Pièce d'identité jointe"
+    },
+    "selfie": {
+      "title": "Vérification faciale",
+      "subtitle": "Alignez votre visage dans le cadre ci-dessous",
+      "attached": "✓ Selfie vérifié et joint"
+    },
+    "submitButton": {
+      "default": "Soumettre la vérification",
+      "processing": "Soumission de la vérification..."
+    },
+    "errors": {
+      "noDocument": "Veuillez télécharger votre pièce d'identité.",
+      "noSelfie": "Veuillez prendre un selfie à l'aide de la caméra.",
+      "failed": "Échec de la soumission."
+    },
+    "success": {
+      "submitted": "KYC soumis avec succès !"
+    }
+  },
+  "DepositPage": {
+    "backToDashboard": "Retour au tableau de bord",
+    "title": "Ajouter des fonds et des dépôts",
+    "subtitle": "Alimentez vos coffres de gestion de patrimoine par virement ou enregistrez un dépôt direct sur compte.",
+    "wireInstructions": {
+      "title": "Instructions de virement",
+      "partnerBank": "Banque partenaire attribuée",
+      "bankNameLabel": "Nom de la banque",
+      "accountNameLabel": "Nom du compte",
+      "defaultClientName": "Client de gestion de patrimoine",
+      "accountNumberLabel": "Numéro de compte",
+      "routingLabel": "Code d'acheminement / SWIFT",
+      "notice": "Les virements entrants s'affichent sous 1 jour ouvrable."
+    }
+  },
+  "SettingsPage": {
+    "title": "Paramètres du compte",
+    "subtitle": "Gérez l'aperçu de votre compte, vos modes de paiement associés, la sécurité et les fonctionnalités de gestion de patrimoine.",
+    "profile": {
+      "defaultName": "Profil utilisateur",
+      "readOnlyBadge": "Lecture seule",
+      "fullNameLabel": "Nom complet",
+      "emailLabel": "Adresse e-mail",
+      "countryLabel": "Pays / Résidence",
+      "notProvided": "Non fourni",
+      "notSpecified": "Non spécifié"
+    },
+    "navSectionTitle": "Préférences et gestion",
+    "items": {
+      "paymentMethods": {
+        "title": "Modes de paiement",
+        "desc": "Associer des banques et des cartes de crédit/débit"
+      },
+      "security": {
+        "title": "Sécurité et mot de passe",
+        "desc": "Changer le mot de passe et sessions actives"
+      },
+      "notifications": {
+        "title": "Notifications",
+        "desc": "Configurer les e-mails et alertes de sécurité"
+      },
+      "kyc": {
+        "title": "Vérification d'identité",
+        "desc": "Statut KYC et limites de virement"
+      },
+      "limits": {
+        "title": "Limites de dépenses et de virement",
+        "desc": "Définir les plafonds journaliers et règles de retrait"
+      },
+      "cardControls": {
+        "title": "Contrôles des cartes et sécurité",
+        "desc": "Options internationales, plafonds par catégorie et PIN"
+      },
+      "beneficiaries": {
+        "title": "Bénéficiaires et succession",
+        "desc": "Contacts de confiance et attribution d'actifs"
+      },
+      "tax": {
+        "title": "Centre fiscal et de conformité",
+        "desc": "Relevés, rapports annuels et résidence"
+      },
+      "apiKeys": {
+        "title": "Clés API et accès",
+        "desc": "Générer des jetons en lecture seule pour les intégrations"
+      }
+    }
+  },
+  "BillsPage": {
+    "backToDashboard": "Retour au tableau de bord",
+    "title": "Factures et reçus du coffre",
+    "subtitle": "Gérez et réglez vos factures de services publics, abonnements et obligations de données.",
+    "activeObligations": "Obligations actives",
+    "dueDate": "Échéance",
+    "empty": {
+      "title": "Aucune facture active trouvée",
+      "description": "Cliquez sur « Ajouter une nouvelle facture » ci-dessus pour configurer un paiement de service ou un abonnement."
+    },
+    "status": {
+      "paid": "Payé",
+      "overdue": "En retard",
+      "pending": "En attente"
+    }
+  },
+  "AddBillModal": {
+    "addButton": "Ajouter une nouvelle facture",
+    "modalTitle": "Régler ou planifier une facture",
+    "modalSubtitle": "Choisissez un fournisseur et entrez votre montant.",
+    "selectUtility": "Sélectionner le service / fournisseur",
+    "billReference": "Référence de la facture / Description",
+    "amountLabel": "Montant (USD)",
+    "cancel": "Annuler",
+    "proceed": "Procéder au paiement",
+    "categories": {
+      "electricity": "Facture d'électricité (PHED)",
+      "water": "Service de distribution d'eau",
+      "internet": "Forfait de données haut débit",
+      "streaming": "Abonnement Netflix"
+    }
+  },
+  "TransactionsPage": {
+    "backToOverview": "Retour à la vue d'ensemble",
+    "title": "Historique des transactions",
+    "description": "Piste d'audit complète de tous les crédits entrants et débits sortants sur vos coffres.",
+    "exportCsv": "Exporter en CSV"
+  },
+  "PaymentSettingsClient": {
+    "backToSettings": "Retour aux paramètres",
+    "pageTitle": "Paramètres de paiement",
+    "pageDescription": "Gérez vos comptes bancaires externes et vos cartes de crédit/débit pour alimenter votre coffre.",
+    "tabs": {
+      "banks": "Comptes bancaires",
+      "cards": "Cartes"
+    },
+    "banksList": {
+      "title": "Vos comptes bancaires liés",
+      "empty": "Aucun compte bancaire lié pour le moment.",
+      "accountLabel": "Compte"
+    },
+    "bankForm": {
+      "title": "Lier un compte bancaire externe",
+      "bankName": "Nom de la banque",
+      "bankNamePlaceholder": "ex. Chase",
+      "accountType": "Type de compte",
+      "checking": "Chèque",
+      "savings": "Épargne",
+      "routingNumber": "Numéro d'acheminement",
+      "routingPlaceholder": "9 chiffres",
+      "accountNumber": "Numéro de compte",
+      "accountPlaceholder": "Numéro de compte complet",
+      "submitting": "Liaison du compte...",
+      "submit": "Lier le compte bancaire"
+    },
+    "cardsList": {
+      "title": "Vos cartes liées",
+      "empty": "Aucune carte liée pour le moment.",
+      "expires": "Expire"
+    },
+    "cardForm": {
+      "title": "Lier une carte de crédit ou de débit",
+      "holderName": "Nom du titulaire",
+      "holderPlaceholder": "Nom tel qu'il apparaît sur la carte",
+      "network": "Réseau de la carte",
+      "number": "Numéro de carte",
+      "numberPlaceholder": "Numéro de carte à 16 chiffres",
+      "expMonth": "Mois d'expiration",
+      "expMonthPlaceholder": "MM (ex. 08)",
+      "expYear": "Année d'expiration",
+      "expYearPlaceholder": "AAAA (ex. 2028)",
+      "cvc": "CVC / CVV",
+      "cvcPlaceholder": "3 ou 4 chiffres",
+      "submitting": "Liaison de la carte...",
+      "submit": "Lier la carte"
+    },
+    "securityNote": "Vos informations financières sont cryptées et stockées conformément aux normes strictes de conformité bancaire.",
+    "success": {
+      "bankLinked": "Compte bancaire lié !",
+      "cardLinked": "Carte liée !"
+    },
+    "errors": {
+      "bankFailed": "Échec de la liaison de la banque.",
+      "cardFailed": "Échec de la liaison de la carte."
+    }
+  },
+  "ApiKeysPage": {
+    "loading": "Chargement des clés API...",
+    "backToSettings": "Retour aux paramètres",
+    "title": "Clés API développeur",
+    "subtitle": "Générez des identifiants API pour un accès programmatique à vos comptes Apex Vault.",
+    "secretBanner": {
+      "title": "Copiez votre clé secrète maintenant",
+      "warning": "Pour des raisons de sécurité, cette clé ne sera <strong>plus jamais affichée</strong>. Veillez à la copier dès maintenant et à la stocker en toute sécurité.",
+      "copyKey": "Copier la clé",
+      "copied": "Copié !",
+      "dismiss": "J'ai enregistré cette clé en toute sécurité"
+    },
+    "form": {
+      "title": "Créer une nouvelle clé API",
+      "nameLabel": "Nom / Libellé de la clé",
+      "namePlaceholder": "ex. Serveur Webhook de production",
+      "permissionsLabel": "Portée des autorisations",
+      "readOnlyOption": "Lecture seule (Afficher soldes et transactions)",
+      "fullAccessOption": "Accès complet (Initier des transferts et gérer les cartes)",
+      "generating": "Génération...",
+      "generateButton": "Générer les identifiants"
+    },
+    "list": {
+      "title": "Clés API actives ({count})",
+      "empty": "Aucune clé API active trouvée.",
+      "readOnlyBadge": "Lecture seule",
+      "fullAccessBadge": "Accès complet",
+      "lastUsed": "Dernière utilisation le {date}",
+      "neverUsed": "Jamais utilisée",
+      "revokeTitle": "Révoquer la clé"
+    },
+    "errors": {
+      "loadFailed": "Échec du chargement des clés API.",
+      "generateFailed": "Échec de la génération de la clé.",
+      "revokeFailed": "Échec de la révocation de la clé."
+    },
+    "success": {
+      "revoked": "Clé API révoquée."
+    }
+  },
+  "BeneficiariesPage": {
+    "loading": "Chargement des bénéficiaires...",
+    "backToSettings": "Retour aux paramètres",
+    "title": "Bénéficiaires et transmission de patrimoine",
+    "subtitle": "Attribuez des bénéficiaires secondaires et définissez les pourcentages d'allocation d'actifs.",
+    "overview": {
+      "portfolioLabel": "Portefeuille alloué"
+    },
+    "form": {
+      "title": "Ajouter un bénéficiaire",
+      "fullNameLabel": "Nom complet",
+      "fullNamePlaceholder": "ex. Eleanor Vance",
+      "emailLabel": "Adresse e-mail",
+      "emailPlaceholder": "eleanor@example.com",
+      "relationshipLabel": "Relation",
+      "allocationLabel": "Allocation (%)",
+      "allocationPlaceholder": "ex. 50",
+      "saving": "Enregistrement...",
+      "saveButton": "Enregistrer le bénéficiaire"
+    },
+    "relationships": {
+      "spouse": "Conjoint(e)",
+      "child": "Enfant",
+      "parent": "Parent",
+      "sibling": "Frère/Sœur",
+      "trust": "Trust familial",
+      "other": "Autre"
+    },
+    "list": {
+      "title": "Bénéficiaires assignés ({count})",
+      "empty": "Aucun bénéficiaire assigné pour le moment.",
+      "allocationSub": "Allocation"
+    },
+    "errors": {
+      "loadFailed": "Échec du chargement des bénéficiaires.",
+      "exceedsLimit": "L'allocation totale ne peut pas dépasser 100 %. Disponible restant : {remaining}%",
+      "addFailed": "Échec de l'ajout du bénéficiaire.",
+      "deleteFailed": "Échec de la suppression du bénéficiaire."
+    },
+    "success": {
+      "added": "Bénéficiaire ajouté avec succès !",
+      "removed": "Bénéficiaire supprimé."
+    }
+  },
+  "CardControlsPage": {
+    "loading": "Chargement des contrôles de la carte...",
+    "backToSettings": "Retour aux paramètres",
+    "title": "Contrôles des cartes et sécurité",
+    "subtitle": "Gérez les autorisations de transaction, les plafonds de dépenses et la sécurité des cartes.",
+    "cardTypes": {
+      "metal": "Métal",
+      "virtual": "Virtuelle",
+      "suffix": "Carte"
+    },
+    "status": {
+      "frozen": "Gelée 🧊",
+      "active": "Active ✅"
+    },
+    "buttons": {
+      "freeze": "Geler la carte",
+      "unfreeze": "Dégeler la carte",
+      "updateLimit": "Mettre à jour le plafond",
+      "updating": "Mise à jour..."
+    },
+    "togglesSectionTitle": "Options de transaction",
+    "toggles": {
+      "international": {
+        "title": "Transactions internationales",
+        "desc": "Autoriser les frais transfrontaliers et marchands étrangers"
+      },
+      "atm": {
+        "title": "Retraits aux DAB",
+        "desc": "Autoriser l'accès aux espèces physiques dans les distributeurs mondiaux"
+      },
+      "online": {
+        "title": "Achats en ligne",
+        "desc": "Activer le commerce électronique et les paiements d'abonnement web"
+      }
+    },
+    "limitSectionTitle": "Plafond de dépenses mensuel",
+    "limitLabel": "Montant du plafond ($)",
+    "spentThisMonth": "Dépensé ce mois-ci : ${spent} / ${limit}",
+    "errors": {
+      "loadFailed": "Échec du chargement des contrôles de la carte.",
+      "notFound": "Détails de la carte introuvables.",
+      "limitFailed": "Échec de la mise à jour du plafond de dépenses."
+    },
+    "success": {
+      "limitUpdated": "Plafond de dépenses mis à jour avec succès !"
+    }
+  },
+  "TaxSettingsPage": {
+    "loading": "Chargement des détails fiscaux...",
+    "backToSettings": "Retour aux paramètres",
+    "title": "Centre fiscal et de conformité",
+    "subtitle": "Gérez les déclarations réglementaires, la résidence fiscale et les documents de reporting annuel.",
+    "form": {
+      "sectionTitle": "Informations réglementaires",
+      "residencyLabel": "Résidence fiscale principale",
+      "tinLabel": "TIN / SSN / EIN",
+      "tinSub": "Les identifiants sensibles sont masqués pour protection.",
+      "fatcaLabel": "Classification FATCA",
+      "fatcaOptions": {
+        "exempt": "Bénéficiaire exempté",
+        "activeNffe": "NFFE actif",
+        "passiveNffe": "NFFE passif",
+        "participatingFfi": "IFI participant"
+      },
+      "usStatusLabel": "Statut fiscal américain",
+      "usPersonToggle": "Personne américaine déclarée",
+      "saving": "Enregistrement...",
+      "saveButton": "Enregistrer le profil de conformité"
+    },
+    "documents": {
+      "sectionTitle": "Documents fiscaux annuels",
+      "downloadBtn": "Télécharger le PDF",
+      "form1099": {
+        "title": "Formulaire 1099-INT (Revenus d'intérêts)",
+        "meta": "Année fiscale 2025 • Disponible"
+      },
+      "portfolioSummary": {
+        "title": "Résumé annuel du portefeuille du coffre",
+        "meta": "Année fiscale 2025 • Disponible"
+      }
+    },
+    "errors": {
+      "loadFailed": "Échec du chargement des paramètres fiscaux.",
+      "updateFailed": "Échec de la mise à jour du profil."
+    },
+    "success": {
+      "profileUpdated": "Profil fiscal et de conformité mis à jour."
+    }
+  },
+  "CustomerLoginPage": {
+    "title": "Connexion au Coffre Privé",
+    "subtitle": "Accédez au positionnement de trésorerie multidevises et aux services de grand livre",
+    "adminPortalLink": "Opérations internes / Portail administrateur"
+  },
+  "LoginForm": {
+    "validation": {
+      "invalidEmail": "Veuillez entrer une adresse e-mail valide",
+      "passwordRequired": "Le mot de passe est requis"
+    },
+    "errors": {
+      "invalidCredentials": "E-mail ou mot de passe invalide."
+    },
+    "fields": {
+      "emailLabel": "Adresse e-mail",
+      "passwordLabel": "Mot de passe"
+    },
+    "buttons": {
+      "authenticating": "Authentification...",
+      "signIn": "Se connecter au portail"
+    },
+    "footer": {
+      "prompt": "Besoin d'un coffre privé ?",
+      "createAccount": "Créer un compte"
+    }
+  },
+  "CustomerRegisterPage": {
+    "title": "Créer un compte de Coffre Privé",
+    "subtitle": "Étape {step} sur 2 — Profil et identifiants",
+    "fields": {
+      "fullNameLabel": "Nom complet légal",
+      "fullNamePlaceholder": "ex. John Doe",
+      "emailLabel": "Adresse e-mail",
+      "passwordLabel": "Mot de passe",
+      "genderLabel": "Genre",
+      "countryLabel": "Pays",
+      "phoneLabel": "Numéro de téléphone",
+      "addressLabel": "Adresse résidentielle",
+      "idLabel": "Pièce d'identité officielle (Passeport / CNI)",
+      "idPlaceholder": "Numéro de pièce d'identité / Passeport"
+    },
+    "genderOptions": {
+      "male": "Homme",
+      "female": "Femme",
+      "other": "Autre",
+      "preferNotToSay": "Préfère ne pas le dire"
+    },
+    "buttons": {
+      "continue": "Continuer vers la configuration de l'identité",
+      "back": "Retour",
+      "creating": "Création du compte du coffre...",
+      "openAccount": "Ouvrir un compte maintenant"
+    },
+    "termsText": "J'accepte les conditions d'utilisation et consens aux vérifications d'identité électroniques.",
+    "footer": {
+      "prompt": "Déjà inscrit ?",
+      "signIn": "Se connecter"
+    },
+    "errors": {
+      "termsRequired": "Vous devez accepter les conditions d'utilisation.",
+      "registrationFailed": "Échec de l'inscription.",
+      "loginPrompt": "Compte créé ! Veuillez vous connecter."
+    }
+  },
+  "InputGroup": {
+    "hidePassword": "Masquer le mot de passe",
+    "showPassword": "Afficher le mot de passe"
+  },
+  "CTA": {
+    "altImage": "Aperçu du coffre-fort sécurisé Apex Bank",
+    "titlePrefix": "Prêt à sécuriser vos actifs avec",
+    "titleHighlight": "Apex Bank",
+    "description": "Ouvrez votre coffre-fort multiduveurs privé en quelques minutes. Sécurisé par une authentification cryptographique à deux facteurs et un audit des appareils en temps réel.",
+    "openAccount": "Ouvrir un compte gratuit",
+    "signIn": "Se connecter au coffre-fort"
+  },
+  "FAQ": {
+    "badge": "Demandes institutionnelles",
+    "titlePrefix": "Foire aux",
+    "titleHighlight": "Questions",
+    "description": "Tout ce que vous devez savoir sur nos coffres-forts privés cryptographiques, nos protocoles de sécurité et nos registres multidevises.",
+    "q1": "Comment mes actifs multidevises sont-ils protégés dans les coffres-forts privés ?",
+    "a1": "Tous les coffres-forts privés sont sécurisés à l'aide d'un chiffrement AES-256 de qualité militaire combiné à des clés cryptographiques matérielles. Les actifs sont isolés dans des nœuds de liquidité multi-régions avec un audit des appareils en temps réel.",
+    "q2": "Quelles mesures de sécurité sont requises lors de la configuration du compte ?",
+    "a2": "Apex Bank exige une authentification à deux facteurs (2FA) par mot de passe à usage unique basé sur le temps (TOTP) via des applications d'authentification, une empreinte numérique des appareils et des sessions vérifiées cryptographiquement pour chaque transaction.",
+    "q3": "Quelle est la rapidité des transferts et des échanges de devises internationales ?",
+    "a3": "Les registres de trésorerie multidevises se règlent instantanément au sein de votre réseau de coffres-forts internes. Les règlements de virements institutionnels externes s'effectuent via des nœuds bancaires mondiaux dédiés avec suivi en temps réel.",
+    "q4": "Puis-je gérer des sous-comptes et des autorisations institutionnels ?",
+    "a4": "Oui. Les profils d'entreprise et institutionnels prennent en charge le contrôle d'accès basé sur les rôles (RBAC) personnalisé, vous permettant d'attribuer des privilèges spécifiques de multi-signature et d'audit aux membres de l'équipe."
+  },
+  "Features": {
+    "badge": "Infrastructure d'entreprise",
+    "titlePrefix": "Conçu pour une",
+    "titleHighlight": "Confidentialité et un Contrôle Absolus",
+    "description": "Découvrez les protocoles fondamentaux et l'architecture bancaire conçus pour protéger vos coffres-forts privés et vos actifs institutionnels.",
+    "explore": "Explorer le protocole technique",
+    "f1Title": "Sécurité renforcée à deux facteurs",
+    "f1Desc": "Flux de vérification TOTP avancés associés à des points de contrôle d'autorisation personnalisés protégeant chaque session.",
+    "f1Badge": "Cryptographique",
+    "f2Title": "Registres multidevises",
+    "f2Desc": "Positionnement de trésorerie en temps réel et gestion des soldes fluides sur les registres d'actifs USD, EUR et mondiaux.",
+    "f2Badge": "Actifs mondiaux",
+    "f3Title": "Pistes d'audit automatisées des appareils",
+    "f3Desc": "Analyse des appareils en temps réel, journalisation IP et suivi des sessions garantissant une transparence et une responsabilité totales.",
+    "f3Badge": "Suivi en direct"
+  },
+  "Footer": {
+    "brandDescription": "Registres multidevises de qualité institutionnelle et architecture de coffre-fort privé cryptographique conçue pour la gestion de patrimoine numérique de haute valeur.",
+    "encrypted": "Chiffré AES-256",
+    "globalNodes": "Nœuds mondiaux actifs",
+    "platformTitle": "Plateforme",
+    "features": "Fonctionnalités et registres",
+    "security": "Aperçu de la sécurité",
+    "onboarding": "Étapes d'intégration",
+    "login": "Connexion au coffre-fort privé",
+    "complianceTitle": "Conformité",
+    "register": "Ouvrir un compte",
+    "deviceAudit": "Pistes d'audit des appareils",
+    "totp": "Protocoles TOTP 2FA",
+    "privacyPolicy": "Politique de confidentialité",
+    "resourcesTitle": "Ressources",
+    "github": "Dépôt GitHub",
+    "apiDocs": "Documentation API",
+    "systemStatus": "État du système",
+    "rights": "Apex Bank Enterprise. Tous droits réservés.",
+    "securityTerms": "Conditions de sécurité",
+    "privacyNotice": "Avis de confidentialité",
+    "auditLogs": "Journaux d'audit"
+  },
+  "GlobalNetwork": {
+    "badge": "Infrastructure internationale",
+    "titlePrefix": "Liquidité mondiale et",
+    "titleHighlight": "Nœuds sécurisés",
+    "description": "Conçu avec une redondance multi-région et un routage chiffré à faible latence à travers les principaux centres financiers mondiaux.",
+    "status": "Opérationnel",
+    "latencyText": "latence",
+    "nyRegion": "Amérique du Nord",
+    "nyCity": "New York",
+    "ldnRegion": "Europe",
+    "ldnCity": "Londres",
+    "zrhRegion": "Europe centrale",
+    "zrhCity": "Zurich",
+    "sgpRegion": "Asie-Pacifique",
+    "sgpCity": "Singapour"
+  },
+  "Hero": {
+    "badge": "Architecture de coffre-fort et de registre privé de nouvelle génération",
+    "titlePrefix": "Services bancaires de qualité institutionnelle pour la",
+    "titleHighlight": "Richesse mondiale",
+    "description": "Prenez le contrôle total du positionnement de trésorerie multidevises et de l'audit des registres en temps réel. Sécurisé par une authentification cryptographique à deux facteurs pour une confidentialité absolue.",
+    "check1": "Registre multidevises USD & EUR",
+    "check2": "Authentification TOTP 2FA renforcée",
+    "check3": "Pistes d'audit automatisées des appareils",
+    "check4": "Transferts chiffrés instantanés",
+    "accessVault": "Accéder au coffre-fort privé",
+    "enteringVault": "Entrée dans le coffre-fort...",
+    "createAccount": "Créer un compte",
+    "preparingPortal": "Préparation du portail...",
+    "altImage": "Aperçu de l'interface utilisateur du coffre-fort Apex Bank",
+    "portfolioLabel": "Portefeuille total"
+  },
+  "Navbar": {
+    "subtitle": "Registre de coffre-fort privé",
+    "features": "Fonctionnalités de la plateforme",
+    "security": "Sécurité d'entreprise",
+    "multiCurrency": "Multidevise",
+    "compliance": "Conformité et audit",
+    "signIn": "Se connecter",
+    "openAccount": "Ouvrir un compte",
+    "ariaLabel": "Basculer le menu de navigation"
+  },
+  "OnboardingSteps": {
+    "badge": "Transition transparente",
+    "titlePrefix": "Votre parcours vers la",
+    "titleHighlight": "Richesse sécurisée",
+    "description": "Commencez avec Apex Bank en trois étapes structurées et protégées par cryptographie.",
+    "phaseText": "Phase",
+    "altImage": "Aperçu du flux d'intégration d'Apex Bank",
+    "s1Title": "Ouvrir un profil sécurisé",
+    "s1Desc": "Enregistrez votre compte institutionnel ou privé en quelques minutes avec des identifiants chiffrés.",
+    "s2Title": "Configurer le TOTP 2FA",
+    "s2Desc": "Scannez votre code QR d'authentification pour renforcer votre session avec une sécurité multifacteur.",
+    "s3Title": "Accéder au coffre-fort privé",
+    "s3Desc": "Gérez les registres de trésorerie multidevises et surveillez les pistes d'audit des appareils en temps réel."
+  },
+  "SecurityOverview": {
+    "badge": "Défense cryptographique",
+    "titlePrefix": "Sécurité de coffre-fort",
+    "titleHighlight": "sans compromis",
+    "description": "Apex Bank met en œuvre des couches de sécurité rigoureuses et des points de contrôle d'autorisation multifactoriels conçus pour garantir la protection totale de vos actifs financiers privés.",
+    "activeProtection": "Protection active activée",
+    "p1Title": "Hachage cryptographique des identifiants",
+    "p1Desc": "Les mots de passe sont protégés à l'aide d'un hachage de chiffrement bcrypt standard de l'industrie pour protéger les comptes d'utilisateurs contre les tentatives d'accès non autorisées.",
+    "p1Badge": "Bcrypt & Sel",
+    "p2Title": "Mots de passe à usage unique basés sur le temps (TOTP)",
+    "p2Desc": "Appliquez l'authentification multifacteur avec des codes d'authentification à 6 chiffres requis à chaque point de défi de session de connexion.",
+    "p2Badge": "TOTP 2FA",
+    "p3Title": "Journalisation d'audit des appareils et des adresses IP",
+    "p3Desc": "L'analyse automatisée des agents utilisateurs et le suivi sécurisé des adresses IP enregistrent chaque session de connexion pour une transparence et une responsabilité totales.",
+    "p3Badge": "Pistes d'audit",
+    "p4Title": "Durcissement de session NextAuth",
+    "p4Desc": "La gestion personnalisée des erreurs de connexion des identifiants et les modèles de stratégie JWT empêchent les fuites de jetons et sécurisent les routes de coffre-fort protégées.",
+    "p4Badge": "Sécurité des jetons"
+  }
+}
