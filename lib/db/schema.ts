@@ -439,3 +439,24 @@ export const siteVisitors = pgTable('site_visitors', {
   path: text('path').notNull(), // The page they visited
   createdAt: timestamp('created_at').defaultNow().notNull(),
 });
+
+
+// Password Reset Tokens
+export const passwordResetTokens = pgTable('password_reset_tokens', {
+  id: uuid('id').defaultRandom().primaryKey(),
+
+  userId: uuid('user_id')
+    .notNull()
+    .references(() => users.id, { onDelete: 'cascade' }),
+
+  // Store only the SHA-256 hash of the reset token
+  tokenHash: text('token_hash').notNull().unique(),
+
+  expiresAt: timestamp('expires_at', { mode: 'date' }).notNull(),
+
+  usedAt: timestamp('used_at', { mode: 'date' }),
+
+  createdAt: timestamp('created_at', { mode: 'date' })
+    .defaultNow()
+    .notNull(),
+});
