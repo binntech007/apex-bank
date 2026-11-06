@@ -1,16 +1,35 @@
+
 // auth.ts
-import NextAuth, { type DefaultSession, CredentialsSignin } from 'next-auth';
+
+import NextAuth, {
+  type DefaultSession,
+  CredentialsSignin,
+} from 'next-auth';
+
 import { DrizzleAdapter } from '@auth/drizzle-adapter';
 import Credentials from 'next-auth/providers/credentials';
+
+import { authConfig } from '@/auth.config';
 import { db } from '@/lib/db';
-import { users, accounts, sessions, auditLogs } from '@/lib/db/schema';
+
+import {
+  users,
+  accounts,
+  sessions,
+  auditLogs,
+} from '@/lib/db/schema';
+
 import { eq } from 'drizzle-orm';
 import bcrypt from 'bcryptjs';
 import { headers } from 'next/headers';
 import { UAParser } from 'ua-parser-js';
 import { authenticator } from '@otplib/preset-default';
+import { randomUUID } from 'node:crypto';
 
-// 🛡️ Custom error classes
+// ============================================
+// CUSTOM AUTHENTICATION ERRORS
+// ============================================
+
 class TwoFactorRequiredError extends CredentialsSignin {
   constructor() {
     super();
@@ -39,11 +58,15 @@ class InvalidPasswordError extends CredentialsSignin {
   }
 }
 
-// Extend NextAuth types 🏷️
+// ============================================
+// NEXTAUTH TYPE AUGMENTATION
+// ============================================
+
 declare module 'next-auth' {
   interface User {
     role?: 'customer' | 'admin';
   }
+
   interface Session {
     user: {
       id: string;
@@ -52,51 +75,83 @@ declare module 'next-auth' {
   }
 }
 
+// ============================================
+// NEXTAUTH CONFIGURATION
+// ============================================
+
 export const { handlers, auth, signIn, signOut } = NextAuth({
+  ...authConfig,
+
   adapter: DrizzleAdapter(db, {
     usersTable: users,
     accountsTable: accounts,
     sessionsTable: sessions,
   }) as any,
-  session: { strategy: 'jwt' },
-  pages: {
-    signIn: '/login',
+
+  session: {
+    strategy: 'jwt',
   },
+
   providers: [
     Credentials({
       name: 'Credentials',
+
       credentials: {
-        email: { label: 'Email', type: 'email' },
-        password: { label: 'Password', type: 'password' },
-        twoFactorToken: { label: '2FA Token', type: 'text' },
+        email: {
+          label: 'Email',
+          type: 'email',
+        },
+
+        password: {
+          label: 'Password',
+          type: 'password',
+        },
+
+        twoFactorToken: {
+          label: '2FA Token',
+          type: 'text',
+        },
       },
 
       async authorize(credentials) {
-        if (!credentials?.email || !credentials?.password) return null;
+        if (!credentials?.email || !credentials?.password) {
+          return null;
+        }
 
-        const email = credentials.email as string;
-        const plainPassword = credentials.password as string;
-        const twoFactorToken = credentials.twoFactorToken as string | undefined;
+        const email = String(credentials.email).trim().toLowerCase();
+        const plainPassword = String(credentials.password);
 
-        // 1. Fetch user from database 🔍
-        const [user] = await db.select().from(users).where(eq(users.email, email));
+        const twoFactorToken = credentials.twoFactorToken
+          ? String(credentials.twoFactorToken)
+          : undefined;
+
+        // 1. Retrieve user
+        const [user] = await db
+          .select()
+          .from(users)
+          .where(eq(users.email, email))
+          .limit(1);
 
         if (!user || !user.password) {
           throw new InvalidPasswordError();
         }
 
-        // 🚫 2. Check if account is suspended by an admin
+        // 2. Check suspended account
         if (user.isSuspended) {
           throw new AccountSuspendedError();
         }
 
-        // 3. Verify password hash 🔑
-        const isPasswordValid = await bcrypt.compare(plainPassword, user.password);
+        // 3. Verify password
+        const isPasswordValid = await bcrypt.compare(
+          plainPassword,
+          user.password
+        );
+
         if (!isPasswordValid) {
           throw new InvalidPasswordError();
         }
 
-        // 4. Verify 2FA if enabled 🛡️
+        // 4. Verify two-factor authentication
         if (user.twoFactorEnabled) {
           if (!twoFactorToken) {
             throw new TwoFactorRequiredError();
@@ -112,47 +167,55 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
           }
         }
 
-        // 5. Capture metadata & parse device information safely 🕵️‍♂️
+        // 5. Capture request information
         let ipAddress = '127.0.0.1';
         let rawUserAgent = '';
 
         try {
           const headerList = await headers();
+
           rawUserAgent = headerList.get('user-agent') || '';
-          
-          ipAddress = 
-            headerList.get('cf-connecting-ip') || 
-            headerList.get('x-client-ip') || 
-            headerList.get('x-forwarded-for')?.split(',')[0].trim() || 
-            headerList.get('x-real-ip') || 
+
+          ipAddress =
+            headerList.get('cf-connecting-ip') ||
+            headerList.get('x-client-ip') ||
+            headerList.get('x-forwarded-for')?.split(',')[0].trim() ||
+            headerList.get('x-real-ip') ||
             '127.0.0.1';
-        } catch (e) {
-          // Fallback if headers context is unavailable
+        } catch {
+          // Use fallback values if request headers are unavailable.
         }
 
+        // 6. Parse device information
         const parser = new UAParser(rawUserAgent);
+
         const device = parser.getDevice();
         const os = parser.getOS();
         const browser = parser.getBrowser();
 
         let deviceLabel = 'Unknown Device';
+
         if (device.vendor || device.model) {
-          deviceLabel = `${device.vendor || ''} ${device.model || ''}`.trim();
+          deviceLabel = `${device.vendor || ''} ${
+            device.model || ''
+          }`.trim();
         } else if (os.name) {
           deviceLabel = `${browser.name || 'Browser'} on ${os.name}`;
         }
 
-        // Save session entry to database 💾
+        // 7. Save custom session record
         await db.insert(sessions).values({
-          sessionToken: crypto.randomUUID(),
+          sessionToken: randomUUID(),
           userId: user.id,
-          expires: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000),
+          expires: new Date(
+            Date.now() + 30 * 24 * 60 * 60 * 1000
+          ),
           userAgent: deviceLabel,
           ipAddress,
           lastActive: new Date(),
         });
 
-        // 📝 Record security audit log entry
+        // 8. Save security audit log
         await db.insert(auditLogs).values({
           userId: user.id,
           action: 'USER_SIGNIN',
@@ -160,7 +223,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
           userAgent: rawUserAgent,
         });
 
-        // 6. Return user object cleanly ✅
+        // 9. Return authenticated user
         return {
           id: user.id,
           name: user.name,
@@ -170,20 +233,4 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
       },
     }),
   ],
-  callbacks: {
-    async jwt({ token, user }) {
-      if (user) {
-        token.id = user.id;
-        token.role = user.role as 'customer' | 'admin';
-      }
-      return token;
-    },
-    async session({ session, token }) {
-      if (session.user && token) {
-        session.user.id = token.id as string;
-        session.user.role = (token.role as 'customer' | 'admin') || 'customer';
-      }
-      return session;
-    },
-  },
 });
