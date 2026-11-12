@@ -29,6 +29,27 @@
       "when": 1793901112795,
       "tag": "0003_tired_black_tarantula",
       "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1794320857509,
+      "tag": "0004_lyrical_ender_wiggin",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1794321629604,
+      "tag": "0005_harsh_the_hood",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1794394341526,
+      "tag": "0006_mean_doctor_spectrum",
+      "breakpoints": true
     }
   ]
 }

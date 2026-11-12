@@ -1,17 +1,28 @@
+
 import { auth } from '@/auth';
 import { db } from '@/lib/db';
-import { ledgerAccounts, ledgerLines, journalEntries } from '@/lib/db/schema';
-import { eq, desc, or } from 'drizzle-orm';
+import {
+  ledgerAccounts,
+  ledgerLines,
+  journalEntries,
+} from '@/lib/db/schema';
+import { eq, desc, inArray } from 'drizzle-orm';
 import { redirect } from 'next/navigation';
 import { getKycStatus } from '@/actions/kyc';
+import { getBusinessUpgradeAccounts } from '@/actions/business-account';
 
-// Modular UI Components 🧩
+// Dashboard Components
 import { DashboardHeader } from '@/components/dashboard/DashboardHeader';
 import { VaultSection } from '@/components/dashboard/VaultSection';
-import { TransactionTable, Transaction } from '@/components/dashboard/TransactionTable';
+import {
+  TransactionTable,
+  Transaction,
+} from '@/components/dashboard/TransactionTable';
 import { QuickActions } from '@/components/dashboard/QuickActions';
+import { BusinessUpgradePopup } from '@/components/dashboard/BusinessUpgradePopup';
 
 export default async function DashboardOverviewPage() {
+  // 1. Authenticate customer
   const session = await auth();
 
   if (!session?.user?.id) {
@@ -20,11 +31,11 @@ export default async function DashboardOverviewPage() {
 
   const userId = session.user.id;
 
-  // 1. Fetch live KYC status from kycVerifications table 🛡️
+  // 2. Fetch live KYC status
   const kycRecord = await getKycStatus(userId);
   const kycStatus = kycRecord?.status || 'unverified';
 
-  // 2. Fetch multi-currency vaults with balances 🏦
+  // 3. Fetch customer's multi-currency accounts
   const accounts = await db
     .select({
       id: ledgerAccounts.id,
@@ -39,12 +50,12 @@ export default async function DashboardOverviewPage() {
   const vaults = accounts.map((acc) => ({
     ...acc,
     balance: acc.balance ?? '0.00',
-    numericBalance: parseFloat(acc.balance || '0'),
+    numericBalance: Number(acc.balance || '0'),
   }));
 
-  const userAccountIds = vaults.map((v) => v.id);
+  const userAccountIds = vaults.map((account) => account.id);
 
-  // 3. Fetch recent transaction entries 📊
+  // 4. Fetch recent transaction entries
   let recentTransactions: Transaction[] = [];
 
   if (userAccountIds.length > 0) {
@@ -58,9 +69,15 @@ export default async function DashboardOverviewPage() {
         currency: ledgerAccounts.currency,
       })
       .from(ledgerLines)
-      .innerJoin(journalEntries, eq(ledgerLines.journalEntryId, journalEntries.id))
-      .innerJoin(ledgerAccounts, eq(ledgerLines.ledgerAccountId, ledgerAccounts.id))
-      .where(or(...userAccountIds.map((id) => eq(ledgerLines.ledgerAccountId, id))))
+      .innerJoin(
+        journalEntries,
+        eq(ledgerLines.journalEntryId, journalEntries.id)
+      )
+      .innerJoin(
+        ledgerAccounts,
+        eq(ledgerLines.ledgerAccountId, ledgerAccounts.id)
+      )
+      .where(inArray(ledgerLines.ledgerAccountId, userAccountIds))
       .orderBy(desc(ledgerLines.createdAt))
       .limit(10);
 
@@ -70,22 +87,39 @@ export default async function DashboardOverviewPage() {
     }));
   }
 
+  // 5. Check eligible Savings Accounts for Business Account upgrade
+  const accountsNeedingUpgrade =
+    await getBusinessUpgradeAccounts();
+
+  // 6. Render dashboard
   return (
-    <main className="w-full max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 space-y-6 sm:space-y-8">
-      {/* Welcome Header Component 👤 */}
+    <main className="relative mx-auto w-full max-w-7xl space-y-6 p-4 sm:space-y-8 sm:p-6 lg:p-8">
+
+      {/* Welcome Header */}
       <DashboardHeader
         userName={session.user.name}
         kycStatus={kycStatus}
       />
 
-      {/* Multi-Currency Vault Cards Section 🏦 */}
-      <VaultSection userId={userId} vaults={vaults} />
+      {/* Multi-Currency Vault Cards */}
+      <VaultSection
+        userId={userId}
+        vaults={vaults}
+      />
 
-      {/* Quick Actions Component ⚡ */}
-       <QuickActions />
+      {/* Quick Actions */}
+      <QuickActions />
 
-      {/* Recent Ledger Transactions Table Component 📑 */}
-      <TransactionTable transactions={recentTransactions} />
+      {/* Recent Ledger Transactions */}
+      <TransactionTable
+        transactions={recentTransactions}
+      />
+
+      {/* Business Account Upgrade Popup */}
+      <BusinessUpgradePopup
+        accounts={accountsNeedingUpgrade}
+      />
+
     </main>
   );
 }

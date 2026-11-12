@@ -9,6 +9,15 @@ export const genderEnum = pgEnum('gender', ['male', 'female', 'other', 'prefer_n
 export const accountCategoryEnum = pgEnum('account_category', ['asset', 'liability', 'equity', 'revenue', 'expense']);
 export const entryTypeEnum = pgEnum('entry_type', ['debit', 'credit']);
 export const ledgerStatusEnum = pgEnum('ledger_status', ['pending', 'posted', 'failed', 'reversed']);
+export const bankAccountTypeEnum = pgEnum(
+  'bank_account_type',
+  ['savings', 'business']
+);
+
+export const businessUpgradeStatusEnum = pgEnum(
+  'business_upgrade_status',
+  ['pending', 'under_review', 'approved', 'rejected']
+);
 // Active Currencies managed by Admin
 
 
@@ -84,6 +93,9 @@ export const ledgerAccounts = pgTable('ledger_accounts', {
   currency: currencyEnum('currency').default('USD').notNull(),
   balance: numeric('balance', { precision: 18, scale: 2 }).default('0.00').notNull(), // 👈 Added balance field
   createdAt: timestamp('created_at').defaultNow().notNull(),
+   accountType: bankAccountTypeEnum('account_type')
+  .default('savings')
+  .notNull(),
 });
 
 
@@ -460,3 +472,62 @@ export const passwordResetTokens = pgTable('password_reset_tokens', {
     .defaultNow()
     .notNull(),
 });
+
+
+
+export const businessAccountApplications = pgTable(
+  'business_account_applications',
+  {
+    id: uuid('id').defaultRandom().primaryKey(),
+
+    userId: uuid('user_id')
+      .notNull()
+      .references(() => users.id, { onDelete: 'cascade' }),
+
+    ledgerAccountId: uuid('ledger_account_id')
+      .notNull()
+      .references(() => ledgerAccounts.id, { onDelete: 'restrict' }),
+
+    // Simple occupation and income information
+    occupation: text('occupation').notNull(),
+    employerName: text('employer_name'),
+    incomeSource: text('income_source').notNull(),
+    monthlyIncomeRange: text('monthly_income_range').notNull(),
+    accountPurpose: text('account_purpose').notNull(),
+
+    // Legacy business fields retained as optional
+    businessName: text('business_name'),
+    businessType: text('business_type'),
+    businessDescription: text('business_description'),
+    registrationNumber: text('registration_number'),
+    taxIdentificationNumber: text('tax_identification_number'),
+    businessEmail: text('business_email'),
+    businessPhone: text('business_phone'),
+    businessAddress: text('business_address'),
+    businessCountry: text('business_country'),
+    registrationDocumentUrl: text('registration_document_url'),
+    proofOfAddressUrl: text('proof_of_address_url'),
+    identityDocumentUrl: text('identity_document_url'),
+
+    // Admin review
+    status: businessUpgradeStatusEnum('status')
+      .default('pending')
+      .notNull(),
+
+    adminNotes: text('admin_notes'),
+    rejectionReason: text('rejection_reason'),
+
+    reviewedBy: uuid('reviewed_by')
+      .references(() => users.id),
+
+    reviewedAt: timestamp('reviewed_at'),
+
+    createdAt: timestamp('created_at')
+      .defaultNow()
+      .notNull(),
+
+    updatedAt: timestamp('updated_at')
+      .defaultNow()
+      .notNull(),
+  }
+);
