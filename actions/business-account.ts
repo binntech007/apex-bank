@@ -30,8 +30,7 @@ type BusinessApplicationInput = {
  *
  * Pending and under-review applications remain visible.
  * Rejected applications remain visible for resubmission.
- * Approved applications are hidden only after the account is
- * actually upgraded to a business account.
+ * Approved applications disappear after the account is upgraded.
  */
 export async function getBusinessUpgradeAccounts() {
   const session = await auth();
@@ -40,76 +39,81 @@ export async function getBusinessUpgradeAccounts() {
     return [];
   }
 
-  const accounts = await db
-    .select({
-      id: ledgerAccounts.id,
-      accountNumber: ledgerAccounts.accountNumber,
-      name: ledgerAccounts.name,
-      currency: ledgerAccounts.currency,
-      balance: ledgerAccounts.balance,
-      accountType: ledgerAccounts.accountType,
-    })
-    .from(ledgerAccounts)
-    .where(
-      and(
-        eq(ledgerAccounts.userId, session.user.id),
-        eq(ledgerAccounts.accountType, 'savings'),
-        gte(ledgerAccounts.balance, '50000')
-      )
-    );
+  try {
+    const accounts = await db
+      .select({
+        id: ledgerAccounts.id,
+        accountNumber: ledgerAccounts.accountNumber,
+        name: ledgerAccounts.name,
+        currency: ledgerAccounts.currency,
+        balance: ledgerAccounts.balance,
+        accountType: ledgerAccounts.accountType,
+      })
+      .from(ledgerAccounts)
+      .where(
+        and(
+          eq(ledgerAccounts.userId, session.user.id),
+          eq(ledgerAccounts.accountType, 'savings'),
+          gte(ledgerAccounts.balance, '50000')
+        )
+      );
 
-  if (!accounts.length) {
-    return [];
-  }
+    if (!accounts.length) {
+      return [];
+    }
 
-  const accountIds = accounts.map((account) => account.id);
+    const accountIds = accounts.map((account) => account.id);
 
-  const applications = await db
-    .select({
-      ledgerAccountId:
-        businessAccountApplications.ledgerAccountId,
-      status: businessAccountApplications.status,
-      rejectionReason:
-        businessAccountApplications.rejectionReason,
-      createdAt: businessAccountApplications.createdAt,
-    })
-    .from(businessAccountApplications)
-    .where(
-      and(
-        eq(businessAccountApplications.userId, session.user.id),
-        inArray(
+    const applications = await db
+      .select({
+        ledgerAccountId:
           businessAccountApplications.ledgerAccountId,
-          accountIds
+        status: businessAccountApplications.status,
+        rejectionReason:
+          businessAccountApplications.rejectionReason,
+        createdAt: businessAccountApplications.createdAt,
+      })
+      .from(businessAccountApplications)
+      .where(
+        and(
+          eq(businessAccountApplications.userId, session.user.id),
+          inArray(
+            businessAccountApplications.ledgerAccountId,
+            accountIds
+          )
         )
       )
-    )
-    .orderBy(desc(businessAccountApplications.createdAt));
+      .orderBy(desc(businessAccountApplications.createdAt));
 
-  // Keep the latest application for each account.
-  const latestApplications = new Map<
-    string,
-    (typeof applications)[number]
-  >();
+    // Keep only the latest application for each account.
+    const latestApplications = new Map<
+      string,
+      (typeof applications)[number]
+    >();
 
-  for (const application of applications) {
-    if (!latestApplications.has(application.ledgerAccountId)) {
-      latestApplications.set(
-        application.ledgerAccountId,
-        application
-      );
+    for (const application of applications) {
+      if (!latestApplications.has(application.ledgerAccountId)) {
+        latestApplications.set(
+          application.ledgerAccountId,
+          application
+        );
+      }
     }
+
+    return accounts.map((account) => {
+      const application = latestApplications.get(account.id);
+
+      return {
+        ...account,
+        balance: account.balance ?? '0.00',
+        applicationStatus: application?.status ?? null,
+        rejectionReason: application?.rejectionReason ?? null,
+      };
+    });
+  } catch (error) {
+    console.error('GET BUSINESS UPGRADE ACCOUNTS ERROR:', error);
+    return [];
   }
-
-  return accounts.map((account) => {
-    const application = latestApplications.get(account.id);
-
-    return {
-      ...account,
-      balance: account.balance ?? '0.00',
-      applicationStatus: application?.status ?? null,
-      rejectionReason: application?.rejectionReason ?? null,
-    };
-  });
 }
 
 /**
@@ -127,15 +131,16 @@ export async function submitBusinessApplication(
     };
   }
 
+  // Validate and normalize submitted values.
+  const ledgerAccountId = input.ledgerAccountId?.trim();
   const occupation = input.occupation?.trim();
   const employerName = input.employerName?.trim() || null;
   const incomeSource = input.incomeSource?.trim();
-  const monthlyIncomeRange =
-    input.monthlyIncomeRange?.trim();
+  const monthlyIncomeRange = input.monthlyIncomeRange?.trim();
   const accountPurpose = input.accountPurpose?.trim();
 
   if (
-    !input.ledgerAccountId ||
+    !ledgerAccountId ||
     !occupation ||
     !incomeSource ||
     !monthlyIncomeRange ||
@@ -147,8 +152,22 @@ export async function submitBusinessApplication(
     };
   }
 
+  // Prevent excessively large form submissions.
+  if (
+    occupation.length > 150 ||
+    (employerName && employerName.length > 150) ||
+    incomeSource.length > 150 ||
+    monthlyIncomeRange.length > 100 ||
+    accountPurpose.length > 2000
+  ) {
+    return {
+      success: false,
+      message: 'One or more fields exceed the allowed length.',
+    };
+  }
+
   try {
-    // Verify account ownership, account type and eligibility.
+    // Verify account ownership, type and minimum balance.
     const [account] = await db
       .select({
         id: ledgerAccounts.id,
@@ -156,7 +175,7 @@ export async function submitBusinessApplication(
       .from(ledgerAccounts)
       .where(
         and(
-          eq(ledgerAccounts.id, input.ledgerAccountId),
+          eq(ledgerAccounts.id, ledgerAccountId),
           eq(ledgerAccounts.userId, session.user.id),
           eq(ledgerAccounts.accountType, 'savings'),
           gte(ledgerAccounts.balance, '50000')
@@ -172,7 +191,7 @@ export async function submitBusinessApplication(
       };
     }
 
-    // Check whether an active application already exists.
+    // Prevent another active or already-approved application.
     const [existing] = await db
       .select({
         id: businessAccountApplications.id,
@@ -205,7 +224,7 @@ export async function submitBusinessApplication(
       };
     }
 
-    // Create the application.
+    // Create a new application.
     await db.insert(businessAccountApplications).values({
       userId: session.user.id,
       ledgerAccountId: account.id,
@@ -218,6 +237,7 @@ export async function submitBusinessApplication(
     });
 
     revalidatePath('/dashboard');
+    revalidatePath('/admin/business-upgrades');
 
     return {
       success: true,
